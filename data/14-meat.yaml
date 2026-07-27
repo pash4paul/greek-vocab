@@ -1,0 +1,79 @@
+topic: Мясная лавка
+lesson: "15"
+
+words:
+  - el: κρέας
+    article: το
+    ru: мясо
+    pos: noun
+    irregular: true
+    note: "нерегулярное склонение: του κρέατος, τα κρέατα"
+    cases:
+      gen: [του κρέατος, των κρεάτων]
+      nom: [~, τα κρέατα]
+      acc: [~, τα κρέατα]
+    forms:
+      plural: κρέατα
+
+  - el: κοτόπουλο
+    article: το
+    ru: курица
+    pos: noun
+    example: Τρώω κοτόπουλο με ρύζι.
+    exampleRu: Я ем курицу с рисом.
+
+  - el: γαλοπούλα
+    article: η
+    ru: индейка
+    pos: noun
+
+  - el: αρνί
+    article: το
+    ru: баранина, ягнёнок
+    pos: noun
+
+  - el: μοσχάρι
+    article: το
+    ru: говядина, телёнок
+    pos: noun
+
+  - el: χοιρινό
+    article: το
+    ru: свинина
+    pos: noun
+
+  - el: κιμάς
+    article: ο
+    ru: фарш
+    pos: noun
+
+  - el: μπριζόλα
+    article: η
+    ru: бризоль, стейк
+    pos: noun
+
+  - el: μπιφτέκι
+    article: το
+    ru: котлета
+    pos: noun
+
+  - el: φιλέτο
+    article: το
+    ru: филе
+    pos: noun
+
+  - el: μοσχαρίσιος
+    ru: говяжий
+    pos: adj
+
+  - el: χοιρινός
+    ru: свиной
+    pos: adj
+
+  - el: βραστός
+    ru: варёный
+    pos: adj
+
+  - el: ψητός
+    ru: жареный, запечённый
+    pos: adj

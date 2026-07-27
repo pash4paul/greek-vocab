@@ -1,0 +1,139 @@
+# В этом файле формы намеренно не прописаны: множественное число
+# и спряжения выводятся при сборке по регулярным правилам.
+# Писать forms нужно только для исключений (тогда же ставится irregular: true)
+# и там, где скрипт отказался выводить — он скажет об этом при npm run check.
+
+topic: Еда и напитки
+lesson: "05"
+
+words:
+  - el: ψωμί
+    article: το
+    ru: хлеб
+    pos: noun
+    example: Θέλω ένα ψωμί, παρακαλώ.
+    exampleRu: Я хочу хлеб, пожалуйста.
+
+  - el: νερό
+    article: το
+    ru: вода
+    pos: noun
+    example: Ένα ποτήρι νερό, παρακαλώ.
+    exampleRu: Стакан воды, пожалуйста.
+
+  - el: καφές
+    article: ο
+    ru: кофе
+    pos: noun
+    example: Πίνω καφέ κάθε πρωί.
+    exampleRu: Я пью кофе каждое утро.
+
+  - el: γάλα
+    article: το
+    ru: молоко
+    pos: noun
+    irregular: true
+    note: во множественном числе γάλατα — окончание нерегулярное
+    forms:
+      plural: γάλατα
+
+  - el: κρασί
+    article: το
+    ru: вино
+    pos: noun
+    example: Το κρασί εδώ είναι πολύ καλό.
+    exampleRu: Вино здесь очень хорошее.
+
+  - el: τυρί
+    article: το
+    ru: сыр
+    pos: noun
+
+  - el: αυγό
+    article: το
+    ru: яйцо
+    pos: noun
+
+  - el: φρούτο
+    article: το
+    ru: фрукт
+    pos: noun
+
+  - el: μήλο
+    article: το
+    ru: яблоко
+    pos: noun
+    example: Τρώω ένα μήλο.
+    exampleRu: Я ем яблоко.
+
+  - el: πορτοκάλι
+    article: το
+    ru: апельсин
+    pos: noun
+
+  - el: σαλάτα
+    article: η
+    ru: салат
+    pos: noun
+    cases:
+      gen: [~, των σαλατών]
+    example: Η σαλάτα είναι φρέσκια.
+    exampleRu: Салат свежий.
+
+  - el: πιάτο
+    article: το
+    ru: тарелка, блюдо
+    pos: noun
+    example: Αυτό το πιάτο είναι νόστιμο.
+    exampleRu: Это блюдо вкусное.
+
+  - el: ποτήρι
+    article: το
+    ru: стакан
+    pos: noun
+
+  - el: εστιατόριο
+    article: το
+    ru: ресторан
+    pos: noun
+    example: Πάμε στο εστιατόριο απόψε.
+    exampleRu: Пойдём сегодня вечером в ресторан.
+
+  - el: λογαριασμός
+    article: ο
+    ru: счёт
+    pos: noun
+    example: Τον λογαριασμό, παρακαλώ.
+    exampleRu: Счёт, пожалуйста.
+
+  - el: νόστιμος
+    ru: вкусный
+    pos: adj
+
+  - el: φρέσκος
+    ru: свежий
+    pos: adj
+    irregular: true
+    note: женский род φρέσκια, а не φρέσκη — как у γλυκός → γλυκιά
+    forms:
+      gender: [φρέσκος, φρέσκια, φρέσκο]
+
+  - el: ζεστός
+    ru: горячий, тёплый
+    pos: adj
+
+  - el: κρύος
+    ru: холодный
+    pos: adj
+
+  - el: παραγγέλνω
+    ru: заказывать
+    pos: verb
+    example: Παραγγέλνω μια σαλάτα.
+    exampleRu: Я заказываю салат.
+
+  - el: πληρώνω
+    ru: платить
+    pos: verb
+    example: Πληρώνω με κάρτα.
+    exampleRu: Я плачу картой.

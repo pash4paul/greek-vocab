@@ -1,0 +1,297 @@
+topic: Страны, национальности, языки
+lesson: "18"
+
+words:
+  # ─── Страны ────────────────────────────────────────────────
+  - el: Ελλάδα
+    article: η
+    ru: Греция
+    pos: noun
+    example: Η Ελλάδα είναι μια όμορφη χώρα.
+    exampleRu: Греция — красивая страна.
+
+  - el: Ρωσία
+    article: η
+    ru: Россия
+    pos: noun
+
+  - el: Ουκρανία
+    article: η
+    ru: Украина
+    pos: noun
+
+  - el: Αγγλία
+    article: η
+    ru: Англия
+    pos: noun
+
+  - el: Γαλλία
+    article: η
+    ru: Франция
+    pos: noun
+
+  - el: Αλβανία
+    article: η
+    ru: Албания
+    pos: noun
+
+  - el: Τουρκία
+    article: η
+    ru: Турция
+    pos: noun
+
+  - el: Βέλγιο
+    article: το
+    ru: Бельгия
+    pos: noun
+
+  - el: Μεξικό
+    article: το
+    ru: Мексика
+    pos: noun
+
+  - el: Καναδάς
+    article: ο
+    ru: Канада
+    pos: noun
+
+  - el: Λίβανος
+    article: ο
+    ru: Ливан
+    pos: noun
+
+  - el: χώρα
+    article: η
+    ru: страна
+    pos: noun
+    cases:
+      gen: [~, των χωρών]
+
+  - el: πρωτεύουσα
+    article: η
+    ru: столица
+    pos: noun
+
+  # ─── Континенты ────────────────────────────────────────────
+  - el: Ευρώπη
+    article: η
+    ru: Европа
+    pos: noun
+
+  - el: Ασία
+    article: η
+    ru: Азия
+    pos: noun
+
+  - el: Αμερική
+    article: η
+    ru: Америка
+    pos: noun
+
+  - el: Αφρική
+    article: η
+    ru: Африка
+    pos: noun
+
+  - el: Ανταρκτική
+    article: η
+    ru: Антарктида
+    pos: noun
+
+  - el: Ωκεανία
+    article: η
+    ru: Океания
+    pos: noun
+
+  # ─── Национальности ────────────────────────────────────────
+  - el: Έλληνας
+    article: ο
+    ru: грек
+    pos: noun
+    irregular: true
+    note: женский род — η Ελληνίδα
+
+  - el: Ελληνίδα
+    article: η
+    ru: гречанка
+    pos: noun
+
+  - el: Ρώσος
+    article: ο
+    ru: русский (человек)
+    pos: noun
+    note: женский род — η Ρωσίδα
+
+  - el: Ρωσίδα
+    article: η
+    ru: русская
+    pos: noun
+
+  - el: Άγγλος
+    article: ο
+    ru: англичанин
+    pos: noun
+
+  - el: Γάλλος
+    article: ο
+    ru: француз
+    pos: noun
+
+  - el: Γερμανός
+    article: ο
+    ru: немец
+    pos: noun
+
+  - el: Ιταλός
+    article: ο
+    ru: итальянец
+    pos: noun
+
+  - el: Ισπανός
+    article: ο
+    ru: испанец
+    pos: noun
+
+  - el: Αμερικανός
+    article: ο
+    ru: американец
+    pos: noun
+
+  - el: Ουκρανός
+    article: ο
+    ru: украинец
+    pos: noun
+
+  - el: Τούρκος
+    article: ο
+    ru: турок
+    pos: noun
+
+  - el: Κινέζος
+    article: ο
+    ru: китаец
+    pos: noun
+
+  - el: Ιάπωνας
+    article: ο
+    ru: японец
+    pos: noun
+
+  - el: Αλβανός
+    article: ο
+    ru: албанец
+    pos: noun
+
+  - el: Δανός
+    article: ο
+    ru: датчанин
+    pos: noun
+
+  - el: Καναδός
+    article: ο
+    ru: канадец
+    pos: noun
+
+  # ─── Языки ─────────────────────────────────────────────────
+  - el: ελληνικά
+    ru: греческий язык
+    pos: other
+    note: множественное число среднего рода — τα ελληνικά
+    example: Μιλάω λίγο ελληνικά ακόμα.
+    exampleRu: Я пока говорю по-гречески немного.
+
+  - el: ρωσικά
+    ru: русский язык
+    pos: other
+
+  - el: αγγλικά
+    ru: английский язык
+    pos: other
+
+  - el: γαλλικά
+    ru: французский язык
+    pos: other
+
+  - el: γερμανικά
+    ru: немецкий язык
+    pos: other
+
+  - el: ισπανικά
+    ru: испанский язык
+    pos: other
+
+  - el: ιταλικά
+    ru: итальянский язык
+    pos: other
+
+  - el: ολλανδικά
+    ru: голландский язык
+    pos: other
+
+  - el: ουκρανικά
+    ru: украинский язык
+    pos: other
+
+  - el: τουρκικά
+    ru: турецкий язык
+    pos: other
+
+  - el: αλβανικά
+    ru: албанский язык
+    pos: other
+
+  # ─── Прилагательные национальности ─────────────────────────
+  - el: ελληνικός
+    ru: греческий
+    pos: adj
+
+  - el: ρωσικός
+    ru: русский (относящийся к России)
+    pos: adj
+
+  - el: αγγλικός
+    ru: английский
+    pos: adj
+
+  - el: γαλλικός
+    ru: французский
+    pos: adj
+
+  - el: αμερικανικός
+    ru: американский
+    pos: adj
+
+  - el: ουκρανικός
+    ru: украинский
+    pos: adj
+
+  - el: κυπριακός
+    ru: кипрский
+    pos: adj
+
+  - el: βελγικός
+    ru: бельгийский
+    pos: adj
+
+  - el: βουλγαρικός
+    ru: болгарский
+    pos: adj
+
+  - el: ευρωπαϊκός
+    ru: европейский
+    pos: adj
+
+  - el: ξένος
+    ru: иностранный, чужой
+    pos: adj
+
+  - el: Ευρωπαϊκή Ένωση
+    article: η
+    ru: Европейский Союз
+    pos: noun
+    irregular: true
+
+  - el: δημοκρατία
+    article: η
+    ru: демократия, республика
+    pos: noun

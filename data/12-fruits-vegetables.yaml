@@ -1,0 +1,159 @@
+topic: Фрукты и овощи
+lesson: "13"
+
+words:
+  # ─── Φρούτα ────────────────────────────────────────────────
+  - el: μπανάνα
+    article: η
+    ru: банан
+    pos: noun
+
+  - el: φράουλα
+    article: η
+    ru: клубника
+    pos: noun
+
+  - el: αχλάδι
+    article: το
+    ru: груша
+    pos: noun
+
+  - el: βερίκοκο
+    article: το
+    ru: абрикос
+    pos: noun
+
+  - el: καρπούζι
+    article: το
+    ru: арбуз
+    pos: noun
+
+  - el: κεράσι
+    article: το
+    ru: черешня
+    pos: noun
+
+  - el: λεμόνι
+    article: το
+    ru: лимон
+    pos: noun
+
+  - el: μανταρίνι
+    article: το
+    ru: мандарин
+    pos: noun
+
+  - el: πεπόνι
+    article: το
+    ru: дыня
+    pos: noun
+
+  - el: ροδάκινο
+    article: το
+    ru: персик
+    pos: noun
+
+  - el: σταφύλι
+    article: το
+    ru: виноград
+    pos: noun
+
+  - el: σύκο
+    article: το
+    ru: инжир
+    pos: noun
+
+  - el: ελιά
+    article: η
+    ru: оливка, оливковое дерево
+    pos: noun
+
+  # ─── Λαχανικά ──────────────────────────────────────────────
+  - el: λαχανικό
+    article: το
+    ru: овощ
+    pos: noun
+
+  - el: μελιτζάνα
+    article: η
+    ru: баклажан
+    pos: noun
+
+  - el: ντομάτα
+    article: η
+    ru: помидор
+    pos: noun
+    example: Η ντομάτα είναι κόκκινη.
+    exampleRu: Помидор красный.
+
+  - el: πατάτα
+    article: η
+    ru: картофель
+    pos: noun
+
+  - el: πιπεριά
+    article: η
+    ru: перец (овощ)
+    pos: noun
+    cases:
+      gen: [~, των πιπεριών]
+
+  - el: αγγούρι
+    article: το
+    ru: огурец
+    pos: noun
+
+  - el: καρότο
+    article: το
+    ru: морковь
+    pos: noun
+
+  - el: κολοκυθάκι
+    article: το
+    ru: кабачок
+    pos: noun
+
+  - el: κρεμμύδι
+    article: το
+    ru: лук
+    pos: noun
+
+  - el: λάχανο
+    article: το
+    ru: капуста
+    pos: noun
+
+  - el: μανιτάρι
+    article: το
+    ru: гриб
+    pos: noun
+
+  - el: μαρούλι
+    article: το
+    ru: салат-латук
+    pos: noun
+
+  - el: σκόρδο
+    article: το
+    ru: чеснок
+    pos: noun
+
+  - el: φασόλι
+    article: το
+    ru: фасоль
+    pos: noun
+
+  - el: φακή
+    article: η
+    ru: чечевица
+    pos: noun
+
+  - el: όσπριο
+    article: το
+    ru: бобовые
+    pos: noun
+
+  - el: φυστίκι
+    article: το
+    ru: фисташка
+    pos: noun

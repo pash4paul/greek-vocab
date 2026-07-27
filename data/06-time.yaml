@@ -1,0 +1,207 @@
+topic: Время и календарь
+lesson: "07"
+
+words:
+  - el: μέρα
+    article: η
+    ru: день
+    pos: noun
+    note: полная форма — η ημέρα
+    example: Τι ωραία μέρα!
+    exampleRu: Какой прекрасный день!
+
+  - el: νύχτα
+    article: η
+    ru: ночь
+    pos: noun
+
+  - el: πρωί
+    article: το
+    ru: утро, утром
+    pos: noun
+
+  - el: μεσημέρι
+    article: το
+    ru: полдень
+    pos: noun
+
+  - el: απόγευμα
+    article: το
+    ru: послеобеденное время
+    pos: noun
+
+  - el: βράδυ
+    article: το
+    ru: вечер
+    pos: noun
+    irregular: true
+    note: склоняется нерегулярно
+    forms:
+      plural: βράδια
+
+  - el: εβδομάδα
+    article: η
+    ru: неделя
+    pos: noun
+
+  - el: λεπτό
+    article: το
+    ru: минута
+    pos: noun
+
+  - el: ώρα
+    article: η
+    ru: час, время
+    pos: noun
+    cases:
+      gen: [~, των ωρών]
+
+  - el: καιρός
+    article: ο
+    ru: время, погода
+    pos: noun
+
+  - el: χειμώνας
+    article: ο
+    ru: зима
+    pos: noun
+
+  - el: φθινόπωρο
+    article: το
+    ru: осень
+    pos: noun
+
+  - el: καλοκαίρι
+    article: το
+    ru: лето
+    pos: noun
+
+  - el: Σαββατοκύριακο
+    article: το
+    ru: выходные, суббота и воскресенье
+    pos: noun
+
+  - el: αργία
+    article: η
+    ru: выходной день
+    pos: noun
+
+  - el: γιορτή
+    article: η
+    ru: праздник
+    pos: noun
+
+  - el: διάλειμμα
+    article: το
+    ru: перерыв
+    pos: noun
+
+  - el: σειρά
+    article: η
+    ru: очередь
+    pos: noun
+    cases:
+      gen: [~, των σειρών]
+
+  - el: φορά
+    article: η
+    ru: раз
+    pos: noun
+    cases:
+      gen: [~, των φορών]
+
+  - el: τέλος
+    article: το
+    ru: конец
+    pos: noun
+
+  - el: σήμερα
+    ru: сегодня
+    pos: adv
+
+  - el: αύριο
+    ru: завтра
+    pos: adv
+
+  - el: χτες
+    ru: вчера
+    pos: adv
+    note: вариант написания — χθες
+
+  - el: τώρα
+    ru: сейчас
+    pos: adv
+
+  - el: μετά
+    ru: после
+    pos: adv
+
+  - el: πάλι
+    ru: снова
+    pos: adv
+
+  - el: αργά
+    ru: медленно, поздно
+    pos: adv
+
+  - el: αργότερα
+    ru: позже
+    pos: adv
+
+  - el: νωρίς
+    ru: рано
+    pos: adv
+
+  - el: αμέσως
+    ru: немедленно
+    pos: adv
+
+  - el: ακόμα
+    ru: ещё
+    pos: adv
+    note: вариант написания — ακόμη
+
+  - el: φέτος
+    ru: в этом году
+    pos: adv
+
+  - el: συνήθως
+    ru: обычно
+    pos: adv
+
+  - el: συνέχεια
+    ru: постоянно
+    pos: adv
+    note: наречие; как существительное η συνέχεια — «продолжение»
+
+  - el: πότε
+    ru: когда?
+    pos: adv
+
+  - el: καθημερινός
+    ru: ежедневный, будний
+    pos: adj
+
+  - el: ημερήσιος
+    ru: ежедневный
+    pos: adj
+
+  - el: μέχρι
+    ru: до, вплоть до (предлог)
+    pos: prep
+
+  - el: πρωί-πρωί
+    ru: рано утром
+    pos: phrase
+
+  - el: μέρα-νύχτα
+    ru: днём и ночью
+    pos: phrase
+
+  - el: μία φορά την εβδομάδα
+    ru: раз в неделю
+    pos: phrase
+
+  - el: από Δευτέρα
+    ru: с понедельника
+    pos: phrase

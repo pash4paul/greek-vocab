@@ -1,0 +1,121 @@
+topic: Дом
+lesson: "02"
+
+words:
+  - el: σπίτι
+    article: το
+    ru: дом
+    pos: noun
+    forms:
+      plural: σπίτια
+    example: Το σπίτι μου είναι μικρό.
+    exampleRu: Мой дом маленький.
+
+  - el: δωμάτιο
+    article: το
+    ru: комната
+    pos: noun
+    forms:
+      plural: δωμάτια
+    example: Το δωμάτιο έχει δύο παράθυρα.
+    exampleRu: В комнате два окна.
+
+  - el: πόρτα
+    article: η
+    ru: дверь
+    pos: noun
+    forms:
+      plural: πόρτες
+    cases:
+      # Род. мн. ч. у женского рода на -α правилами не выводится:
+      # πόρτα → πορτών, но μητέρα → μητέρων. Тильда — «оставить выведенное».
+      gen: [~, των πορτών]
+    example: Η πόρτα είναι ανοιχτή.
+    exampleRu: Дверь открыта.
+
+  - el: παράθυρο
+    article: το
+    ru: окно
+    pos: noun
+    forms:
+      plural: παράθυρα
+    example: Κλείσε το παράθυρο, παρακαλώ.
+    exampleRu: Закрой окно, пожалуйста.
+
+  - el: τραπέζι
+    article: το
+    ru: стол
+    pos: noun
+    forms:
+      plural: τραπέζια
+    example: Το τραπέζι είναι μεγάλο.
+    exampleRu: Стол большой.
+
+  - el: καρέκλα
+    article: η
+    ru: стул
+    pos: noun
+    forms:
+      plural: καρέκλες
+    cases:
+      gen: [~, των καρεκλών]
+    example: Η καρέκλα είναι καινούργια.
+    exampleRu: Стул новый.
+
+  - el: κρεβάτι
+    article: το
+    ru: кровать
+    pos: noun
+    forms:
+      plural: κρεβάτια
+    example: Το κρεβάτι είναι στο δωμάτιο.
+    exampleRu: Кровать в комнате.
+
+  - el: κουζίνα
+    article: η
+    ru: кухня, плита
+    pos: noun
+    forms:
+      plural: κουζίνες
+    cases:
+      gen: [~, των κουζινών]
+    note: одно слово и для помещения, и для плиты
+    example: Η κουζίνα είναι μικρή αλλά ωραία.
+    exampleRu: Кухня маленькая, но приятная.
+
+  - el: καναπές
+    article: ο
+    ru: диван
+    pos: noun
+    forms:
+      plural: καναπέδες
+    example: Ο καναπές είναι πολύ αναπαυτικός.
+    exampleRu: Диван очень удобный.
+
+  - el: ψυγείο
+    article: το
+    ru: холодильник
+    pos: noun
+    forms:
+      plural: ψυγεία
+    example: Το γάλα είναι στο ψυγείο.
+    exampleRu: Молоко в холодильнике.
+
+  - el: μπάνιο
+    article: το
+    ru: ванная, туалет, купание
+    pos: noun
+    note: то же слово в выражении κάνω μπάνιο — «купаться»
+    forms:
+      plural: μπάνια
+    example: Πού είναι το μπάνιο;
+    exampleRu: Где туалет?
+
+  - el: κλειδί
+    article: το
+    ru: ключ
+    pos: noun
+    forms:
+      plural: κλειδιά
+    example: Δεν βρίσκω το κλειδί μου.
+    exampleRu: Я не нахожу свой ключ.

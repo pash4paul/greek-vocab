@@ -1,0 +1,620 @@
+{
+  "source": "el.wiktionary.org",
+  "fetchedWords": 99,
+  "cells": {
+    "fili:noun": {
+      "gen": [
+        null,
+        "των φίλων"
+      ],
+      "voc": [
+        null,
+        "φίλες"
+      ]
+    },
+    "kyria:noun": {
+      "gen": [
+        null,
+        "των κυριών"
+      ]
+    },
+    "chira:noun": {
+      "gen": [
+        null,
+        "των χηρών"
+      ]
+    },
+    "kori:noun": {
+      "gen": [
+        null,
+        "των κορών"
+      ],
+      "voc": [
+        null,
+        "κόρες"
+      ]
+    },
+    "ethnikotita:noun": {
+      "gen": [
+        null,
+        "των εθνικοτήτων"
+      ]
+    },
+    "ypikootita:noun": {
+      "gen": [
+        null,
+        "των υπηκοοτήτων"
+      ]
+    },
+    "mera:noun": {
+      "gen": [
+        null,
+        "των μερών"
+      ]
+    },
+    "nychta:noun": {
+      "gen": [
+        null,
+        "των νυχτών"
+      ]
+    },
+    "evdomada:noun": {
+      "gen": [
+        null,
+        "των εβδομάδων"
+      ]
+    },
+    "cheimonas:noun": {
+      "gen": [
+        null,
+        "των χειμώνων"
+      ]
+    },
+    "argia:noun": {
+      "gen": [
+        null,
+        "των αργιών"
+      ]
+    },
+    "plateia:noun": {
+      "gen": [
+        null,
+        "των πλατειών"
+      ]
+    },
+    "polykatoikia:noun": {
+      "gen": [
+        null,
+        "των πολυκατοικιών"
+      ]
+    },
+    "monokatoikia:noun": {
+      "gen": [
+        null,
+        "των μονοκατοικιών"
+      ]
+    },
+    "oyranoxystis:noun": {
+      "gen": [
+        null,
+        "των ουρανοξυστών"
+      ]
+    },
+    "astynomia:noun": {
+      "gen": [
+        null,
+        "των αστυνομιών"
+      ]
+    },
+    "ekklisia:noun": {
+      "gen": [
+        null,
+        "των εκκλησιών"
+      ]
+    },
+    "vivliothiki:noun": {
+      "gen": [
+        null,
+        "των βιβλιοθηκών"
+      ],
+      "voc": [
+        null,
+        "βιβλιοθήκες"
+      ]
+    },
+    "xenonas:noun": {
+      "gen": [
+        null,
+        "των ξενώνων"
+      ]
+    },
+    "kafeteria:noun": {
+      "gen": [
+        null,
+        "των καφετεριών"
+      ]
+    },
+    "taverna:noun": {
+      "gen": [
+        null,
+        "των ταβερνών"
+      ]
+    },
+    "katastimatarchis:noun": {
+      "gen": [
+        null,
+        "των καταστηματαρχών"
+      ]
+    },
+    "foyrnaris:noun": {
+      "gen": [
+        null,
+        "των φούρναρηδων"
+      ]
+    },
+    "zacharoplastis:noun": {
+      "gen": [
+        null,
+        "των ζαχαροπλαστών"
+      ]
+    },
+    "anthopolis:noun": {
+      "gen": [
+        null,
+        "των ανθοπωλών"
+      ]
+    },
+    "vivliopolis:noun": {
+      "gen": [
+        null,
+        "των βιβλιοπωλών"
+      ]
+    },
+    "manavis:noun": {
+      "gen": [
+        null,
+        "των μανάβηδων"
+      ]
+    },
+    "kreopolis:noun": {
+      "gen": [
+        null,
+        "των κρεοπωλών"
+      ]
+    },
+    "chasapis:noun": {
+      "gen": [
+        null,
+        "των χασάπηδων"
+      ]
+    },
+    "posotita:noun": {
+      "gen": [
+        null,
+        "των ποσοτήτων"
+      ]
+    },
+    "feta:noun": {
+      "gen": [
+        null,
+        "των φετών"
+      ]
+    },
+    "architektonas:noun": {
+      "gen": [
+        null,
+        "των αρχιτεκτόνων"
+      ]
+    },
+    "epicheirimatias:noun": {
+      "gen": [
+        null,
+        "των επιχειρηματιών"
+      ]
+    },
+    "tamias:noun": {
+      "gen": [
+        null,
+        "των ταμιών"
+      ]
+    },
+    "tragoydistria:noun": {
+      "gen": [
+        null,
+        "των τραγουδιστριών"
+      ]
+    },
+    "skinothetis:noun": {
+      "gen": [
+        null,
+        "των σκηνοθετών"
+      ]
+    },
+    "ergatis:noun": {
+      "gen": [
+        null,
+        "των εργατών"
+      ]
+    },
+    "mageiras:noun": {
+      "gen": [
+        null,
+        "των μαγείρων"
+      ]
+    },
+    "etaireia:noun": {
+      "gen": [
+        null,
+        "των εταιρειών"
+      ]
+    },
+    "mathitria:noun": {
+      "gen": [
+        null,
+        "των μαθητριών"
+      ]
+    },
+    "foititria:noun": {
+      "gen": [
+        null,
+        "των φοιτητριών"
+      ]
+    },
+    "goma:noun": {
+      "gen": [
+        null,
+        "των γομών"
+      ]
+    },
+    "charakas:noun": {
+      "gen": [
+        null,
+        "των χαράκων"
+      ]
+    },
+    "istoria:noun": {
+      "gen": [
+        null,
+        "των ιστοριών"
+      ]
+    },
+    "logotechnia:noun": {
+      "gen": [
+        null,
+        "των λογοτεχνιών"
+      ]
+    },
+    "filologia:noun": {
+      "gen": [
+        null,
+        "των φιλολογιών"
+      ]
+    },
+    "mythologia:noun": {
+      "gen": [
+        null,
+        "των μυθολογιών"
+      ]
+    },
+    "oikologia:noun": {
+      "gen": [
+        null,
+        "των οικολογιών"
+      ]
+    },
+    "ascholia:noun": {
+      "gen": [
+        null,
+        "των ασχολιών"
+      ]
+    },
+    "grammateia:noun": {
+      "gen": [
+        null,
+        "των γραμματειών"
+      ]
+    },
+    "othoni:noun": {
+      "gen": [
+        null,
+        "των οθονών"
+      ],
+      "voc": [
+        null,
+        "οθόνες"
+      ]
+    },
+    "mpataria:noun": {
+      "gen": [
+        null,
+        "των μπαταριών"
+      ]
+    },
+    "tilekarta:noun": {
+      "gen": [
+        null,
+        "των τηλεκαρτών"
+      ]
+    },
+    "efimerida:noun": {
+      "gen": [
+        null,
+        "των εφημερίδων"
+      ]
+    },
+    "anaptiras:noun": {
+      "gen": [
+        null,
+        "των αναπτήρων"
+      ]
+    },
+    "mpanana:noun": {
+      "gen": [
+        null,
+        "των μπανανών"
+      ]
+    },
+    "fraoyla:noun": {
+      "gen": [
+        null,
+        "των φραουλών"
+      ]
+    },
+    "ntomata:noun": {
+      "gen": [
+        null,
+        "των ντοματών"
+      ]
+    },
+    "patata:noun": {
+      "gen": [
+        null,
+        "των πατατών"
+      ]
+    },
+    "zachari:noun": {
+      "voc": [
+        null,
+        "ζάχαρες"
+      ]
+    },
+    "fratzola:noun": {
+      "gen": [
+        null,
+        "των φρατζολών"
+      ]
+    },
+    "sokolata:noun": {
+      "gen": [
+        null,
+        "των σοκολατών"
+      ]
+    },
+    "tsichla:noun": {
+      "gen": [
+        null,
+        "των τσιχλών"
+      ]
+    },
+    "marmelada:noun": {
+      "gen": [
+        null,
+        "των μαρμελάδων"
+      ]
+    },
+    "konserva:noun": {
+      "gen": [
+        null,
+        "των κονσερβών"
+      ]
+    },
+    "portokalada:noun": {
+      "gen": [
+        null,
+        "των πορτοκαλάδων"
+      ]
+    },
+    "garida:noun": {
+      "gen": [
+        null,
+        "των γαρίδων"
+      ]
+    },
+    "odontovoyrtsa:noun": {
+      "gen": [
+        null,
+        "των οδοντοβουρτσών"
+      ]
+    },
+    "aspirini:noun": {
+      "gen": [
+        null,
+        "των ασπιρινών"
+      ],
+      "voc": [
+        null,
+        "ασπιρίνες"
+      ]
+    },
+    "diaita:noun": {
+      "gen": [
+        null,
+        "των διαιτών"
+      ]
+    },
+    "mprizola:noun": {
+      "gen": [
+        null,
+        "των μπριζολών"
+      ]
+    },
+    "kithara:noun": {
+      "gen": [
+        null,
+        "των κιθαρών"
+      ]
+    },
+    "tainia:noun": {
+      "gen": [
+        null,
+        "των ταινιών"
+      ]
+    },
+    "pezoporia:noun": {
+      "gen": [
+        null,
+        "των πεζοποριών"
+      ]
+    },
+    "ippasia:noun": {
+      "gen": [
+        null,
+        "των ιππασιών"
+      ]
+    },
+    "iliotherapeia:noun": {
+      "gen": [
+        null,
+        "των ηλιοθεραπειών"
+      ]
+    },
+    "agonas:noun": {
+      "gen": [
+        null,
+        "των αγώνων"
+      ]
+    },
+    "istioploia:noun": {
+      "gen": [
+        null,
+        "των ιστιοπλοϊών"
+      ]
+    },
+    "paparoyna:noun": {
+      "gen": [
+        null,
+        "των παπαρουνών"
+      ]
+    },
+    "anemoni:noun": {
+      "voc": [
+        null,
+        "ανεμώνες"
+      ]
+    },
+    "toylipa:noun": {
+      "gen": [
+        null,
+        "των τουλιπών"
+      ]
+    },
+    "gata:noun": {
+      "gen": [
+        null,
+        "των γατών"
+      ]
+    },
+    "zesti:noun": {
+      "voc": [
+        null,
+        "ζέστες"
+      ]
+    },
+    "simaia:noun": {
+      "gen": [
+        null,
+        "των σημαιών"
+      ]
+    },
+    "ellada:noun": {
+      "gen": [
+        null,
+        "των Ελλάδων"
+      ]
+    },
+    "rosia:noun": {
+      "gen": [
+        null,
+        "των Ρωσιών"
+      ]
+    },
+    "oykrania:noun": {
+      "gen": [
+        null,
+        "των Ουκρανιών"
+      ]
+    },
+    "gallia:noun": {
+      "gen": [
+        null,
+        "των Γαλλιών"
+      ]
+    },
+    "alvania:noun": {
+      "gen": [
+        null,
+        "των Αλβανιών"
+      ]
+    },
+    "toyrkia:noun": {
+      "gen": [
+        null,
+        "των Τουρκιών"
+      ]
+    },
+    "proteyoysa:noun": {
+      "gen": [
+        null,
+        "των πρωτευουσών"
+      ]
+    },
+    "asia:noun": {
+      "gen": [
+        null,
+        "των Ασιών"
+      ]
+    },
+    "okeania:noun": {
+      "gen": [
+        null,
+        "των Ωκεανιών"
+      ]
+    },
+    "ellinida:noun": {
+      "gen": [
+        null,
+        "των Ελληνίδων"
+      ]
+    },
+    "rosida:noun": {
+      "gen": [
+        null,
+        "των Ρωσίδων"
+      ]
+    },
+    "iaponas:noun": {
+      "gen": [
+        null,
+        "των Ιαπώνων"
+      ]
+    },
+    "dimokratia:noun": {
+      "gen": [
+        null,
+        "των δημοκρατιών"
+      ]
+    },
+    "eykairia:noun": {
+      "gen": [
+        null,
+        "των ευκαιριών"
+      ]
+    },
+    "idea:noun": {
+      "gen": [
+        null,
+        "των ιδεών"
+      ]
+    }
+  }
+}

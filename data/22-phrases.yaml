@@ -1,0 +1,182 @@
+topic: Полезные выражения
+lesson: "23"
+
+words:
+  - el: καλώς ήρθες
+    ru: добро пожаловать
+    pos: phrase
+    note: на «вы» — καλώς ήρθατε
+
+  - el: χαίρετε
+    ru: приветствую вас, рад встрече
+    pos: phrase
+
+  - el: χαιρετισμός
+    article: ο
+    ru: привет, приветствие
+    pos: noun
+
+  - el: ορίστε
+    ru: пожалуйста, вот, слушаю
+    pos: phrase
+    note: при передаче предмета и при ответе на зов
+
+  - el: με λένε
+    ru: меня зовут
+    pos: phrase
+    example: Με λένε Παύλο.
+    exampleRu: Меня зовут Павел.
+
+  - el: τι κάνεις
+    ru: как дела?
+    pos: phrase
+
+  - el: πώς είσαι
+    ru: как ты?
+    pos: phrase
+
+  - el: μια χαρά
+    ru: отлично
+    pos: phrase
+
+  - el: έτσι κι έτσι
+    ru: так себе
+    pos: phrase
+
+  - el: πώς το λένε αυτό ελληνικά
+    ru: как это называется по-гречески?
+    pos: phrase
+
+  - el: τι ωραία
+    ru: как замечательно!
+    pos: phrase
+
+  - el: δεν πειράζει
+    ru: не важно, ничего страшного
+    pos: phrase
+
+  - el: καλό μεσημέρι
+    ru: хорошего дня!
+    pos: phrase
+
+  - el: κάτι άλλο
+    ru: что-то ещё
+    pos: phrase
+
+  - el: τίποτε άλλο
+    ru: больше ничего
+    pos: phrase
+
+  - el: κι άλλο ένα
+    ru: и ещё один
+    pos: phrase
+
+  - el: πρώτα-πρώτα
+    ru: сначала, первым делом
+    pos: phrase
+
+  - el: στη συνέχεια
+    ru: затем, далее
+    pos: phrase
+
+  - el: στο τέλος
+    ru: в конце
+    pos: phrase
+
+  - el: είναι η σειρά μου
+    ru: сейчас моя очередь
+    pos: phrase
+
+  - el: έχω δίκιο
+    ru: я прав
+    pos: phrase
+
+  - el: δίκιο
+    article: το
+    ru: право, справедливость
+    pos: noun
+
+  - el: λόγω ζέστης
+    ru: в связи с жарой
+    pos: phrase
+
+  - el: χαιρετισμούς σε
+    ru: передавай привет...
+    pos: phrase
+
+  - el: γεννήθηκα
+    ru: я родился
+    pos: phrase
+    note: форма прошедшего времени от γεννιέμαι
+
+  - el: ήταν
+    ru: был, была, было
+    pos: phrase
+    note: прошедшее время от είμαι
+
+  - el: θα είναι
+    ru: будет, будут
+    pos: phrase
+
+  - el: θα ήθελα
+    ru: я хотел бы
+    pos: phrase
+    example: Θα ήθελα έναν καφέ, παρακαλώ.
+    exampleRu: Я хотел бы кофе, пожалуйста.
+
+  - el: υπάρχει
+    ru: существует, имеется
+    pos: phrase
+
+  - el: ευκαιρία
+    article: η
+    ru: возможность
+    pos: noun
+
+  - el: ιδέα
+    article: η
+    ru: идея
+    pos: noun
+
+  - el: χαρά
+    article: η
+    ru: радость
+    pos: noun
+    cases:
+      gen: [~, των χαρών]
+
+  - el: κίνηση
+    article: η
+    ru: движение
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι κινήσεις]
+      gen: [~, των κινήσεων]
+      acc: [~, τις κινήσεις]
+    forms:
+      plural: κινήσεις
+
+  - el: ένωση
+    article: η
+    ru: союз
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι ενώσεις]
+      gen: [~, των ενώσεων]
+      acc: [~, τις ενώσεις]
+    forms:
+      plural: ενώσεις
+
+  - el: προέλευση
+    article: η
+    ru: происхождение, источник
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι προελεύσεις]
+      gen: [~, των προελεύσεων]
+      acc: [~, τις προελεύσεις]
+    forms:
+      plural: προελεύσεις

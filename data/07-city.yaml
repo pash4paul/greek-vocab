@@ -1,0 +1,277 @@
+topic: Город и адрес
+lesson: "08"
+
+words:
+  - el: πόλη
+    article: η
+    ru: город
+    pos: noun
+    irregular: true
+    note: "тип на -εις: οι πόλεις, а не «πόλες»"
+    cases:
+      nom: [~, οι πόλεις]
+      gen: [~, των πόλεων]
+      acc: [~, τις πόλεις]
+    forms:
+      plural: πόλεις
+
+  - el: χωριό
+    article: το
+    ru: деревня, село
+    pos: noun
+
+  - el: οδός
+    article: η
+    ru: улица
+    pos: noun
+    note: женский род, хотя окончание -ος
+
+  - el: πλατεία
+    article: η
+    ru: площадь
+    pos: noun
+
+  - el: λεωφόρος
+    article: η
+    ru: проспект
+    pos: noun
+    note: женский род, хотя окончание -ος
+
+  - el: κέντρο
+    article: το
+    ru: центр
+    pos: noun
+
+  - el: προάστιο
+    article: το
+    ru: пригород
+    pos: noun
+
+  - el: περιοχή
+    article: η
+    ru: район
+    pos: noun
+
+  - el: γειτονιά
+    article: η
+    ru: соседство, квартал
+    pos: noun
+
+  - el: διεύθυνση
+    article: η
+    ru: адрес, управление
+    pos: noun
+    cases:
+      nom: [~, οι διευθύνσεις]
+      gen: [~, των διευθύνσεων]
+      acc: [~, τις διευθύνσεις]
+    forms:
+      plural: διευθύνσεις
+    irregular: true
+
+  - el: αριθμός
+    article: ο
+    ru: число, номер
+    pos: noun
+
+  - el: όροφος
+    article: ο
+    ru: этаж
+    pos: noun
+
+  - el: ισόγειο
+    article: το
+    ru: цокольный этаж
+    pos: noun
+
+  - el: διαμέρισμα
+    article: το
+    ru: квартира
+    pos: noun
+    example: Μένω σε ένα μικρό διαμέρισμα.
+    exampleRu: Я живу в маленькой квартире.
+
+  - el: πολυκατοικία
+    article: η
+    ru: многоэтажный дом
+    pos: noun
+
+  - el: μονοκατοικία
+    article: η
+    ru: частный дом
+    pos: noun
+
+  - el: ουρανοξύστης
+    article: ο
+    ru: небоскрёб
+    pos: noun
+
+  - el: κήπος
+    article: ο
+    ru: сад
+    pos: noun
+
+  - el: αυλή
+    article: η
+    ru: двор
+    pos: noun
+
+  - el: πάρκο
+    article: το
+    ru: парк
+    pos: noun
+
+  - el: παιδική χαρά
+    article: η
+    ru: детская площадка
+    pos: noun
+    irregular: true
+    note: словосочетание, склоняются оба слова
+
+  - el: στάση
+    article: η
+    ru: остановка
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι στάσεις]
+      gen: [~, των στάσεων]
+      acc: [~, τις στάσεις]
+    forms:
+      plural: στάσεις
+
+  - el: αστυνομία
+    article: η
+    ru: полиция
+    pos: noun
+
+  - el: εκκλησία
+    article: η
+    ru: церковь
+    pos: noun
+
+  - el: δημαρχείο
+    article: το
+    ru: мэрия
+    pos: noun
+
+  - el: βιβλιοθήκη
+    article: η
+    ru: библиотека
+    pos: noun
+    cases:
+      nom: [~, οι βιβλιοθήκες]
+      acc: [~, τις βιβλιοθήκες]
+
+  - el: μουσείο
+    article: το
+    ru: музей
+    pos: noun
+
+  - el: θέατρο
+    article: το
+    ru: театр
+    pos: noun
+
+  - el: νοσοκομείο
+    article: το
+    ru: больница
+    pos: noun
+
+  - el: ξενοδοχείο
+    article: το
+    ru: гостиница
+    pos: noun
+
+  - el: ξενώνας
+    article: ο
+    ru: гостиница, общежитие
+    pos: noun
+
+  - el: λιμάνι
+    article: το
+    ru: порт
+    pos: noun
+
+  - el: ταχυδρομείο
+    article: το
+    ru: почта
+    pos: noun
+
+  - el: γυμναστήριο
+    article: το
+    ru: спортивный зал
+    pos: noun
+
+  - el: καφετέρια
+    article: η
+    ru: кафе
+    pos: noun
+
+  - el: καφενείο
+    article: το
+    ru: кофейня
+    pos: noun
+
+  - el: ταβέρνα
+    article: η
+    ru: таверна
+    pos: noun
+
+  - el: κομμωτήριο
+    article: το
+    ru: парикмахерская
+    pos: noun
+
+  - el: εμπορικό κέντρο
+    article: το
+    ru: торговый центр
+    pos: noun
+    irregular: true
+
+  - el: γήπεδο
+    article: το
+    ru: стадион
+    pos: noun
+
+  - el: εργοστάσιο
+    article: το
+    ru: завод
+    pos: noun
+
+  - el: λεωφορείο
+    article: το
+    ru: автобус
+    pos: noun
+    example: Παίρνω το λεωφορείο κάθε πρωί.
+    exampleRu: Я езжу на автобусе каждое утро.
+
+  - el: αυτοκίνητο
+    article: το
+    ru: автомобиль
+    pos: noun
+
+  - el: ποδήλατο
+    article: το
+    ru: велосипед
+    pos: noun
+
+  - el: πλοίο
+    article: το
+    ru: корабль
+    pos: noun
+
+  - el: καΐκι
+    article: το
+    ru: лодка
+    pos: noun
+
+  - el: ταξίδι
+    article: το
+    ru: путешествие, поездка
+    pos: noun
+
+  - el: χιλιόμετρο
+    article: το
+    ru: километр
+    pos: noun

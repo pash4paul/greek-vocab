@@ -1,0 +1,355 @@
+topic: Магазины и продавцы
+lesson: "09"
+
+words:
+  - el: κατάστημα
+    article: το
+    ru: магазин
+    pos: noun
+
+  - el: μαγαζί
+    article: το
+    ru: магазин, лавка
+    pos: noun
+    example: Το μαγαζί είναι κλειστό σήμερα.
+    exampleRu: Магазин сегодня закрыт.
+
+  - el: αγορά
+    article: η
+    ru: рынок, покупка
+    pos: noun
+    cases:
+      gen: [~, των αγορών]
+
+  - el: λαϊκή
+    article: η
+    ru: базар
+    pos: noun
+    note: полностью — η λαϊκή αγορά
+
+  - el: σούπερ μάρκετ
+    article: το
+    ru: супермаркет
+    pos: noun
+    irregular: true
+    note: заимствование, не склоняется
+
+  - el: υπεραγορά
+    article: η
+    ru: гипермаркет
+    pos: noun
+    cases:
+      gen: [~, των υπεραγορών]
+
+  - el: φούρνος
+    article: ο
+    ru: печь, пекарня
+    pos: noun
+
+  - el: αρτοποιείο
+    article: το
+    ru: хлебный магазин
+    pos: noun
+
+  - el: ζαχαροπλαστείο
+    article: το
+    ru: кондитерская
+    pos: noun
+
+  - el: ανθοπωλείο
+    article: το
+    ru: цветочный магазин
+    pos: noun
+
+  - el: βιβλιοπωλείο
+    article: το
+    ru: книжный магазин
+    pos: noun
+
+  - el: χαρτοπωλείο
+    article: το
+    ru: магазин канцтоваров
+    pos: noun
+
+  - el: μανάβικο
+    article: το
+    ru: овощной магазин
+    pos: noun
+
+  - el: κρεοπωλείο
+    article: το
+    ru: мясной магазин
+    pos: noun
+
+  - el: χασάπικο
+    article: το
+    ru: мясная лавка
+    pos: noun
+
+  - el: ιχθυοπωλείο
+    article: το
+    ru: рыбный магазин
+    pos: noun
+
+  - el: ψαράδικο
+    article: το
+    ru: рыбная лавка
+    pos: noun
+
+  - el: φαρμακείο
+    article: το
+    ru: аптека
+    pos: noun
+
+  - el: καθαριστήριο
+    article: το
+    ru: химчистка
+    pos: noun
+
+  - el: περίπτερο
+    article: το
+    ru: киоск
+    pos: noun
+
+  # ─── Продавцы ───────────────────────────────────────────────
+  - el: καταστηματάρχης
+    article: ο
+    ru: продавец, владелец магазина
+    pos: noun
+
+  - el: φούρναρης
+    article: ο
+    irregular: true
+    note: >-
+      разговорное название профессии: множественное на -ηδες,
+      а не на -ες как у μαθητής → μαθητές
+    forms:
+      plural: φουρνάρηδες
+    cases:
+      nom: [~, οι φουρνάρηδες]
+      gen: [~, των φουρνάρηδων]
+      acc: [~, τους φουρνάρηδες]
+      voc: [~, φουρνάρηδες]
+    ru: пекарь
+    pos: noun
+
+  - el: ζαχαροπλάστης
+    article: ο
+    ru: кондитер
+    pos: noun
+
+  - el: ανθοπώλης
+    article: ο
+    ru: продавец цветов
+    pos: noun
+
+  - el: βιβλιοπώλης
+    article: ο
+    ru: продавец книг
+    pos: noun
+
+  - el: μανάβης
+    article: ο
+    irregular: true
+    note: >-
+      разговорное название профессии: множественное на -ηδες,
+      а не на -ες как у μαθητής → μαθητές
+    forms:
+      plural: μανάβηδες
+    cases:
+      nom: [~, οι μανάβηδες]
+      gen: [~, των μανάβηδων]
+      acc: [~, τους μανάβηδες]
+      voc: [~, μανάβηδες]
+    ru: зеленщик
+    pos: noun
+
+  - el: κρεοπώλης
+    article: ο
+    ru: продавец мяса
+    pos: noun
+
+  - el: χασάπης
+    article: ο
+    irregular: true
+    note: >-
+      разговорное название профессии: множественное на -ηδες,
+      а не на -ες как у μαθητής → μαθητές
+    forms:
+      plural: χασάπηδες
+    cases:
+      nom: [~, οι χασάπηδες]
+      gen: [~, των χασάπηδων]
+      acc: [~, τους χασάπηδες]
+      voc: [~, χασάπηδες]
+    ru: мясник
+    pos: noun
+
+  - el: περιπτεράς
+    article: ο
+    ru: продавец киоска
+    pos: noun
+
+  - el: ταχυδρόμος
+    article: ο
+    ru: почтальон
+    pos: noun
+
+  - el: φαρμακοποιός
+    article: ο
+    ru: аптекарь, фармацевт
+    pos: noun
+
+  - el: ηλεκτρολόγος
+    article: ο
+    ru: электрик
+    pos: noun
+
+  # ─── Покупки ────────────────────────────────────────────────
+  - el: απόδειξη
+    article: η
+    ru: чек, доказательство
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι αποδείξεις]
+      gen: [~, των αποδείξεων]
+      acc: [~, τις αποδείξεις]
+    forms:
+      plural: αποδείξεις
+
+  - el: κέρμα
+    article: το
+    ru: монетка
+    pos: noun
+
+  - el: χρήμα
+    article: το
+    ru: деньги
+    pos: noun
+    note: обычно во мн. ч. — τα χρήματα
+
+  - el: νόμισμα
+    article: το
+    ru: денежная единица, монета
+    pos: noun
+
+  - el: ευρώ
+    article: το
+    ru: евро
+    pos: noun
+    irregular: true
+    note: не склоняется
+
+  - el: λεπτό ευρώ
+    article: το
+    ru: евроцент
+    pos: noun
+    irregular: true
+
+  - el: ποσότητα
+    article: η
+    ru: количество
+    pos: noun
+
+  - el: κιλό
+    article: το
+    ru: килограмм
+    pos: noun
+
+  - el: γραμμάριο
+    article: το
+    ru: грамм
+    pos: noun
+
+  - el: κομμάτι
+    article: το
+    ru: кусок
+    pos: noun
+
+  - el: φέτα
+    article: η
+    ru: ломоть, кусок
+    pos: noun
+    note: то же слово, что и сыр фета
+
+  - el: κουταλιά
+    article: η
+    ru: ложка (чего-либо)
+    pos: noun
+    cases:
+      gen: [~, των κουταλιών]
+
+  - el: κουτί
+    article: το
+    ru: коробка
+    pos: noun
+
+  - el: μπουκάλι
+    article: το
+    ru: бутылка
+    pos: noun
+
+  - el: πακέτο
+    article: το
+    ru: пакет, пачка
+    pos: noun
+
+  - el: σακούλα
+    article: η
+    ru: пакет
+    pos: noun
+    cases:
+      gen: [~, των σακουλών]
+
+  - el: είδος
+    article: το
+    ru: вид, товар
+    pos: noun
+
+  - el: πράγμα
+    article: το
+    ru: вещь
+    pos: noun
+
+  - el: αγοράζω
+    ru: покупать
+    pos: verb
+    example: Αγοράζω ψωμί κάθε μέρα.
+    exampleRu: Я покупаю хлеб каждый день.
+
+  - el: πουλάω
+    ru: продавать
+    pos: verb
+
+  - el: διαλέγω
+    ru: выбирать
+    pos: verb
+
+  - el: ζυγίζω
+    ru: взвешивать
+    pos: verb
+
+  - el: κοστίζω
+    ru: стоить
+    pos: verb
+
+  - el: πόσο κάνει
+    ru: сколько стоит?
+    pos: phrase
+
+  - el: πόσο έχει
+    ru: почём?, сколько просят?
+    pos: phrase
+
+  - el: τα ρέστα
+    ru: сдача
+    pos: phrase
+
+  - el: τα ψιλά
+    ru: мелочь
+    pos: phrase
+
+  - el: τα ψώνια
+    ru: покупки
+    pos: phrase

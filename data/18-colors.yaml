@@ -1,0 +1,99 @@
+topic: Цвета
+lesson: "19"
+
+words:
+  - el: άσπρος
+    ru: белый
+    pos: adj
+    example: Το άσπρο πουκάμισο είναι καθαρό.
+    exampleRu: Белая рубашка чистая.
+
+  - el: λευκός
+    ru: белый (книжное)
+    pos: adj
+    note: более книжный синоним άσπρος
+
+  - el: μαύρος
+    ru: чёрный
+    pos: adj
+
+  - el: κόκκινος
+    ru: красный
+    pos: adj
+
+  - el: κίτρινος
+    ru: жёлтый
+    pos: adj
+
+  - el: πράσινος
+    ru: зелёный
+    pos: adj
+
+  - el: γαλάζιος
+    ru: голубой
+    pos: adj
+
+  - el: γκρίζος
+    ru: серый
+    pos: adj
+    irregular: true
+    note: женский род γκρίζα, а не «γκρίζη»
+    forms:
+      gender: [γκρίζος, γκρίζα, γκρίζο]
+
+  - el: πορτοκαλής
+    ru: оранжевый
+    pos: adj
+    irregular: true
+    note: особый тип на -ής/-ιά/-ί
+    forms:
+      gender: [πορτοκαλής, πορτοκαλιά, πορτοκαλί]
+
+  # ─── Несклоняемые заимствования ────────────────────────────
+  - el: καφέ
+    ru: коричневый
+    pos: adj
+    irregular: true
+    note: не склоняется, форма одна для всех родов
+
+  - el: μπλε
+    ru: синий
+    pos: adj
+    irregular: true
+    note: не склоняется
+
+  - el: μοβ
+    ru: фиолетовый
+    pos: adj
+    irregular: true
+    note: не склоняется
+
+  - el: μπεζ
+    ru: бежевый
+    pos: adj
+    irregular: true
+    note: не склоняется
+
+  - el: ροζ
+    ru: розовый
+    pos: adj
+    irregular: true
+    note: не склоняется
+
+  - el: μπορντό
+    ru: бордовый
+    pos: adj
+    irregular: true
+    note: не склоняется
+
+  - el: τιρκουάζ
+    ru: бирюзовый
+    pos: adj
+    irregular: true
+    note: не склоняется
+
+  - el: φούξια
+    ru: пурпурный, фуксия
+    pos: adj
+    irregular: true
+    note: не склоняется

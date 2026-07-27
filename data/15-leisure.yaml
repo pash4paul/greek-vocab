@@ -1,0 +1,288 @@
+topic: Досуг и спорт
+lesson: "16"
+
+words:
+  - el: χόμπι
+    article: το
+    ru: увлечение, хобби
+    pos: noun
+    irregular: true
+    note: заимствование, не склоняется
+
+  - el: μουσική
+    article: η
+    ru: музыка
+    pos: noun
+
+  - el: κιθάρα
+    article: η
+    ru: гитара
+    pos: noun
+
+  - el: βιολί
+    article: το
+    ru: скрипка
+    pos: noun
+
+  - el: πιάνο
+    article: το
+    ru: пианино
+    pos: noun
+
+  - el: τζαζ
+    article: η
+    ru: джаз
+    pos: noun
+    irregular: true
+
+  - el: ροκ
+    article: το
+    ru: рок
+    pos: noun
+    irregular: true
+
+  - el: τραγούδι
+    article: το
+    ru: песня
+    pos: noun
+
+  - el: χορός
+    article: ο
+    ru: танец
+    pos: noun
+
+  - el: ποίηση
+    article: η
+    ru: поэзия
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι ποιήσεις]
+      gen: [~, των ποιήσεων]
+      acc: [~, τις ποιήσεις]
+    forms:
+      plural: ποιήσεις
+
+  - el: ταινία
+    article: η
+    ru: фильм, кинолента
+    pos: noun
+
+  - el: σινεμά
+    article: το
+    ru: кино
+    pos: noun
+    irregular: true
+
+  - el: κινηματογράφος
+    article: ο
+    ru: кинематограф
+    pos: noun
+
+  - el: έκθεση
+    article: η
+    ru: выставка
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι εκθέσεις]
+      gen: [~, των εκθέσεων]
+      acc: [~, τις εκθέσεις]
+    forms:
+      plural: εκθέσεις
+
+  - el: ραντεβού
+    article: το
+    ru: свидание, встреча
+    pos: noun
+    irregular: true
+
+  - el: βόλτα
+    article: η
+    ru: прогулка
+    pos: noun
+
+  - el: περίπατος
+    article: ο
+    ru: прогулка пешком
+    pos: noun
+
+  - el: περπάτημα
+    article: το
+    ru: пешая прогулка
+    pos: noun
+
+  - el: εκδρομή
+    article: η
+    ru: экскурсия
+    pos: noun
+
+  - el: πεζοπορία
+    article: η
+    ru: поход
+    pos: noun
+
+  - el: ιππασία
+    article: η
+    ru: верховая езда
+    pos: noun
+
+  - el: κολύμπι
+    article: το
+    ru: плавание
+    pos: noun
+
+  - el: ηλιοθεραπεία
+    article: η
+    ru: солнечные ванны
+    pos: noun
+
+  - el: ψάρεμα
+    article: το
+    ru: рыбалка
+    pos: noun
+
+  - el: αγώνας
+    article: ο
+    ru: борьба, состязание
+    pos: noun
+
+  - el: σπορ
+    article: το
+    ru: спорт
+    pos: noun
+    irregular: true
+
+  - el: γυμναστική
+    article: η
+    ru: гимнастика, физкультура
+    pos: noun
+
+  - el: ποδόσφαιρο
+    article: το
+    ru: футбол
+    pos: noun
+
+  - el: μπάσκετ
+    article: το
+    ru: баскетбол
+    pos: noun
+    irregular: true
+
+  - el: βόλεϊ
+    article: το
+    ru: волейбол
+    pos: noun
+    irregular: true
+
+  - el: τένις
+    article: το
+    ru: теннис
+    pos: noun
+    irregular: true
+
+  - el: σκάκι
+    article: το
+    ru: шахматы
+    pos: noun
+
+  - el: τάβλι
+    article: το
+    ru: нарды
+    pos: noun
+
+  - el: μπριτζ
+    article: το
+    ru: бридж
+    pos: noun
+    irregular: true
+
+  - el: παιχνίδι
+    article: το
+    ru: игра
+    pos: noun
+
+  - el: σέρφινγκ
+    article: το
+    ru: сёрфинг
+    pos: noun
+    irregular: true
+
+  - el: ράφτινγκ
+    article: το
+    ru: рафтинг
+    pos: noun
+    irregular: true
+
+  - el: καγιάκ
+    article: το
+    ru: каяк
+    pos: noun
+    irregular: true
+
+  - el: ιστιοπλοΐα
+    article: η
+    ru: парусный спорт, яхтинг
+    pos: noun
+
+  - el: μοτοκρός
+    article: το
+    ru: мотокросс
+    pos: noun
+    irregular: true
+
+  - el: μόδα
+    article: η
+    ru: мода
+    pos: noun
+
+  - el: τίτλος
+    article: ο
+    ru: название, заглавие
+    pos: noun
+
+  - el: παίζω
+    ru: играть
+    pos: verb
+    example: Παίζω κιθάρα κάθε μέρα.
+    exampleRu: Я играю на гитаре каждый день.
+
+  - el: γυρίζω
+    ru: возвращаться, поворачивать
+    pos: verb
+
+  - el: φεύγω
+    ru: уходить, уезжать
+    pos: verb
+
+  - el: περιμένω
+    ru: ждать
+    pos: verb
+
+  - el: προτιμάω
+    ru: предпочитать
+    pos: verb
+
+  - el: μου αρέσει
+    ru: мне нравится
+    pos: phrase
+
+  - el: κάνω μπάνιο
+    ru: купаться
+    pos: phrase
+
+  - el: κάνω πεζοπορία
+    ru: ходить в поход
+    pos: phrase
+
+  - el: πάω εκδρομή
+    ru: ездить на экскурсию
+    pos: phrase
+
+  - el: πάω περίπατο
+    ru: идти на прогулку
+    pos: phrase
+
+  - el: βλέπω τηλεόραση
+    ru: смотреть телевизор
+    pos: phrase

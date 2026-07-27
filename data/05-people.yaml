@@ -1,0 +1,201 @@
+topic: Люди и семья
+lesson: "06"
+
+words:
+  - el: άντρας
+    article: ο
+    ru: мужчина, муж
+    pos: noun
+    example: Ο άντρας μου δουλεύει εδώ.
+    exampleRu: Мой муж работает здесь.
+
+  - el: γυναίκα
+    article: η
+    ru: женщина, жена
+    pos: noun
+    cases:
+      gen: [~, των γυναικών]
+    example: Η γυναίκα μου είναι δασκάλα.
+    exampleRu: Моя жена — учительница.
+
+  - el: παιδί
+    article: το
+    ru: ребёнок
+    pos: noun
+    example: Το παιδί παίζει στην αυλή.
+    exampleRu: Ребёнок играет во дворе.
+
+  - el: αγόρι
+    article: το
+    ru: мальчик
+    pos: noun
+
+  - el: κορίτσι
+    article: το
+    ru: девочка
+    pos: noun
+
+  - el: κοπέλα
+    article: η
+    ru: девушка
+    pos: noun
+
+  - el: πατέρας
+    article: ο
+    ru: отец
+    pos: noun
+    cases:
+      gen: [~, των πατέρων]
+
+  - el: μητέρα
+    article: η
+    ru: мать
+    pos: noun
+    cases:
+      gen: [~, των μητέρων]
+
+  - el: οικογένεια
+    article: η
+    ru: семья
+    pos: noun
+    cases:
+      gen: [~, των οικογενειών]
+    example: Η οικογένειά μου μένει στην Αθήνα.
+    exampleRu: Моя семья живёт в Афинах.
+
+  - el: φίλος
+    article: ο
+    ru: друг
+    pos: noun
+    example: Ο φίλος μου έρχεται αύριο.
+    exampleRu: Мой друг приезжает завтра.
+
+  - el: φίλη
+    article: η
+    ru: подруга
+    pos: noun
+    cases:
+      nom: [~, οι φίλες]
+      acc: [~, τις φίλες]
+
+  - el: κύριος
+    article: ο
+    ru: господин
+    pos: noun
+    note: звательная форма — κύριε
+
+  - el: κυρία
+    article: η
+    ru: госпожа
+    pos: noun
+    note: звательная форма — κυρία
+
+  - el: παρέα
+    article: η
+    ru: компания, друзья
+    pos: noun
+
+  - el: χήρος
+    article: ο
+    ru: вдовец
+    pos: noun
+
+  - el: χήρα
+    article: η
+    ru: вдова
+    pos: noun
+
+  - el: κόρη
+    article: η
+    ru: дочь
+    pos: noun
+    cases:
+      nom: [~, οι κόρες]
+      acc: [~, τις κόρες]
+
+  - el: όνομα
+    article: το
+    ru: имя
+    pos: noun
+    example: Το όνομά μου είναι Παύλος.
+    exampleRu: Меня зовут Павел.
+
+  - el: επώνυμο
+    article: το
+    ru: фамилия
+    pos: noun
+
+  - el: εθνικότητα
+    article: η
+    ru: национальность
+    pos: noun
+
+  - el: υπηκοότητα
+    article: η
+    ru: гражданство
+    pos: noun
+
+  - el: καταγωγή
+    article: η
+    ru: происхождение, корни (откуда родом)
+    pos: noun
+
+  - el: ζωή
+    article: η
+    ru: жизнь
+    pos: noun
+
+  - el: κόσμος
+    article: ο
+    ru: мир, люди
+    pos: noun
+
+  - el: παντρεμένος
+    ru: женат, замужем
+    pos: adj
+
+  - el: αρραβωνιασμένος
+    ru: помолвленный
+    pos: adj
+
+  - el: ελεύθερος
+    ru: свободный
+    pos: adj
+
+  - el: διαζευγμένος
+    ru: разведённый
+    pos: adj
+
+  - el: χωρισμένος
+    ru: разведённый, расставшийся
+    pos: adj
+
+  - el: ερωτευμένος
+    ru: влюблённый
+    pos: adj
+
+  - el: αγαπημένος
+    ru: любимый
+    pos: adj
+
+  - el: γνωρίζω
+    ru: знать, быть знакомым
+    pos: verb
+
+  - el: αγαπάω
+    ru: любить
+    pos: verb
+    example: Αγαπάω την οικογένειά μου.
+    exampleRu: Я люблю свою семью.
+
+  - el: λατρεύω
+    ru: обожать
+    pos: verb
+
+  - el: λέγομαι
+    ru: называться, зваться
+    pos: verb
+    irregular: true
+    note: среднепассивный залог; «με λένε» — «меня зовут»
+    forms:
+      present: [λέγομαι, λέγεσαι, λέγεται, λεγόμαστε, λέγεστε, λέγονται]

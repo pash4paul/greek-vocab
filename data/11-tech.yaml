@@ -1,0 +1,178 @@
+topic: Техника и связь
+lesson: "12"
+
+words:
+  - el: υπολογιστής
+    article: ο
+    ru: компьютер
+    pos: noun
+
+  - el: οθόνη
+    article: η
+    ru: экран
+    pos: noun
+    cases:
+      nom: [~, οι οθόνες]
+      acc: [~, τις οθόνες]
+
+  - el: πληκτρολόγιο
+    article: το
+    ru: клавиатура
+    pos: noun
+
+  - el: ποντίκι
+    article: το
+    ru: компьютерная мышь
+    pos: noun
+
+  - el: φορτιστής
+    article: ο
+    ru: зарядное устройство
+    pos: noun
+
+  - el: μπαταρία
+    article: η
+    ru: батарейка
+    pos: noun
+
+  - el: ίντερνετ
+    article: το
+    ru: интернет
+    pos: noun
+    irregular: true
+    note: заимствование, не склоняется
+
+  - el: κινητό
+    article: το
+    ru: мобильный телефон
+    pos: noun
+    example: Το κινητό μου δεν έχει μπαταρία.
+    exampleRu: У моего телефона села батарея.
+
+  - el: τηλέφωνο
+    article: το
+    ru: телефон
+    pos: noun
+
+  - el: σταθερό
+    article: το
+    ru: стационарный телефон
+    pos: noun
+
+  - el: τηλεκάρτα
+    article: η
+    ru: телекарта
+    pos: noun
+
+  - el: τηλεόραση
+    article: η
+    ru: телевизор, телевидение
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι τηλεοράσεις]
+      gen: [~, των τηλεοράσεων]
+      acc: [~, τις τηλεοράσεις]
+    forms:
+      plural: τηλεοράσεις
+
+  - el: ραδιόφωνο
+    article: το
+    ru: радио, радиоприёмник
+    pos: noun
+
+  - el: εκπομπή
+    article: η
+    ru: телепередача
+    pos: noun
+
+  - el: σίριαλ
+    article: το
+    ru: сериал
+    pos: noun
+    irregular: true
+    note: заимствование, не склоняется
+
+  - el: ριάλιτι
+    article: το
+    ru: реалити-шоу
+    pos: noun
+    irregular: true
+
+  - el: εφημερίδα
+    article: η
+    ru: газета
+    pos: noun
+
+  - el: περιοδικό
+    article: το
+    ru: журнал
+    pos: noun
+
+  - el: γράμμα
+    article: το
+    ru: письмо, буква
+    pos: noun
+
+  - el: πρόγραμμα
+    article: το
+    ru: программа
+    pos: noun
+
+  - el: μουσική τεχνολογία
+    article: η
+    ru: музыкальная технология
+    pos: noun
+    irregular: true
+
+  - el: ντιζάιν
+    article: το
+    ru: дизайн
+    pos: noun
+    irregular: true
+
+  - el: προφίλ
+    article: το
+    ru: профиль
+    pos: noun
+    irregular: true
+
+  - el: πορτρέτο
+    article: το
+    ru: портрет
+    pos: noun
+
+  - el: αναπτήρας
+    article: ο
+    ru: зажигалка
+    pos: noun
+
+  - el: λυχνάρι
+    article: το
+    ru: лампа, фонарь
+    pos: noun
+
+  - el: μπρίκι
+    article: το
+    ru: турка, джезва
+    pos: noun
+
+  - el: ακούω
+    ru: слушать
+    pos: verb
+    irregular: true
+    note: спрягается ακούω, ακούς, ακούει, ακούμε, ακούτε, ακούνε
+    forms:
+      present: [ακούω, ακούς, ακούει, ακούμε, ακούτε, ακούνε]
+
+  - el: βγαίνω
+    ru: выходить
+    pos: verb
+
+  - el: μπαίνω
+    ru: входить
+    pos: verb
+
+  - el: καπνίζω
+    ru: курить
+    pos: verb

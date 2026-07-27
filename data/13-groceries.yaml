@@ -1,0 +1,325 @@
+topic: Продукты и бакалея
+lesson: "14"
+
+words:
+  - el: ζάχαρη
+    article: η
+    ru: сахар
+    pos: noun
+    cases:
+      nom: [~, οι ζάχαρες]
+      acc: [~, τις ζάχαρες]
+
+  - el: αλάτι
+    article: το
+    ru: соль
+    pos: noun
+
+  - el: αλεύρι
+    article: το
+    ru: мука
+    pos: noun
+
+  - el: πιπέρι
+    article: το
+    ru: перец (специя)
+    pos: noun
+
+  - el: λάδι
+    article: το
+    ru: растительное масло
+    pos: noun
+
+  - el: βούτυρο
+    article: το
+    ru: сливочное масло
+    pos: noun
+
+  - el: μέλι
+    article: το
+    ru: мёд
+    pos: noun
+
+  - el: ξίδι
+    article: το
+    ru: уксус
+    pos: noun
+
+  - el: ρύζι
+    article: το
+    ru: рис
+    pos: noun
+
+  - el: μακαρόνι
+    article: το
+    ru: макаронина
+    pos: noun
+    note: обычно во мн. ч. — τα μακαρόνια
+
+  - el: ζυμαρικό
+    article: το
+    ru: макаронные изделия
+    pos: noun
+
+  - el: γιαούρτι
+    article: το
+    ru: йогурт
+    pos: noun
+
+  - el: γραβιέρα
+    article: η
+    ru: гравьера (греческий твёрдый сыр)
+    pos: noun
+
+  - el: ζαμπόν
+    article: το
+    ru: ветчина
+    pos: noun
+    irregular: true
+    note: заимствование, не склоняется
+
+  - el: λουκάνικο
+    article: το
+    ru: сосиска
+    pos: noun
+
+  - el: σαλάμι
+    article: το
+    ru: колбаса
+    pos: noun
+
+  - el: αλλαντικό
+    article: το
+    ru: колбасные изделия
+    pos: noun
+
+  - el: γαλακτοκομικό
+    article: το
+    ru: молочная продукция
+    pos: noun
+
+  - el: μπισκότο
+    article: το
+    ru: печенье
+    pos: noun
+
+  - el: παξιμάδι
+    article: το
+    ru: сухарь
+    pos: noun
+
+  - el: φρυγανιά
+    article: η
+    ru: сухарик, тост
+    pos: noun
+    cases:
+      gen: [~, των φρυγανιών]
+
+  - el: τοστ
+    article: το
+    ru: тост, гренка
+    pos: noun
+    irregular: true
+
+  - el: κουλουράκι
+    article: το
+    ru: бублик
+    pos: noun
+
+  - el: φρατζόλα
+    article: η
+    ru: буханка
+    pos: noun
+
+  - el: τυρόπιτα
+    article: η
+    ru: тиропита, пирог с фетой
+    pos: noun
+
+  - el: μουσακάς
+    article: ο
+    ru: мусака
+    pos: noun
+
+  - el: ομελέτα
+    article: η
+    ru: омлет
+    pos: noun
+
+  - el: δημητριακό
+    article: το
+    ru: злак
+    pos: noun
+
+  - el: σοκολάτα
+    article: η
+    ru: шоколадка
+    pos: noun
+
+  - el: καραμέλα
+    article: η
+    ru: карамель
+    pos: noun
+
+  - el: τσίχλα
+    article: η
+    ru: жвачка
+    pos: noun
+
+  - el: παγωτό
+    article: το
+    ru: мороженое
+    pos: noun
+
+  - el: γλυκό
+    article: το
+    ru: сладость
+    pos: noun
+
+  - el: μαρμελάδα
+    article: η
+    ru: мармелад, джем
+    pos: noun
+
+  - el: κονσέρβα
+    article: η
+    ru: консерва
+    pos: noun
+
+  - el: μπίρα
+    article: η
+    ru: пиво
+    pos: noun
+
+  - el: ποτό
+    article: το
+    ru: алкогольный напиток
+    pos: noun
+
+  - el: αναψυκτικό
+    article: το
+    ru: прохладительный напиток
+    pos: noun
+
+  - el: πορτοκαλάδα
+    article: η
+    ru: апельсиновый сок
+    pos: noun
+
+  - el: χυμός
+    article: ο
+    ru: сок
+    pos: noun
+
+  - el: σόδα
+    article: η
+    ru: содовая
+    pos: noun
+
+  - el: τσάι
+    article: το
+    ru: чай
+    pos: noun
+
+  - el: φαγητό
+    article: το
+    ru: еда
+    pos: noun
+
+  # ─── Море и рыба ───────────────────────────────────────────
+  - el: ψάρι
+    article: το
+    ru: рыба
+    pos: noun
+
+  - el: γαρίδα
+    article: η
+    ru: креветка
+    pos: noun
+
+  - el: χταπόδι
+    article: το
+    ru: осьминог
+    pos: noun
+
+  - el: θαλασσινό
+    article: το
+    ru: морепродукт
+    pos: noun
+
+  # ─── Хозтовары ─────────────────────────────────────────────
+  - el: σαπούνι
+    article: το
+    ru: мыло
+    pos: noun
+
+  - el: σαμπουάν
+    article: το
+    ru: шампунь
+    pos: noun
+    irregular: true
+
+  - el: οδοντόβουρτσα
+    article: η
+    ru: зубная щётка
+    pos: noun
+
+  - el: οδοντόκρεμα
+    article: η
+    ru: зубная паста
+    pos: noun
+
+  - el: απορρυπαντικό
+    article: το
+    ru: моющее средство
+    pos: noun
+
+  - el: χαρτί υγείας
+    article: το
+    ru: туалетная бумага
+    pos: noun
+    irregular: true
+
+  - el: χαρτομάντιλο
+    article: το
+    ru: салфетка
+    pos: noun
+
+  - el: τσιγάρο
+    article: το
+    ru: сигарета
+    pos: noun
+
+  - el: ασπιρίνη
+    article: η
+    ru: аспирин
+    pos: noun
+    cases:
+      nom: [~, οι ασπιρίνες]
+      acc: [~, τις ασπιρίνες]
+
+  - el: δίαιτα
+    article: η
+    ru: диета
+    pos: noun
+
+  - el: υγεία
+    article: η
+    ru: здоровье
+    pos: noun
+
+  - el: βάρος
+    article: το
+    ru: вес, тяжесть
+    pos: noun
+
+  - el: μαγειρεύω
+    ru: готовить (еду)
+    pos: verb
+    example: Μαγειρεύω κάθε βράδυ.
+    exampleRu: Я готовлю каждый вечер.
+
+  - el: μαγειρική
+    article: η
+    ru: кулинария
+    pos: noun

@@ -1,0 +1,234 @@
+topic: Учёба и школа
+lesson: "11"
+
+words:
+  - el: σχολείο
+    article: το
+    ru: школа
+    pos: noun
+
+  - el: γυμνάσιο
+    article: το
+    ru: гимназия
+    pos: noun
+
+  - el: λύκειο
+    article: το
+    ru: лицей
+    pos: noun
+
+  - el: πανεπιστήμιο
+    article: το
+    ru: университет
+    pos: noun
+
+  - el: τάξη
+    article: η
+    ru: класс
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι τάξεις]
+      gen: [~, των τάξεων]
+      acc: [~, τις τάξεις]
+    forms:
+      plural: τάξεις
+    example: Ο δάσκαλος είναι στην τάξη.
+    exampleRu: Учитель в классе.
+
+  - el: μάθημα
+    article: το
+    ru: урок
+    pos: noun
+    example: Το μάθημα αρχίζει στις οκτώ.
+    exampleRu: Урок начинается в восемь.
+
+  - el: μαθητής
+    article: ο
+    ru: ученик
+    pos: noun
+
+  - el: μαθήτρια
+    article: η
+    ru: ученица
+    pos: noun
+    cases:
+      nom: [~, οι μαθήτριες]
+      acc: [~, τις μαθήτριες]
+
+  - el: δάσκαλος
+    article: ο
+    ru: учитель
+    pos: noun
+
+  - el: δασκάλα
+    article: η
+    ru: учительница
+    pos: noun
+    cases:
+      gen: [~, των δασκαλών]
+
+  - el: φοιτητής
+    article: ο
+    ru: студент
+    pos: noun
+
+  - el: φοιτήτρια
+    article: η
+    ru: студентка
+    pos: noun
+    cases:
+      nom: [~, οι φοιτήτριες]
+      acc: [~, τις φοιτήτριες]
+
+  - el: βιβλίο
+    article: το
+    ru: книга
+    pos: noun
+    example: Διαβάζω ένα ενδιαφέρον βιβλίο.
+    exampleRu: Я читаю интересную книгу.
+
+  - el: τετράδιο
+    article: το
+    ru: тетрадь
+    pos: noun
+
+  - el: λεξικό
+    article: το
+    ru: словарь
+    pos: noun
+
+  - el: μολύβι
+    article: το
+    ru: карандаш
+    pos: noun
+
+  - el: στυλό
+    article: το
+    ru: ручка
+    pos: noun
+    irregular: true
+    note: заимствование, не склоняется
+
+  - el: μαρκαδόρος
+    article: ο
+    ru: фломастер, маркер
+    pos: noun
+
+  - el: γόμα
+    article: η
+    ru: ластик
+    pos: noun
+
+  - el: ξύστρα
+    article: η
+    ru: точилка
+    pos: noun
+    cases:
+      gen: [~, των ξυστρών]
+
+  - el: χάρακας
+    article: ο
+    ru: линейка
+    pos: noun
+
+  - el: χαρτί
+    article: το
+    ru: бумага
+    pos: noun
+
+  - el: ράφι
+    article: το
+    ru: полка
+    pos: noun
+
+  - el: λέξη
+    article: η
+    ru: слово
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι λέξεις]
+      gen: [~, των λέξεων]
+      acc: [~, τις λέξεις]
+    forms:
+      plural: λέξεις
+
+  - el: γλώσσα
+    article: η
+    ru: язык
+    pos: noun
+    cases:
+      gen: [~, των γλωσσών]
+    example: Μαθαίνω μια νέα γλώσσα.
+    exampleRu: Я учу новый язык.
+
+  - el: επίθετο
+    article: το
+    ru: имя прилагательное
+    pos: noun
+
+  - el: διάβασμα
+    article: το
+    ru: чтение
+    pos: noun
+
+  - el: ιστορία
+    article: η
+    ru: история
+    pos: noun
+
+  - el: λογοτεχνία
+    article: η
+    ru: литература
+    pos: noun
+
+  - el: φιλολογία
+    article: η
+    ru: филология
+    pos: noun
+
+  - el: ιατρική
+    article: η
+    ru: медицина
+    pos: noun
+
+  - el: πληροφορική
+    article: η
+    ru: информатика
+    pos: noun
+
+  - el: αρχιτεκτονική
+    article: η
+    ru: архитектура
+    pos: noun
+
+  - el: μυθολογία
+    article: η
+    ru: мифология
+    pos: noun
+
+  - el: οικολογία
+    article: η
+    ru: экология
+    pos: noun
+
+  - el: ασχολία
+    article: η
+    ru: занятие
+    pos: noun
+
+  - el: μαθαίνω
+    ru: учить, изучать
+    pos: verb
+    example: Μαθαίνω ελληνικά.
+    exampleRu: Я учу греческий.
+
+  - el: σπουδάζω
+    ru: учиться
+    pos: verb
+
+  - el: γραμματεία
+    article: η
+    ru: приёмная, секретариат
+    pos: noun

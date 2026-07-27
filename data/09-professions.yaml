@@ -1,0 +1,253 @@
+topic: Работа и профессии
+lesson: "10"
+
+words:
+  - el: επάγγελμα
+    article: το
+    ru: профессия
+    pos: noun
+    example: Τι επάγγελμα κάνεις;
+    exampleRu: Кем ты работаешь?
+
+  - el: δουλειά
+    article: η
+    ru: работа
+    pos: noun
+    cases:
+      gen: [~, των δουλειών]
+    example: Πηγαίνω στη δουλειά με το λεωφορείο.
+    exampleRu: Я езжу на работу на автобусе.
+
+  - el: γιατρός
+    article: ο
+    ru: врач
+    pos: noun
+    note: и о женщине — η γιατρός
+
+  - el: δικηγόρος
+    article: ο
+    ru: адвокат
+    pos: noun
+
+  - el: αρχιτέκτονας
+    article: ο
+    ru: архитектор
+    pos: noun
+
+  - el: βιολόγος
+    article: ο
+    ru: биолог
+    pos: noun
+
+  - el: γραμματέας
+    article: ο
+    ru: секретарь
+    pos: noun
+    irregular: true
+    note: множественное число οι γραμματείς
+    cases:
+      nom: [~, οι γραμματείς]
+      gen: [~, των γραμματέων]
+      acc: [~, τους γραμματείς]
+    forms:
+      plural: γραμματείς
+
+  - el: επιχειρηματίας
+    article: ο
+    ru: предприниматель
+    pos: noun
+
+  - el: ηθοποιός
+    article: ο
+    ru: актёр
+    pos: noun
+
+  - el: μαθηματικός
+    article: ο
+    ru: математик
+    pos: noun
+
+  - el: ξεναγός
+    article: ο
+    ru: гид
+    pos: noun
+
+  - el: οικονομολόγος
+    article: ο
+    ru: экономист
+    pos: noun
+
+  - el: ταμίας
+    article: ο
+    ru: кассир
+    pos: noun
+
+  - el: υδραυλικός
+    article: ο
+    ru: сантехник
+    pos: noun
+
+  - el: υπάλληλος
+    article: ο
+    ru: служащий
+    pos: noun
+
+  - el: φιλόλογος
+    article: ο
+    ru: филолог
+    pos: noun
+
+  - el: φωτογράφος
+    article: ο
+    ru: фотограф
+    pos: noun
+
+  - el: ζωγράφος
+    article: ο
+    ru: художник
+    pos: noun
+
+  - el: μουσικός
+    article: ο
+    ru: музыкант
+    pos: noun
+
+  - el: τραγουδιστής
+    article: ο
+    ru: певец
+    pos: noun
+
+  - el: τραγουδίστρια
+    article: η
+    ru: певица
+    pos: noun
+    cases:
+      nom: [~, οι τραγουδίστριες]
+      acc: [~, τις τραγουδίστριες]
+
+  - el: σκηνοθέτης
+    article: ο
+    ru: режиссёр
+    pos: noun
+
+  - el: γυμναστής
+    article: ο
+    ru: учитель физкультуры
+    pos: noun
+
+  - el: καθηγητής
+    article: ο
+    ru: преподаватель
+    pos: noun
+
+  - el: εργάτης
+    article: ο
+    ru: рабочий
+    pos: noun
+
+  - el: μάγειρας
+    article: ο
+    ru: повар
+    pos: noun
+
+  - el: αστυνομικός
+    article: ο
+    ru: полицейский
+    pos: noun
+
+  - el: δήμαρχος
+    article: ο
+    ru: мэр
+    pos: noun
+
+  - el: παπάς
+    article: ο
+    ru: священник
+    pos: noun
+
+  - el: άνεργος
+    article: ο
+    ru: безработный
+    pos: noun
+
+  - el: εταιρεία
+    article: η
+    ru: компания
+    pos: noun
+
+  - el: επιχείρηση
+    article: η
+    ru: предприятие
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι επιχειρήσεις]
+      gen: [~, των επιχειρήσεων]
+      acc: [~, τις επιχειρήσεις]
+    forms:
+      plural: επιχειρήσεις
+
+  - el: οργανισμός
+    article: ο
+    ru: организация
+    pos: noun
+
+  - el: τράπεζα
+    article: η
+    ru: банк
+    pos: noun
+    cases:
+      gen: [~, των τραπεζών]
+
+  - el: γραφείο
+    article: το
+    ru: офис, бюро
+    pos: noun
+
+  - el: τμήμα
+    article: το
+    ru: отдел, часть
+    pos: noun
+
+  - el: δουλεύω
+    ru: работать
+    pos: verb
+    example: Δουλεύω σε μια τεχνική εταιρεία.
+    exampleRu: Я работаю в технической компании.
+
+  - el: διδάσκω
+    ru: преподавать
+    pos: verb
+
+  - el: ανήκω
+    ru: принадлежать
+    pos: verb
+
+  - el: υπάρχω
+    ru: существовать
+    pos: verb
+    note: очень часто в 3 л. — υπάρχει «имеется»
+
+  - el: αρχίζω
+    ru: начинать
+    pos: verb
+
+  - el: τελειώνω
+    ru: заканчивать
+    pos: verb
+
+  - el: ετοιμάζω
+    ru: готовить, подготавливать
+    pos: verb
+
+  - el: ψάχνω
+    ru: искать
+    pos: verb
+
+  - el: βρίσκω
+    ru: находить
+    pos: verb
+
+  - el: χάνω
+    ru: терять
+    pos: verb

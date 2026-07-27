@@ -1,0 +1,175 @@
+topic: Природа
+lesson: "17"
+
+words:
+  - el: φύση
+    article: η
+    ru: природа
+    pos: noun
+    irregular: true
+    cases:
+      nom: [~, οι φύσεις]
+      gen: [~, των φύσεων]
+      acc: [~, τις φύσεις]
+    forms:
+      plural: φύσεις
+
+  - el: δέντρο
+    article: το
+    ru: дерево
+    pos: noun
+
+  - el: φυτό
+    article: το
+    ru: растение
+    pos: noun
+
+  - el: φύλλο
+    article: το
+    ru: лист
+    pos: noun
+
+  - el: λουλούδι
+    article: το
+    ru: цветок
+    pos: noun
+
+  - el: αγριολούλουδο
+    article: το
+    ru: полевой цветок
+    pos: noun
+
+  - el: τριαντάφυλλο
+    article: το
+    ru: роза
+    pos: noun
+
+  - el: μαργαρίτα
+    article: η
+    ru: ромашка
+    pos: noun
+
+  - el: παπαρούνα
+    article: η
+    ru: мак
+    pos: noun
+
+  - el: ανεμώνη
+    article: η
+    ru: подснежник, анемона
+    pos: noun
+    cases:
+      nom: [~, οι ανεμώνες]
+      acc: [~, τις ανεμώνες]
+
+  - el: τουλίπα
+    article: η
+    ru: тюльпан
+    pos: noun
+
+  - el: κυκλάμινο
+    article: το
+    ru: цикламен
+    pos: noun
+
+  - el: πουλί
+    article: το
+    ru: птица
+    pos: noun
+
+  - el: σκύλος
+    article: ο
+    ru: пёс, собака
+    pos: noun
+
+  - el: γάτα
+    article: η
+    ru: кошка
+    pos: noun
+
+  - el: ποτάμι
+    article: το
+    ru: река
+    pos: noun
+    note: вариант — ο ποταμός
+
+  - el: δέλτα
+    article: το
+    ru: дельта
+    pos: noun
+    irregular: true
+    note: не склоняется
+
+  - el: βιότοπος
+    article: ο
+    ru: заповедник, биотоп
+    pos: noun
+
+  - el: κλίμα
+    article: το
+    ru: климат
+    pos: noun
+
+  - el: ζέστη
+    article: η
+    ru: жара
+    pos: noun
+    cases:
+      nom: [~, οι ζέστες]
+      acc: [~, τις ζέστες]
+
+  - el: κρύο
+    article: το
+    ru: холод
+    pos: noun
+
+  - el: σιτάρι
+    article: το
+    ru: пшеница
+    pos: noun
+
+  - el: χρώμα
+    article: το
+    ru: цвет
+    pos: noun
+
+  - el: σημαία
+    article: η
+    ru: знамя, флаг
+    pos: noun
+
+  - el: βόρειος
+    ru: северный
+    pos: adj
+
+  - el: νότιος
+    ru: южный
+    pos: adj
+
+  - el: μεσογειακός
+    ru: средиземноморский
+    pos: adj
+
+  - el: γραφικός
+    ru: живописный
+    pos: adj
+
+  - el: βιολογικός
+    ru: биологический, натуральный
+    pos: adj
+
+  - el: συνορεύω
+    ru: граничить
+    pos: verb
+
+  - el: απέχω
+    ru: находиться на расстоянии
+    pos: verb
+
+  - el: βρίσκομαι
+    ru: находиться
+    pos: verb
+    irregular: true
+    note: среднепассивный залог
+    forms:
+      present: [βρίσκομαι, βρίσκεσαι, βρίσκεται, βρισκόμαστε, βρίσκεστε, βρίσκονται]

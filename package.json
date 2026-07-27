@@ -1,0 +1,32 @@
+{
+  "name": "greek-vocab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "deck": "node scripts/build-deck.mjs",
+    "dev": "npm run deck && vite",
+    "build": "npm run deck && tsc -b && vite build",
+    "preview": "vite preview",
+    "check": "node scripts/morphology.test.mjs && node scripts/tts.test.mjs && node scripts/build-deck.mjs --check",
+    "test:morph": "node scripts/morphology.test.mjs",
+    "simulate": "npm run deck && node scripts/simulate.mjs",
+    "fetch:cases": "npm run deck && node scripts/fetch-declensions.mjs",
+    "test:tts": "node scripts/tts.test.mjs"
+  },
+  "dependencies": {
+    "idb-keyval": "^6.2.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "ts-fsrs": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0",
+    "yaml": "^2.7.1"
+  }
+}

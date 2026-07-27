@@ -1,0 +1,10 @@
+node_modules
+dist
+dev-dist
+src/generated
+tmp
+tsconfig.tsbuildinfo
+.DS_Store
+.idea
+*.local
+.cache
