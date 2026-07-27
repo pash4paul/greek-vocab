@@ -269,6 +269,21 @@ export function Session({ deck, progress, plan, onAnswer, onExit }: Props) {
           {/* ── Разбор ── */}
           {phase === 'answer' && (
             <div className="reveal">
+              {/*
+                Ответ показываем явно. На узнавании спрашивают перевод — без него
+                разбор не отвечает на заданный вопрос. На аудировании в вопросе
+                только динамик, поэтому нужно ещё и написание: иначе по такой
+                карточке невозможно узнать, как слово выглядит.
+              */}
+              {(item.kind === 'recognize' || item.kind === 'listen') && (
+                <div className="answer-line">
+                  {item.kind === 'listen' && (
+                    <span className="greek-mid">{item.word.display}</span>
+                  )}
+                  <b className="answer-ru">{item.word.ru}</b>
+                </div>
+              )}
+
               {verdict && verdict !== 'exact' && (
                 <div className={`verdict ${verdict}`}>
                   {verdict === 'accent' ? 'Верно, но ударение не там' : 'Правильный ответ:'}

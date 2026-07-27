@@ -17,6 +17,8 @@ interface Props {
 export function SettingsView({ deck, progress, tts, onChange, onReplace }: Props) {
   const s = progress.settings;
   const [msg, setMsg] = useState<string | null>(null);
+  const [pasteOpen, setPasteOpen] = useState(false);
+  const [pasted, setPasted] = useState('');
   const fileRef = useRef<HTMLInputElement>(null);
 
   const patch = (p: Partial<Settings>) => onChange({ ...s, ...p });
@@ -34,13 +36,48 @@ export function SettingsView({ deck, progress, tts, onChange, onReplace }: Props
   };
 
   const doExport = () => {
-    const blob = new Blob([exportProgress(progress)], { type: 'application/json' });
+    const text = exportProgress(progress, deck);
+    const blob = new Blob([text], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
     a.download = `greek-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    // Safari игнорирует click() на якоре, которого нет в документе.
+    document.body.appendChild(a);
     a.click();
-    URL.revokeObjectURL(url);
+    a.remove();
+    // Браузер читает blob асинхронно. Немедленный revoke обрывает чтение, и файл
+    // сохраняется пустым или не сохраняется вовсе — именно из-за этого перенос
+    // прогресса не работал. Отпускаем ссылку с запасом.
+    setTimeout(() => URL.revokeObjectURL(url), 60_000);
+    setMsg(`Файл сохранён · ${Math.round(text.length / 1024)} КБ`);
+  };
+
+  /**
+   * Перенос между устройствами файлом неудобен: на iPhone его надо сначала
+   * куда-то положить, потом найти в выборе файлов. Текстом через общий буфер
+   * Apple (Universal Clipboard) это одно нажатие на каждой стороне.
+   */
+  const doCopy = async () => {
+    const text = exportProgress(progress, deck);
+    try {
+      await navigator.clipboard.writeText(text);
+      setMsg(`Прогресс скопирован · ${Math.round(text.length / 1024)} КБ. Вставь на другом устройстве.`);
+    } catch {
+      setMsg('Буфер обмена недоступен — воспользуйся кнопкой «Файл»');
+    }
+  };
+
+  const doPaste = () => {
+    try {
+      const p = importProgress(pasted);
+      onReplace(p);
+      setPasted('');
+      setPasteOpen(false);
+      setMsg(`Загружено: ${Object.keys(p.cards).length} карточек`);
+    } catch (e) {
+      setMsg(`Не удалось прочитать: ${(e as Error).message}`);
+    }
   };
 
   const doImport = async (file: File) => {
@@ -183,12 +220,43 @@ export function SettingsView({ deck, progress, tts, onChange, onReplace }: Props
       <section>
         <h3>Данные</h3>
         <p className="muted small">
-          Прогресс лежит только в этом браузере. Делай экспорт время от времени —
-          и им же переносится прогресс на другое устройство.
+          Прогресс лежит только в этом браузере — на сервер ничего не уходит.
+          Делай копию время от времени, ею же прогресс переносится
+          на другое устройство.
+        </p>
+
+        <p className="muted small">
+          <b>Между iPhone и Mac проще через буфер:</b> «Скопировать» здесь,
+          «Вставить» там. Файл нужен для настоящего бэкапа.
         </p>
         <div className="btn-row">
-          <button className="btn" onClick={doExport}>Экспорт</button>
-          <button className="btn" onClick={() => fileRef.current?.click()}>Импорт</button>
+          <button className="btn primary" onClick={doCopy}>Скопировать</button>
+          <button className="btn" onClick={() => setPasteOpen(!pasteOpen)}>Вставить</button>
+        </div>
+
+        {pasteOpen && (
+          <div className="paste-box">
+            <textarea
+              className="paste-area"
+              value={pasted}
+              onChange={(e) => setPasted(e.target.value)}
+              placeholder="Вставь сюда скопированный прогресс (⌘V или долгое нажатие → Вставить)"
+              rows={4}
+            />
+            <div className="btn-row">
+              <button className="btn primary" onClick={doPaste} disabled={!pasted.trim()}>
+                Загрузить
+              </button>
+              <button className="btn" onClick={() => { setPasted(''); setPasteOpen(false); }}>
+                Отмена
+              </button>
+            </div>
+          </div>
+        )}
+
+        <div className="btn-row" style={{ marginTop: 12 }}>
+          <button className="btn" onClick={doExport}>Файл</button>
+          <button className="btn" onClick={() => fileRef.current?.click()}>Из файла</button>
           <button className="btn danger" onClick={doReset}>Сбросить</button>
         </div>
         <input

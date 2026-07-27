@@ -1,5 +1,6 @@
 import { get, set } from 'idb-keyval';
-import { DEFAULT_SETTINGS, type Progress } from '../types.ts';
+import { DEFAULT_SETTINGS, KIND_SHORT, type Deck, type Progress, type StoredCard } from '../types.ts';
+import { humanInterval } from './scheduler.ts';
 
 const KEY = 'greek-vocab:progress';
 const BACKUP_KEY = 'greek-vocab:progress:backup';
@@ -83,8 +84,57 @@ export async function flushNow(p: Progress) {
   await flush(p);
 }
 
-export function exportProgress(p: Progress): string {
-  return JSON.stringify({ exportedAt: new Date().toISOString(), progress: p }, null, 2);
+/**
+ * Бэкап прогресса.
+ *
+ * Кроме машинной части кладём человекочитаемую сводку и список слов с их
+ * состоянием: без неё в файле видны только идентификаторы вида
+ * «spiti:noun|recognize» и числа FSRS, и проверить глазами, что бэкап не пустой,
+ * невозможно. При импорте эти разделы игнорируются — источник правды один,
+ * поле `progress`.
+ */
+export function exportProgress(p: Progress, deck?: Deck): string {
+  const cards = Object.values(p.cards);
+  const byWord = new Map<string, StoredCard[]>();
+  for (const c of cards) {
+    const list = byWord.get(c.wordId) ?? [];
+    list.push(c);
+    byWord.set(c.wordId, list);
+  }
+
+  const titles = new Map((deck?.words ?? []).map((w) => [w.id, w]));
+  const words = [...byWord.entries()]
+    .map(([id, list]) => {
+      const w = titles.get(id);
+      const карточки: Record<string, string> = {};
+      for (const c of list) {
+        const ms = new Date(c.due).getTime() - Date.now();
+        карточки[KIND_SHORT[c.kind]] = ms <= 0 ? 'к повторению' : `через ${humanInterval(ms)}`;
+      }
+      return {
+        слово: w?.display ?? id,
+        перевод: w?.ru ?? '—',
+        карточки,
+        ответов: list.reduce((n, c) => n + c.reps, 0),
+        ошибок: list.reduce((n, c) => n + c.lapses, 0),
+      };
+    })
+    .sort((a, b) => b.ответов - a.ответов);
+
+  return JSON.stringify({
+    app: 'greek-vocab',
+    формат: PROGRESS_VERSION,
+    сохранено: new Date().toISOString(),
+    сводка: {
+      'слов начато': byWord.size,
+      'карточек': cards.length,
+      'в долгой памяти': cards.filter((c) => c.state === 2).length,
+      'ответов всего': p.reviews.length,
+      'дней занятий': Object.keys(p.days).length,
+    },
+    слова: words,
+    progress: p,
+  }, null, 2);
 }
 
 export function importProgress(json: string): Progress {

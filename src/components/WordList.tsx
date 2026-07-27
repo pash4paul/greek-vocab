@@ -49,7 +49,7 @@ export function WordList({ deck, progress }: { deck: Deck; progress: Progress })
         />
       </div>
 
-      <div className="chips">
+      <div className="chips chips-scroll">
         {FILTERS.map(([f, label]) => (
           <button
             key={f}
@@ -61,7 +61,7 @@ export function WordList({ deck, progress }: { deck: Deck; progress: Progress })
         ))}
       </div>
 
-      <div className="chips">
+      <div className="chips chips-scroll">
         <button className={`chip ${topic === '' ? 'on' : ''}`} onClick={() => setTopic('')}>
           Все темы
         </button>

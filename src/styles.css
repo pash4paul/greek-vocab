@@ -245,6 +245,16 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 
 .reveal { margin-top: 18px; }
 
+/* Ответ на заданный вопрос — первое, что видно в разборе. */
+.answer-line {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: 12px 14px; margin-bottom: 14px; text-align: center;
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--green) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--green) 30%, transparent);
+}
+.answer-ru { font-size: 1.25rem; font-weight: 600; }
+
 .verdict { padding: 12px 14px; border-radius: var(--radius); margin-bottom: 14px; font-size: .92rem; }
 .verdict.accent { background: color-mix(in srgb, var(--amber) 14%, transparent); }
 .verdict.wrong  { background: color-mix(in srgb, var(--red) 14%, transparent); }
@@ -341,10 +351,31 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 .search:focus { outline: none; border-color: var(--accent); }
 
 .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0; }
+
+/**
+ * Ряд с горизонтальной прокруткой вместо переноса строк.
+ * 23 темы в переносящихся строках занимают 400+ пикселей — на телефоне это
+ * больше половины экрана, и до самих слов приходится долго скроллить.
+ * Свайп по одному ряду — привычный для телефона способ выбрать категорию.
+ */
+.chips-scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  /* Чтобы крайние чипы не липли к границам экрана при прокрутке */
+  padding-inline: 1px;
+}
+.chips-scroll::-webkit-scrollbar { display: none; }
+.chips-scroll .chip { flex: 0 0 auto; }
+
 .chip {
-  padding: 6px 12px; border-radius: 20px; font-size: .8rem;
+  display: inline-flex; align-items: center;
+  /* Минимум 44px — рекомендация Apple для области касания */
+  min-height: 44px;
+  padding: 0 14px; border-radius: 22px; font-size: .82rem;
   border: 1px solid var(--line); background: var(--surface);
-  color: var(--muted); cursor: pointer;
+  color: var(--muted); cursor: pointer; white-space: nowrap;
 }
 .chip.on { background: var(--accent-dim); border-color: var(--accent); color: var(--text); }
 
@@ -414,7 +445,17 @@ code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-
 .msg {
   margin-top: 10px; padding: 10px 12px; border-radius: var(--radius);
   background: var(--accent-dim); font-size: .85rem;
+  overflow-wrap: anywhere;
 }
+
+.paste-box { margin-top: 10px; display: grid; gap: 8px; }
+.paste-area {
+  width: 100%; padding: 10px 12px; border-radius: var(--radius);
+  border: 1px solid var(--line); background: var(--surface); color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem;
+  resize: vertical;
+}
+.paste-area:focus { outline: none; border-color: var(--accent); }
 
 .diag { margin-top: 14px; }
 .diag-body {
