@@ -36,6 +36,27 @@ npm run simulate     # прогон 60 учебных дней: видно, во
 npm run fetch:cases  # добрать падежные формы из Викисловаря
 ```
 
+## Коммиты — только по-английски
+
+Сообщения коммитов пишутся **на английском**, даже когда весь остальной разговор
+идёт по-русски. Это относится и к заголовку, и к телу.
+
+```
+Show the answer in the card review
+
+The review pane never displayed what the question asked for: no translation
+on recognition cards, and not even the written form on listening cards.
+705 of 786 words have no example, so there was no hint at all.
+```
+
+Комментарии в коде, `CLAUDE.md`, `README.md`, тексты интерфейса и словарь
+остаются по-русски — правило касается только истории git.
+
+Проверяется механически хуком `githooks/commit-msg`: коммит с кириллицей
+в сообщении не пройдёт. Хук включается один раз на клон —
+`git config core.hooksPath githooks`, в этой копии уже включён.
+Разовый обход, если он зачем-то нужен: `git commit --no-verify`.
+
 ## Правила, которые нельзя нарушать
 
 **1. Не подгонять правило под одно слово.** В `scripts/morphology.mjs` живут
@@ -181,7 +202,8 @@ npm run fetch:cases  # добрать падежные формы из Вики�
 | `CLAUDE.md` | этот файл: контекст и правила проекта |
 | `.claude/skills/` | навыки: `/add-words`, `/publish` |
 | `.claude/settings.json` | разрешения и хук автопроверки |
-| `scripts/hooks/check-data.sh` | логика хука |
+| `scripts/hooks/check-data.sh` | логика хука автопроверки словаря |
+| `githooks/commit-msg` | git-хук: коммиты только на английском |
 
 Формат словаря и деплой подробно описаны в `README.md`.
 
