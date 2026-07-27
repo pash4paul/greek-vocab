@@ -13,7 +13,7 @@
     "simulate": "npm run deck && node scripts/simulate.mjs",
     "fetch:cases": "npm run deck && node scripts/fetch-declensions.mjs",
     "test:tts": "node scripts/tts.test.mjs",
-    "test:storage": "npm run deck && node scripts/storage.test.mjs"
+    "test:storage": "node scripts/storage.test.mjs"
   },
   "dependencies": {
     "idb-keyval": "^6.2.1",

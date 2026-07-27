@@ -9,14 +9,21 @@
  * Запуск: npm run test:storage
  */
 
-import { readFileSync } from 'node:fs';
-import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const deck = JSON.parse(readFileSync(join(ROOT, 'src/generated/deck.json'), 'utf8'));
-
 const { exportProgress, importProgress, emptyProgress } = await import('../src/lib/storage.ts');
+
+/**
+ * Колода собирается своя, а не читается из src/generated/deck.json: тот файл
+ * в git не хранится и режимом `--check` не создаётся, поэтому в чистой копии
+ * теста бы не было. Здесь нужны только три слова, на которых он и работает.
+ */
+const deck = {
+  version: 1, builtFrom: [], topics: ['Дом', 'Базовые глаголы', 'Прилагательные'],
+  words: [
+    { id: 'spiti:noun', el: 'σπίτι', article: 'το', display: 'το σπίτι', ru: 'дом', pos: 'noun', topic: 'Дом', tags: [] },
+    { id: 'grafo:verb', el: 'γράφω', display: 'γράφω', ru: 'писать', pos: 'verb', topic: 'Базовые глаголы', tags: [] },
+    { id: 'megalos:adj', el: 'μεγάλος', display: 'μεγάλος', ru: 'большой', pos: 'adj', topic: 'Прилагательные', tags: [] },
+  ],
+};
 
 let failed = 0;
 let passed = 0;
