@@ -1,6 +1,7 @@
 import type { Word } from '../types.ts';
 import { CASES, CASE_SHORT } from '../types.ts';
 import { speak, ttsAvailable } from '../lib/tts.ts';
+import { spokenForm } from '../lib/session.ts';
 
 /**
  * Падежная таблица. В свёрнутом виде показывает только те падежи, форма
@@ -59,7 +60,7 @@ export function WordDetails({
         {word.irregular && <span className="irregular-chip">неправильное</span>}
         <span className="topic-chip">{word.topic}</span>
         {ttsAvailable() && (
-          <button className="icon-btn" onClick={() => speak(word.el, rate)} aria-label="Прослушать">
+          <button className="icon-btn" onClick={() => speak(spokenForm(word), rate)} aria-label="Прослушать">
             🔊
           </button>
         )}

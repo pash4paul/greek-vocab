@@ -3,6 +3,7 @@ import type { Deck, Progress, StoredCard, Word } from '../types.ts';
 import { CARD_KINDS, KIND_SHORT, cardKey } from '../types.ts';
 import { State, humanInterval, isLeech } from '../lib/scheduler.ts';
 import { normalizeLoose } from '../lib/greek.mjs';
+import { spokenForm } from '../lib/session.ts';
 import { speak, ttsAvailable } from '../lib/tts.ts';
 import { WordDetails } from './WordDetails.tsx';
 
@@ -122,7 +123,7 @@ export function WordList({ deck, progress }: { deck: Deck; progress: Progress })
                   {ttsAvailable() && (
                     <button
                       className="btn wide"
-                      onClick={() => speak(word.example || word.el, progress.settings.ttsRate)}
+                      onClick={() => speak(word.example || spokenForm(word), progress.settings.ttsRate)}
                     >
                       🔊 Прослушать {word.example ? 'пример' : 'слово'}
                     </button>

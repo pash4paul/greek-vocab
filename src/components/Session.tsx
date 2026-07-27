@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CardKind, Deck, Progress, StoredCard, Word } from '../types.ts';
 import { cardKey } from '../types.ts';
 import {
-  cellLabel, clozeSentence, distractors, expectedAnswer,
+  cellLabel, clozeSentence, distractors, expectedAnswer, spokenForm,
   type QueueItem, type SessionPlan,
 } from '../lib/session.ts';
 import { Rating, State, makeScheduler, newCard, previewIntervals } from '../lib/scheduler.ts';
@@ -96,7 +96,7 @@ export function Session({ deck, progress, plan, onAnswer, onExit }: Props) {
     // Без предшествующего жеста Safari глушит речь и может залипнуть —
     // до первого клика по странице озвучиваем только по кнопке.
     if (item.kind === 'listen' && progress.settings.autoPlayAudio && canAutoSpeak()) {
-      speak(item.word.el, progress.settings.ttsRate);
+      speak(spokenForm(item.word), progress.settings.ttsRate);
     }
     if (item.kind === 'produce' || item.kind === 'cloze' || item.kind === 'case') {
       inputRef.current?.focus();
@@ -190,7 +190,7 @@ export function Session({ deck, progress, plan, onAnswer, onExit }: Props) {
             {item.kind === 'listen' && (
               <button
                 className="speaker-big"
-                onClick={() => speak(item.word.el, progress.settings.ttsRate)}
+                onClick={() => speak(spokenForm(item.word), progress.settings.ttsRate)}
                 aria-label="Прослушать"
               >
                 🔊
@@ -322,7 +322,7 @@ const GRADE_LABEL: Record<number, string> = {
 
 function Intro({ word, rate, onNext }: { word: Word; rate: number; onNext: () => void }) {
   useEffect(() => {
-    if (canAutoSpeak()) speak(word.el, rate);
+    if (canAutoSpeak()) speak(spokenForm(word), rate);
     return stopSpeaking;
   }, [word.el, rate]);
 
