@@ -1,5 +1,5 @@
 import type {
-  CardKind, CaseCell, Deck, DayStats, Progress, Settings, StoredCard, Word,
+  CardKind, CaseCell, Deck, DayStats, GrammCase, Progress, Settings, StoredCard, Word,
 } from '../types.ts';
 import { CASES, CASE_LABEL, cardKey } from '../types.ts';
 import { isGraduated } from './scheduler.ts';
@@ -36,9 +36,14 @@ function ladderFor(word: Word, settings: Settings, ttsAvailable: boolean): CardK
     if (!enabled.has(k)) return false;
     if (k === 'cloze') return !!word.example && !!clozeSentence(word);
     if (k === 'listen') return ttsAvailable;
-    if (k === 'case') return drillableCells(word).length > 0;
+    if (k === 'case') return drillableCells(word, enabledCases(settings)).length > 0;
     return true;
   });
+}
+
+/** Падежи, включённые в настройках. Старый прогресс поля не знает — там все. */
+function enabledCases(settings: Settings): GrammCase[] {
+  return settings.enabledCases ?? CASES;
 }
 
 /**
@@ -49,12 +54,13 @@ function ladderFor(word: Word, settings: Settings, ttsAvailable: boolean): CardK
  * Звательный оставляем только у мужского рода: у остальных он совпадает
  * с именительным без артикля.
  */
-export function drillableCells(word: Word): CaseCell[] {
+export function drillableCells(word: Word, cases: GrammCase[] = CASES): CaseCell[] {
   const d = word.declension;
   if (!d) return [];
   const base = d.nom[0];
   const out: CaseCell[] = [];
   for (const c of CASES) {
+    if (!cases.includes(c)) continue;
     if (c === 'voc' && word.article !== 'ο') continue;
     for (const num of [0, 1] as const) {
       // Звательный во множественном числе в живой речи не встречается
@@ -100,11 +106,20 @@ export type QueueItem =
   | { type: 'intro'; word: Word }
   | { type: 'card'; word: Word; kind: CardKind; isNew: boolean; cell?: CaseCell };
 
-/** Падежная карточка каждый раз спрашивает случайную клетку таблицы. */
-function withCell(item: Extract<QueueItem, { type: 'card' }>): QueueItem {
+/**
+ * Падежная карточка каждый раз спрашивает случайную клетку таблицы.
+ *
+ * null — спрашивать нечего: все клетки этого слова либо пустые, либо отключены
+ * в настройках. Карточка могла возникнуть, когда падеж был ещё включён,
+ * поэтому её надо не показывать, а не надеяться, что её не существует.
+ */
+function withCell(
+  item: Extract<QueueItem, { type: 'card' }>,
+  settings: Settings,
+): QueueItem | null {
   if (item.kind !== 'case') return item;
-  const cells = drillableCells(item.word);
-  if (!cells.length) return item;
+  const cells = drillableCells(item.word, enabledCases(settings));
+  if (!cells.length) return null;
   return { ...item, cell: cells[Math.floor(Math.random() * cells.length)] };
 }
 
@@ -157,7 +172,8 @@ export function buildSession(
     if (!settings.enabledKinds.includes(card.kind)) continue;
     if (card.kind === 'listen' && !ttsAvailable) continue;
     if (new Date(card.due).getTime() <= nowMs) {
-      due.push(withCell({ type: 'card', word, kind: card.kind, isNew: false }));
+      const item = withCell({ type: 'card', word, kind: card.kind, isNew: false }, settings);
+      if (item) due.push(item);
     }
   }
   due = shuffle(due);
@@ -182,7 +198,9 @@ export function buildSession(
     if (!started) continue;
     for (const kind of unlockedKinds(word, cards, settings, ttsAvailable)) {
       if (cards[cardKey(word.id, kind)]) continue;
-      unlockedUnits.push([withCell({ type: 'card', word, kind, isNew: true })]);
+      const item = withCell({ type: 'card', word, kind, isNew: true }, settings);
+      if (!item) continue;
+      unlockedUnits.push([item]);
       break; // за раз открываем одному слову только одну новую ступень
     }
   }

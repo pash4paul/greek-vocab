@@ -127,6 +127,8 @@ export interface Settings {
   /** 0 — без ограничения */
   maxReviewsPerDay: number;
   enabledKinds: CardKind[];
+  /** Падежи, которые спрашивает упражнение на падежи */
+  enabledCases: GrammCase[];
   /** true — ошибка в ударении засчитывается как неверный ответ */
   strictAccents: boolean;
   /** требовать артикль при вводе существительных */
@@ -152,6 +154,9 @@ export const DEFAULT_SETTINGS: Settings = {
   newWordsPerDay: 8,
   maxReviewsPerDay: 0,
   enabledKinds: ['recognize', 'produce', 'listen', 'cloze', 'case'],
+  // Родительный выключен: по учебнику он ещё не проходился, а формы его
+  // самые непредсказуемые. Включается в настройках, когда дойдёт очередь.
+  enabledCases: ['nom', 'acc', 'voc'],
   strictAccents: false,
   requireArticle: true,
   ttsRate: 0.85,

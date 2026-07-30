@@ -12,8 +12,9 @@
  * Запуск: npm run test:session
  */
 
-const { spokenForm, expectedAnswer, clozeSentence, drillableCells, cellForm } =
+const { spokenForm, expectedAnswer, clozeSentence, drillableCells, cellForm, buildSession } =
   await import('../src/lib/session.ts');
+const { CASES, DEFAULT_SETTINGS } = await import('../src/types.ts');
 
 let failed = 0;
 let passed = 0;
@@ -77,6 +78,50 @@ for (const cell of cells) {
   eq(cell.case === 'voc' ? !сАртиклем : сАртиклем, 'true',
     `${cell.case} — артикль ${cell.case === 'voc' ? 'отсутствует' : 'на месте'}`);
 }
+
+console.log('Отключённый падеж не попадает в вопросы');
+const withoutGen = CASES.filter((c) => c !== 'gen');
+const cellsNoGen = drillableCells(noun, withoutGen);
+eq(cellsNoGen.some((cell) => cell.case === 'gen'), 'false', 'родительного среди клеток нет');
+eq(cellsNoGen.length > 0, 'true', 'остальные клетки остались на месте');
+eq(DEFAULT_SETTINGS.enabledCases.includes('gen'), 'false', 'по умолчанию родительный выключен');
+
+// Слово, у которого от исходной формы отличается только родительный:
+// с выключенным родительным спрашивать у него нечего вообще.
+const onlyGen = {
+  ...noun, id: 'gala:noun', el: 'γάλα', display: 'το γάλα', ru: 'молоко',
+  declension: {
+    nom: ['το γάλα', null],
+    gen: ['του γάλακτος', null],
+    acc: ['το γάλα', null],
+    voc: [null, null],
+  },
+};
+eq(drillableCells(onlyGen, CASES).length > 0, 'true', 'с родительным клетка есть');
+eq(drillableCells(onlyGen, withoutGen).length, 0, 'без родительного клеток не остаётся');
+
+// Карточка могла быть создана, когда падеж был включён. Она не должна всплывать
+// в сессии пустым вопросом — её надо просто не показывать.
+const stale = (wordId) => ({
+  wordId, kind: 'case', due: '2026-01-01T00:00:00.000Z',
+  stability: 10, difficulty: 5, elapsed_days: 0, scheduled_days: 10,
+  reps: 3, lapses: 0, state: 2,
+});
+const plan = buildSession(
+  { version: 1, builtFrom: [], topics: ['Дом'], words: [noun, onlyGen] },
+  {
+    version: 1,
+    cards: { 'spiti:noun|case': stale('spiti:noun'), 'gala:noun|case': stale('gala:noun') },
+    reviews: [], days: {}, settings: { ...DEFAULT_SETTINGS },
+  },
+  new Date('2026-07-30T10:00:00.000Z'),
+  true,
+);
+const caseItems = plan.items.filter((i) => i.type === 'card' && i.kind === 'case');
+eq(caseItems.length, 1, 'в сессию попала только карточка, которой есть что спросить');
+eq(caseItems[0].word.id, 'spiti:noun', 'и это не слово с одним родительным');
+eq(caseItems.every((i) => i.cell && i.cell.case !== 'gen'), 'true',
+  'у каждой падежной карточки есть клетка, и она не родительная');
 
 console.log(`\n${passed} проверок пройдено, ${failed} провалено`);
 process.exit(failed ? 1 : 0);

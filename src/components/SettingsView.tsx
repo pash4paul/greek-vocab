@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
-import type { CardKind, Deck, Progress, Settings } from '../types.ts';
-import { CARD_KINDS, KIND_LABEL } from '../types.ts';
+import type { CardKind, Deck, GrammCase, Progress, Settings } from '../types.ts';
+import { CARD_KINDS, CASES, CASE_LABEL, KIND_LABEL } from '../types.ts';
 import { emptyProgress, exportProgress, importProgress } from '../lib/storage.ts';
 import {
   allVoices, getGreekVoice, getRecentEvents, greekVoices, speak, supported,
@@ -22,12 +22,21 @@ export function SettingsView({ deck, progress, tts, onChange, onReplace }: Props
   const fileRef = useRef<HTMLInputElement>(null);
 
   const patch = (p: Partial<Settings>) => onChange({ ...s, ...p });
+  const cases = s.enabledCases ?? CASES;
 
   const toggleKind = (k: CardKind) => {
     const has = s.enabledKinds.includes(k);
     const next = has ? s.enabledKinds.filter((x) => x !== k) : [...s.enabledKinds, k];
     if (!next.length) return;
     patch({ enabledKinds: next });
+  };
+
+  const toggleCase = (c: GrammCase) => {
+    const has = cases.includes(c);
+    // Именительный не отключается: множественное число спрашивается через него,
+    // и без него у среднего рода не остаётся ни одной клетки.
+    if (has && (c === 'nom' || cases.length === 1)) return;
+    patch({ enabledCases: has ? cases.filter((x) => x !== c) : [...cases, c] });
   };
 
   const toggleTopic = (t: string) => {
@@ -151,6 +160,28 @@ export function SettingsView({ deck, progress, tts, onChange, onReplace }: Props
         <p className="muted small">
           Голос: {tts ? getGreekVoice()?.name : 'греческий голос не установлен'}
         </p>
+
+        {s.enabledKinds.includes('case') && (
+          <>
+            <h4>Какие падежи спрашивать</h4>
+            {CASES.map((c) => (
+              <label className="row" key={c}>
+                <input
+                  type="checkbox"
+                  checked={cases.includes(c)}
+                  disabled={c === 'nom'}
+                  onChange={() => toggleCase(c)}
+                />
+                <span>{CASE_LABEL[c]}</span>
+                {c === 'nom' && <span className="muted small">множественное число</span>}
+              </label>
+            ))}
+            <p className="muted small">
+              Выключенный падеж просто не попадает в вопросы — накопленный прогресс
+              по слову остаётся, и падеж можно вернуть в любой момент.
+            </p>
+          </>
+        )}
       </section>
 
       <section>

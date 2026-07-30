@@ -8,3 +8,4 @@ tsconfig.tsbuildinfo
 .idea
 *.local
 .cache
+.playwright-mcp
