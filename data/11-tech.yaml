@@ -6,6 +6,8 @@ words:
     article: ο
     ru: компьютер
     pos: noun
+    example: Ο υπολογιστής δεν δουλεύει.
+    exampleRu: Компьютер не работает.
 
   - el: οθόνη
     article: η
@@ -14,26 +16,36 @@ words:
     cases:
       nom: [~, οι οθόνες]
       acc: [~, τις οθόνες]
+    example: Η οθόνη είναι πολύ μεγάλη.
+    exampleRu: Экран очень большой.
 
   - el: πληκτρολόγιο
     article: το
     ru: клавиатура
     pos: noun
+    example: Το πληκτρολόγιο έχει ελληνικά γράμματα.
+    exampleRu: На клавиатуре греческие буквы.
 
   - el: ποντίκι
     article: το
     ru: компьютерная мышь
     pos: noun
+    example: Πάτα με το ποντίκι εδώ.
+    exampleRu: Нажми мышкой здесь.
 
   - el: φορτιστής
     article: ο
     ru: зарядное устройство
     pos: noun
+    example: Ξέχασα τον φορτιστή στο σπίτι.
+    exampleRu: Я забыл зарядку дома.
 
   - el: μπαταρία
     article: η
     ru: батарейка
     pos: noun
+    example: Η μπαταρία τελείωσε.
+    exampleRu: Батарейка села.
 
   - el: ίντερνετ
     article: το
@@ -41,6 +53,8 @@ words:
     pos: noun
     irregular: true
     note: заимствование, не склоняется
+    example: Δεν έχω ίντερνετ εδώ.
+    exampleRu: Здесь у меня нет интернета.
 
   - el: κινητό
     article: το
@@ -53,16 +67,22 @@ words:
     article: το
     ru: телефон
     pos: noun
+    example: Το τηλέφωνο χτυπάει.
+    exampleRu: Телефон звонит.
 
   - el: σταθερό
     article: το
     ru: стационарный телефон
     pos: noun
+    example: Πάρε με στο σταθερό.
+    exampleRu: Позвони мне на домашний.
 
   - el: τηλεκάρτα
     article: η
     ru: телекарта
     pos: noun
+    example: Αγόρασα μια τηλεκάρτα από το περίπτερο.
+    exampleRu: Я купил телекарту в киоске.
 
   - el: τηλεόραση
     article: η
@@ -75,16 +95,22 @@ words:
       acc: [~, τις τηλεοράσεις]
     forms:
       plural: τηλεοράσεις
+    example: Η τηλεόραση είναι ανοιχτή.
+    exampleRu: Телевизор включён.
 
   - el: ραδιόφωνο
     article: το
     ru: радио, радиоприёмник
     pos: noun
+    example: Ακούω ελληνική μουσική στο ραδιόφωνο.
+    exampleRu: Я слушаю греческую музыку по радио.
 
   - el: εκπομπή
     article: η
     ru: телепередача
     pos: noun
+    example: Η εκπομπή αρχίζει στις οκτώ.
+    exampleRu: Передача начинается в восемь.
 
   - el: σίριαλ
     article: το
@@ -92,70 +118,96 @@ words:
     pos: noun
     irregular: true
     note: заимствование, не склоняется
+    example: Βλέπω ένα ελληνικό σίριαλ.
+    exampleRu: Я смотрю греческий сериал.
 
   - el: ριάλιτι
     article: το
     ru: реалити-шоу
     pos: noun
     irregular: true
+    example: Δεν μου αρέσουν τα ριάλιτι.
+    exampleRu: Мне не нравятся реалити-шоу.
 
   - el: εφημερίδα
     article: η
     ru: газета
     pos: noun
+    example: Διαβάζω την εφημερίδα κάθε πρωί.
+    exampleRu: Я читаю газету каждое утро.
 
   - el: περιοδικό
     article: το
     ru: журнал
     pos: noun
+    example: Αγόρασα ένα περιοδικό για το ταξίδι.
+    exampleRu: Я купил журнал в дорогу.
 
   - el: γράμμα
     article: το
     ru: письмо, буква
     pos: noun
+    example: Έγραψα ένα γράμμα στη γιαγιά.
+    exampleRu: Я написал письмо бабушке.
 
   - el: πρόγραμμα
     article: το
     ru: программа
     pos: noun
+    example: Το πρόγραμμα του θεάτρου είναι εδώ.
+    exampleRu: Программа театра — вот здесь.
 
   - el: μουσική τεχνολογία
     article: η
     ru: музыкальная технология
     pos: noun
     irregular: true
+    example: Σπουδάζει μουσική τεχνολογία.
+    exampleRu: Он изучает музыкальные технологии.
 
   - el: ντιζάιν
     article: το
     ru: дизайн
     pos: noun
     irregular: true
+    example: Το ντιζάιν του σπιτιού είναι μοντέρνο.
+    exampleRu: Дизайн дома современный.
 
   - el: προφίλ
     article: το
     ru: профиль
     pos: noun
     irregular: true
+    example: Άλλαξε τη φωτογραφία στο προφίλ.
+    exampleRu: Поменяй фотографию в профиле.
 
   - el: πορτρέτο
     article: το
     ru: портрет
     pos: noun
+    example: Ο ζωγράφος έκανε ένα πορτρέτο.
+    exampleRu: Художник написал портрет.
 
   - el: αναπτήρας
     article: ο
     ru: зажигалка
     pos: noun
+    example: Έχεις αναπτήρα;
+    exampleRu: У тебя есть зажигалка?
 
   - el: λυχνάρι
     article: το
     ru: лампа, фонарь
     pos: noun
+    example: Το λυχνάρι φωτίζει το δωμάτιο.
+    exampleRu: Лампа освещает комнату.
 
   - el: μπρίκι
     article: το
     ru: турка, джезва
     pos: noun
+    example: Φτιάχνω καφέ στο μπρίκι.
+    exampleRu: Я варю кофе в турке.
 
   - el: ακούω
     ru: слушать
@@ -164,15 +216,23 @@ words:
     note: спрягается ακούω, ακούς, ακούει, ακούμε, ακούτε, ακούνε
     forms:
       present: [ακούω, ακούς, ακούει, ακούμε, ακούτε, ακούνε]
+    example: Ακούς τι λέω;
+    exampleRu: Ты слышишь, что я говорю?
 
   - el: βγαίνω
     ru: выходить
     pos: verb
+    example: Βγαίνω από το σπίτι στις οκτώ.
+    exampleRu: Я выхожу из дома в восемь.
 
   - el: μπαίνω
     ru: входить
     pos: verb
+    example: Μπαίνω στο λεωφορείο.
+    exampleRu: Я вхожу в автобус.
 
   - el: καπνίζω
     ru: курить
     pos: verb
+    example: Δεν καπνίζω εδώ και δέκα χρόνια.
+    exampleRu: Я не курю уже десять лет.

@@ -14,21 +14,29 @@ words:
     article: η
     ru: ночь
     pos: noun
+    example: Η νύχτα είναι ήσυχη.
+    exampleRu: Ночь тихая.
 
   - el: πρωί
     article: το
     ru: утро, утром
     pos: noun
+    example: Το πρωί πίνω καφέ.
+    exampleRu: Утром я пью кофе.
 
   - el: μεσημέρι
     article: το
     ru: полдень
     pos: noun
+    example: Τρώμε στη μία το μεσημέρι.
+    exampleRu: Мы обедаем в час дня.
 
   - el: απόγευμα
     article: το
     ru: послеобеденное время
     pos: noun
+    example: Το απόγευμα διαβάζω ελληνικά.
+    exampleRu: После обеда я занимаюсь греческим.
 
   - el: βράδυ
     article: το
@@ -38,16 +46,22 @@ words:
     note: склоняется нерегулярно
     forms:
       plural: βράδια
+    example: Το βράδυ βλέπουμε τηλεόραση.
+    exampleRu: Вечером мы смотрим телевизор.
 
   - el: εβδομάδα
     article: η
     ru: неделя
     pos: noun
+    example: Η εβδομάδα έχει επτά μέρες.
+    exampleRu: В неделе семь дней.
 
   - el: λεπτό
     article: το
     ru: минута
     pos: noun
+    example: Περίμενε ένα λεπτό.
+    exampleRu: Подожди минуту.
 
   - el: ώρα
     article: η
@@ -55,46 +69,64 @@ words:
     pos: noun
     cases:
       gen: [~, των ωρών]
+    example: Τι ώρα είναι;
+    exampleRu: Который час?
 
   - el: καιρός
     article: ο
     ru: время, погода
     pos: noun
+    example: Δεν έχω καιρό για καφέ.
+    exampleRu: У меня нет времени на кофе.
 
   - el: χειμώνας
     article: ο
     ru: зима
     pos: noun
+    example: Τον χειμώνα κάνει κρύο.
+    exampleRu: Зимой холодно.
 
   - el: φθινόπωρο
     article: το
     ru: осень
     pos: noun
+    example: Το φθινόπωρο βρέχει συχνά.
+    exampleRu: Осенью часто идёт дождь.
 
   - el: καλοκαίρι
     article: το
     ru: лето
     pos: noun
+    example: Το καλοκαίρι πάμε στη θάλασσα.
+    exampleRu: Летом мы едем на море.
 
   - el: Σαββατοκύριακο
     article: το
     ru: выходные, суббота и воскресенье
     pos: noun
+    example: Το Σαββατοκύριακο μένω σπίτι.
+    exampleRu: На выходных я остаюсь дома.
 
   - el: αργία
     article: η
     ru: выходной день
     pos: noun
+    example: Η Δευτέρα είναι αργία.
+    exampleRu: Понедельник — выходной день.
 
   - el: γιορτή
     article: η
     ru: праздник
     pos: noun
+    example: Σήμερα έχουμε γιορτή στο σχολείο.
+    exampleRu: Сегодня у нас праздник в школе.
 
   - el: διάλειμμα
     article: το
     ru: перерыв
     pos: noun
+    example: Κάνουμε ένα μικρό διάλειμμα.
+    exampleRu: Делаем небольшой перерыв.
 
   - el: σειρά
     article: η
@@ -102,6 +134,8 @@ words:
     pos: noun
     cases:
       gen: [~, των σειρών]
+    example: Περιμένω τη σειρά μου.
+    exampleRu: Я жду своей очереди.
 
   - el: φορά
     article: η
@@ -109,99 +143,147 @@ words:
     pos: noun
     cases:
       gen: [~, των φορών]
+    example: Είναι η πρώτη φορά που έρχομαι εδώ.
+    exampleRu: Я здесь впервые.
 
   - el: τέλος
     article: το
     ru: конец
     pos: noun
+    example: Στο τέλος του μήνα φεύγω.
+    exampleRu: В конце месяца я уезжаю.
 
   - el: σήμερα
     ru: сегодня
     pos: adv
+    example: Σήμερα δεν δουλεύω.
+    exampleRu: Сегодня я не работаю.
 
   - el: αύριο
     ru: завтра
     pos: adv
+    example: Αύριο έχω μάθημα ελληνικών.
+    exampleRu: Завтра у меня урок греческого.
 
   - el: χτες
     ru: вчера
     pos: adv
     note: вариант написания — χθες
+    example: Χτες ήμουν στη θάλασσα.
+    exampleRu: Вчера я был на море.
 
   - el: τώρα
     ru: сейчас
     pos: adv
+    example: Τώρα δεν μπορώ, συγγνώμη.
+    exampleRu: Сейчас не могу, извини.
 
   - el: μετά
     ru: после
     pos: adv
+    example: Μετά το φαγητό πίνουμε καφέ.
+    exampleRu: После еды мы пьём кофе.
 
   - el: πάλι
     ru: снова
     pos: adv
+    example: Πάλι ξέχασα το κλειδί.
+    exampleRu: Я снова забыл ключ.
 
   - el: αργά
     ru: медленно, поздно
     pos: adv
+    example: Ήρθα αργά στη δουλειά.
+    exampleRu: Я поздно пришёл на работу.
 
   - el: αργότερα
     ru: позже
     pos: adv
+    example: Θα σε πάρω τηλέφωνο αργότερα.
+    exampleRu: Я позвоню тебе позже.
 
   - el: νωρίς
     ru: рано
     pos: adv
+    example: Ξυπνάω νωρίς κάθε μέρα.
+    exampleRu: Я встаю рано каждый день.
 
   - el: αμέσως
     ru: немедленно
     pos: adv
+    example: Έλα αμέσως εδώ!
+    exampleRu: Иди сюда немедленно!
 
   - el: ακόμα
     ru: ещё
     pos: adv
     note: вариант написания — ακόμη
+    example: Δεν είμαι ακόμα έτοιμος.
+    exampleRu: Я ещё не готов.
 
   - el: φέτος
     ru: в этом году
     pos: adv
+    example: Φέτος μαθαίνω ελληνικά.
+    exampleRu: В этом году я учу греческий.
 
   - el: συνήθως
     ru: обычно
     pos: adv
+    example: Συνήθως τρώω στο σπίτι.
+    exampleRu: Обычно я ем дома.
 
   - el: συνέχεια
     ru: постоянно
     pos: adv
     note: наречие; как существительное η συνέχεια — «продолжение»
+    example: Μιλάει συνέχεια στο τηλέφωνο.
+    exampleRu: Он постоянно говорит по телефону.
 
   - el: πότε
     ru: когда?
     pos: adv
+    example: Πότε έρχεσαι;
+    exampleRu: Когда ты придёшь?
 
   - el: καθημερινός
     ru: ежедневный, будний
     pos: adj
+    example: Η καθημερινή ζωή εδώ είναι ήρεμη.
+    exampleRu: Повседневная жизнь здесь спокойная.
 
   - el: ημερήσιος
     ru: ежедневный
     pos: adj
+    example: Το ημερήσιο εισιτήριο κοστίζει πέντε ευρώ.
+    exampleRu: Дневной билет стоит пять евро.
 
   - el: μέχρι
     ru: до, вплоть до (предлог)
     pos: prep
+    example: Δουλεύω μέχρι τις πέντε.
+    exampleRu: Я работаю до пяти.
 
   - el: πρωί-πρωί
     ru: рано утром
     pos: phrase
+    example: Ξύπνησα πρωί-πρωί σήμερα.
+    exampleRu: Сегодня я встал рано утром.
 
   - el: μέρα-νύχτα
     ru: днём и ночью
     pos: phrase
+    example: Δουλεύει μέρα-νύχτα.
+    exampleRu: Он работает днём и ночью.
 
   - el: μία φορά την εβδομάδα
     ru: раз в неделю
     pos: phrase
+    example: Πάω στο γυμναστήριο μία φορά την εβδομάδα.
+    exampleRu: Я хожу в спортзал раз в неделю.
 
   - el: από Δευτέρα
     ru: с понедельника
     pos: phrase
+    example: Από Δευτέρα ξεκινάω δουλειά.
+    exampleRu: С понедельника я начинаю работу.

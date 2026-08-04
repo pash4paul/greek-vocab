@@ -8,48 +8,66 @@ words:
     pos: noun
     irregular: true
     note: заимствование, не склоняется
+    example: Το χόμπι μου είναι η μουσική.
+    exampleRu: Моё хобби — музыка.
 
   - el: μουσική
     article: η
     ru: музыка
     pos: noun
+    example: Η μουσική είναι πολύ δυνατή.
+    exampleRu: Музыка очень громкая.
 
   - el: κιθάρα
     article: η
     ru: гитара
     pos: noun
+    example: Παίζω κιθάρα από μικρός.
+    exampleRu: Я играю на гитаре с детства.
 
   - el: βιολί
     article: το
     ru: скрипка
     pos: noun
+    example: Το βιολί είναι δύσκολο όργανο.
+    exampleRu: Скрипка — трудный инструмент.
 
   - el: πιάνο
     article: το
     ru: пианино
     pos: noun
+    example: Η κόρη μου μαθαίνει πιάνο.
+    exampleRu: Моя дочь учится играть на пианино.
 
   - el: τζαζ
     article: η
     ru: джаз
     pos: noun
     irregular: true
+    example: Μου αρέσει η τζαζ.
+    exampleRu: Мне нравится джаз.
 
   - el: ροκ
     article: το
     ru: рок
     pos: noun
     irregular: true
+    example: Ακούει ροκ μουσική.
+    exampleRu: Он слушает рок.
 
   - el: τραγούδι
     article: το
     ru: песня
     pos: noun
+    example: Αυτό το τραγούδι είναι παλιό.
+    exampleRu: Эта песня старая.
 
   - el: χορός
     article: ο
     ru: танец
     pos: noun
+    example: Ο ελληνικός χορός είναι ζωηρός.
+    exampleRu: Греческий танец живой.
 
   - el: ποίηση
     article: η
@@ -62,22 +80,30 @@ words:
       acc: [~, τις ποιήσεις]
     forms:
       plural: ποιήσεις
+    example: Διαβάζω ελληνική ποίηση.
+    exampleRu: Я читаю греческую поэзию.
 
   - el: ταινία
     article: η
     ru: фильм, кинолента
     pos: noun
+    example: Η ταινία αρχίζει στις εννιά.
+    exampleRu: Фильм начинается в девять.
 
   - el: σινεμά
     article: το
     ru: кино
     pos: noun
     irregular: true
+    example: Πάμε σινεμά το Σάββατο;
+    exampleRu: Пойдём в кино в субботу?
 
   - el: κινηματογράφος
     article: ο
     ru: кинематограф
     pos: noun
+    example: Ο ελληνικός κινηματογράφος έχει ιστορία.
+    exampleRu: У греческого кино есть история.
 
   - el: έκθεση
     article: η
@@ -90,156 +116,214 @@ words:
       acc: [~, τις εκθέσεις]
     forms:
       plural: εκθέσεις
+    example: Η έκθεση είναι στο μουσείο.
+    exampleRu: Выставка в музее.
 
   - el: ραντεβού
     article: το
     ru: свидание, встреча
     pos: noun
     irregular: true
+    example: Έχω ραντεβού στις πέντε.
+    exampleRu: У меня встреча в пять.
 
   - el: βόλτα
     article: η
     ru: прогулка
     pos: noun
+    example: Πάμε μια βόλτα στην παραλία.
+    exampleRu: Пойдём прогуляемся по пляжу.
 
   - el: περίπατος
     article: ο
     ru: прогулка пешком
     pos: noun
+    example: Ο περίπατος στο πάρκο κάνει καλό.
+    exampleRu: Прогулка в парке полезна.
 
   - el: περπάτημα
     article: το
     ru: пешая прогулка
     pos: noun
+    example: Το περπάτημα είναι καλή γυμναστική.
+    exampleRu: Ходьба — хорошая гимнастика.
 
   - el: εκδρομή
     article: η
     ru: экскурсия
     pos: noun
+    example: Η εκδρομή είναι την Κυριακή.
+    exampleRu: Экскурсия в воскресенье.
 
   - el: πεζοπορία
     article: η
     ru: поход
     pos: noun
+    example: Η πεζοπορία στα βουνά είναι ωραία.
+    exampleRu: Походы в горах — это здорово.
 
   - el: ιππασία
     article: η
     ru: верховая езда
     pos: noun
+    example: Κάνω ιππασία κάθε Σάββατο.
+    exampleRu: Я катаюсь на лошади каждую субботу.
 
   - el: κολύμπι
     article: το
     ru: плавание
     pos: noun
+    example: Το κολύμπι είναι το αγαπημένο μου σπορ.
+    exampleRu: Плавание — мой любимый спорт.
 
   - el: ηλιοθεραπεία
     article: η
     ru: солнечные ванны
     pos: noun
+    example: Κάνω ηλιοθεραπεία στην παραλία.
+    exampleRu: Я загораю на пляже.
 
   - el: ψάρεμα
     article: το
     ru: рыбалка
     pos: noun
+    example: Πάω για ψάρεμα το πρωί.
+    exampleRu: Утром я иду на рыбалку.
 
   - el: αγώνας
     article: ο
     ru: борьба, состязание
     pos: noun
+    example: Ο αγώνας αρχίζει στις οκτώ.
+    exampleRu: Матч начинается в восемь.
 
   - el: σπορ
     article: το
     ru: спорт
     pos: noun
     irregular: true
+    example: Ποιο σπορ σου αρέσει;
+    exampleRu: Какой спорт тебе нравится?
 
   - el: γυμναστική
     article: η
     ru: гимнастика, физкультура
     pos: noun
+    example: Κάνω γυμναστική κάθε πρωί.
+    exampleRu: Я делаю зарядку каждое утро.
 
   - el: ποδόσφαιρο
     article: το
     ru: футбол
     pos: noun
+    example: Τα παιδιά παίζουν ποδόσφαιρο.
+    exampleRu: Дети играют в футбол.
 
   - el: μπάσκετ
     article: το
     ru: баскетбол
     pos: noun
     irregular: true
+    example: Παίζω μπάσκετ με τους φίλους μου.
+    exampleRu: Я играю в баскетбол с друзьями.
 
   - el: βόλεϊ
     article: το
     ru: волейбол
     pos: noun
     irregular: true
+    example: Το βόλεϊ παίζεται στην παραλία.
+    exampleRu: В волейбол играют на пляже.
 
   - el: τένις
     article: το
     ru: теннис
     pos: noun
     irregular: true
+    example: Παίζει τένις πολύ καλά.
+    exampleRu: Он очень хорошо играет в теннис.
 
   - el: σκάκι
     article: το
     ru: шахматы
     pos: noun
+    example: Ο παππούς παίζει σκάκι.
+    exampleRu: Дедушка играет в шахматы.
 
   - el: τάβλι
     article: το
     ru: нарды
     pos: noun
+    example: Παίζουν τάβλι στο καφενείο.
+    exampleRu: В кофейне играют в нарды.
 
   - el: μπριτζ
     article: το
     ru: бридж
     pos: noun
     irregular: true
+    example: Το μπριτζ είναι δύσκολο παιχνίδι.
+    exampleRu: Бридж — сложная игра.
 
   - el: παιχνίδι
     article: το
     ru: игра
     pos: noun
+    example: Το παιχνίδι τελείωσε.
+    exampleRu: Игра закончилась.
 
   - el: σέρφινγκ
     article: το
     ru: сёрфинг
     pos: noun
     irregular: true
+    example: Κάνει σέρφινγκ στην Κρήτη.
+    exampleRu: Он занимается сёрфингом на Крите.
 
   - el: ράφτινγκ
     article: το
     ru: рафтинг
     pos: noun
     irregular: true
+    example: Πήγαμε ράφτινγκ στο ποτάμι.
+    exampleRu: Мы ходили на рафтинг по реке.
 
   - el: καγιάκ
     article: το
     ru: каяк
     pos: noun
     irregular: true
+    example: Κάνουμε καγιάκ στη θάλασσα.
+    exampleRu: Мы катаемся на каяке по морю.
 
   - el: ιστιοπλοΐα
     article: η
     ru: парусный спорт, яхтинг
     pos: noun
+    example: Η ιστιοπλοΐα θέλει αέρα.
+    exampleRu: Парусному спорту нужен ветер.
 
   - el: μοτοκρός
     article: το
     ru: мотокросс
     pos: noun
     irregular: true
+    example: Το μοτοκρός είναι επικίνδυνο.
+    exampleRu: Мотокросс опасен.
 
   - el: μόδα
     article: η
     ru: мода
     pos: noun
+    example: Αυτά τα ρούχα είναι μόδα φέτος.
+    exampleRu: Эта одежда в моде в этом году.
 
   - el: τίτλος
     article: ο
     ru: название, заглавие
     pos: noun
+    example: Ποιος είναι ο τίτλος της ταινίας;
+    exampleRu: Как называется фильм?
 
   - el: παίζω
     ru: играть
@@ -250,39 +334,59 @@ words:
   - el: γυρίζω
     ru: возвращаться, поворачивать
     pos: verb
+    example: Γυρίζω σπίτι στις έξι.
+    exampleRu: Я возвращаюсь домой в шесть.
 
   - el: φεύγω
     ru: уходить, уезжать
     pos: verb
+    example: Φεύγω αύριο για την Ελλάδα.
+    exampleRu: Завтра я уезжаю в Грецию.
 
   - el: περιμένω
     ru: ждать
     pos: verb
+    example: Περιμένω το λεωφορείο.
+    exampleRu: Я жду автобус.
 
   - el: προτιμάω
     ru: предпочитать
     pos: verb
+    example: Προτιμάω τσάι από καφέ.
+    exampleRu: Я предпочитаю чай кофе.
 
   - el: μου αρέσει
     ru: мне нравится
     pos: phrase
+    example: Μου αρέσει πολύ αυτό το τραγούδι.
+    exampleRu: Мне очень нравится эта песня.
 
   - el: κάνω μπάνιο
     ru: купаться
     pos: phrase
+    example: Κάνω μπάνιο κάθε βράδυ.
+    exampleRu: Я купаюсь каждый вечер.
 
   - el: κάνω πεζοπορία
     ru: ходить в поход
     pos: phrase
+    example: Κάνω πεζοπορία στα βουνά.
+    exampleRu: Я хожу в походы в горы.
 
   - el: πάω εκδρομή
     ru: ездить на экскурсию
     pos: phrase
+    example: Πάω εκδρομή στους Δελφούς.
+    exampleRu: Я езжу на экскурсию в Дельфы.
 
   - el: πάω περίπατο
     ru: идти на прогулку
     pos: phrase
+    example: Πάω περίπατο στο πάρκο.
+    exampleRu: Я иду на прогулку в парк.
 
   - el: βλέπω τηλεόραση
     ru: смотреть телевизор
     pos: phrase
+    example: Βλέπω τηλεόραση μόνο τα Σαββατοκύριακα.
+    exampleRu: Я смотрю телевизор только по выходным.

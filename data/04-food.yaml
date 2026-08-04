@@ -36,6 +36,8 @@ words:
     note: во множественном числе γάλατα — окончание нерегулярное
     forms:
       plural: γάλατα
+    example: Θέλω ένα ποτήρι γάλα.
+    exampleRu: Я хочу стакан молока.
 
   - el: κρασί
     article: το
@@ -48,16 +50,22 @@ words:
     article: το
     ru: сыр
     pos: noun
+    example: Μου αρέσει το ελληνικό τυρί.
+    exampleRu: Мне нравится греческий сыр.
 
   - el: αυγό
     article: το
     ru: яйцо
     pos: noun
+    example: Τρώω ένα αυγό για πρωινό.
+    exampleRu: Я ем яйцо на завтрак.
 
   - el: φρούτο
     article: το
     ru: фрукт
     pos: noun
+    example: Το μήλο είναι φρούτο.
+    exampleRu: Яблоко — фрукт.
 
   - el: μήλο
     article: το
@@ -70,6 +78,8 @@ words:
     article: το
     ru: апельсин
     pos: noun
+    example: Το πορτοκάλι είναι γλυκό.
+    exampleRu: Апельсин сладкий.
 
   - el: σαλάτα
     article: η
@@ -91,6 +101,8 @@ words:
     article: το
     ru: стакан
     pos: noun
+    example: Θέλω ένα ποτήρι νερό.
+    exampleRu: Я хочу стакан воды.
 
   - el: εστιατόριο
     article: το
@@ -109,6 +121,8 @@ words:
   - el: νόστιμος
     ru: вкусный
     pos: adj
+    example: Το φαγητό είναι πολύ νόστιμο.
+    exampleRu: Еда очень вкусная.
 
   - el: φρέσκος
     ru: свежий
@@ -117,14 +131,20 @@ words:
     note: женский род φρέσκια, а не φρέσκη — как у γλυκός → γλυκιά
     forms:
       gender: [φρέσκος, φρέσκια, φρέσκο]
+    example: Το ψωμί είναι φρέσκο.
+    exampleRu: Хлеб свежий.
 
   - el: ζεστός
     ru: горячий, тёплый
     pos: adj
+    example: Ο καφές είναι πολύ ζεστός.
+    exampleRu: Кофе очень горячий.
 
   - el: κρύος
     ru: холодный
     pos: adj
+    example: Το νερό είναι κρύο.
+    exampleRu: Вода холодная.
 
   - el: παραγγέλνω
     ru: заказывать

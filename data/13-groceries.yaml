@@ -9,67 +9,93 @@ words:
     cases:
       nom: [~, οι ζάχαρες]
       acc: [~, τις ζάχαρες]
+    example: Πίνω τον καφέ χωρίς ζάχαρη.
+    exampleRu: Я пью кофе без сахара.
 
   - el: αλάτι
     article: το
     ru: соль
     pos: noun
+    example: Το φαγητό θέλει αλάτι.
+    exampleRu: Еде не хватает соли.
 
   - el: αλεύρι
     article: το
     ru: мука
     pos: noun
+    example: Το ψωμί θέλει αλεύρι και νερό.
+    exampleRu: Хлебу нужны мука и вода.
 
   - el: πιπέρι
     article: το
     ru: перец (специя)
     pos: noun
+    example: Βάλε λίγο πιπέρι στο κρέας.
+    exampleRu: Добавь немного перца в мясо.
 
   - el: λάδι
     article: το
     ru: растительное масло
     pos: noun
+    example: Το ελληνικό λάδι είναι εξαιρετικό.
+    exampleRu: Греческое масло превосходное.
 
   - el: βούτυρο
     article: το
     ru: сливочное масло
     pos: noun
+    example: Βάζω βούτυρο στο ψωμί.
+    exampleRu: Я мажу хлеб маслом.
 
   - el: μέλι
     article: το
     ru: мёд
     pos: noun
+    example: Το μέλι είναι πιο γλυκό από τη ζάχαρη.
+    exampleRu: Мёд слаще сахара.
 
   - el: ξίδι
     article: το
     ru: уксус
     pos: noun
+    example: Βάζω ξίδι στη σαλάτα.
+    exampleRu: Я добавляю в салат уксус.
 
   - el: ρύζι
     article: το
     ru: рис
     pos: noun
+    example: Το ρύζι βράζει δέκα λεπτά.
+    exampleRu: Рис варится десять минут.
 
   - el: μακαρόνι
     article: το
     ru: макаронина
     pos: noun
     note: обычно во мн. ч. — τα μακαρόνια
+    example: Τα μακαρόνια είναι έτοιμα.
+    exampleRu: Макароны готовы.
 
   - el: ζυμαρικό
     article: το
     ru: макаронные изделия
     pos: noun
+    example: Τα ζυμαρικά είναι φθηνό φαγητό.
+    exampleRu: Макаронные изделия — дешёвая еда.
 
   - el: γιαούρτι
     article: το
     ru: йогурт
     pos: noun
+    example: Τρώω γιαούρτι με μέλι.
+    exampleRu: Я ем йогурт с мёдом.
 
   - el: γραβιέρα
     article: η
     ru: гравьера (греческий твёрдый сыр)
     pos: noun
+    example: Η γραβιέρα είναι σκληρό τυρί.
+    exampleRu: Гравьера — твёрдый сыр.
 
   - el: ζαμπόν
     article: το
@@ -77,36 +103,50 @@ words:
     pos: noun
     irregular: true
     note: заимствование, не склоняется
+    example: Το τοστ έχει ζαμπόν και τυρί.
+    exampleRu: В тосте ветчина и сыр.
 
   - el: λουκάνικο
     article: το
     ru: сосиска
     pos: noun
+    example: Το λουκάνικο ψήνεται γρήγορα.
+    exampleRu: Сосиска жарится быстро.
 
   - el: σαλάμι
     article: το
     ru: колбаса
     pos: noun
+    example: Θέλω δέκα φέτες σαλάμι.
+    exampleRu: Мне десять ломтиков колбасы.
 
   - el: αλλαντικό
     article: το
     ru: колбасные изделия
     pos: noun
+    example: Τα αλλαντικά είναι στο ψυγείο.
+    exampleRu: Колбасы в холодильнике.
 
   - el: γαλακτοκομικό
     article: το
     ru: молочная продукция
     pos: noun
+    example: Τα γαλακτοκομικά είναι φρέσκα.
+    exampleRu: Молочные продукты свежие.
 
   - el: μπισκότο
     article: το
     ru: печенье
     pos: noun
+    example: Τα παιδιά τρώνε μπισκότα.
+    exampleRu: Дети едят печенье.
 
   - el: παξιμάδι
     article: το
     ru: сухарь
     pos: noun
+    example: Το παξιμάδι είναι πολύ σκληρό.
+    exampleRu: Сухарь очень твёрдый.
 
   - el: φρυγανιά
     article: η
@@ -114,112 +154,156 @@ words:
     pos: noun
     cases:
       gen: [~, των φρυγανιών]
+    example: Τρώω φρυγανιές για πρωινό.
+    exampleRu: На завтрак я ем сухарики.
 
   - el: τοστ
     article: το
     ru: тост, гренка
     pos: noun
     irregular: true
+    example: Το τοστ είναι ζεστό.
+    exampleRu: Тост горячий.
 
   - el: κουλουράκι
     article: το
     ru: бублик
     pos: noun
+    example: Τρώω ένα κουλουράκι με τον καφέ.
+    exampleRu: Я ем бублик с кофе.
 
   - el: φρατζόλα
     article: η
     ru: буханка
     pos: noun
+    example: Αγόρασα μια φρατζόλα ψωμί.
+    exampleRu: Я купил буханку хлеба.
 
   - el: τυρόπιτα
     article: η
     ru: тиропита, пирог с фетой
     pos: noun
+    example: Η τυρόπιτα είναι ζεστή.
+    exampleRu: Тиропита горячая.
 
   - el: μουσακάς
     article: ο
     ru: мусака
     pos: noun
+    example: Ο μουσακάς είναι το αγαπημένο μου φαγητό.
+    exampleRu: Мусака — моя любимая еда.
 
   - el: ομελέτα
     article: η
     ru: омлет
     pos: noun
+    example: Φτιάχνω ομελέτα με τρία αυγά.
+    exampleRu: Я делаю омлет из трёх яиц.
 
   - el: δημητριακό
     article: το
     ru: злак
     pos: noun
+    example: Τρώω δημητριακά με γάλα.
+    exampleRu: Я ем хлопья с молоком.
 
   - el: σοκολάτα
     article: η
     ru: шоколадка
     pos: noun
+    example: Η σοκολάτα λιώνει στον ήλιο.
+    exampleRu: Шоколад тает на солнце.
 
   - el: καραμέλα
     article: η
     ru: карамель
     pos: noun
+    example: Το παιδί θέλει μια καραμέλα.
+    exampleRu: Ребёнок хочет карамельку.
 
   - el: τσίχλα
     article: η
     ru: жвачка
     pos: noun
+    example: Μασάει τσίχλα όλη μέρα.
+    exampleRu: Он весь день жуёт жвачку.
 
   - el: παγωτό
     article: το
     ru: мороженое
     pos: noun
+    example: Το καλοκαίρι τρώω παγωτό.
+    exampleRu: Летом я ем мороженое.
 
   - el: γλυκό
     article: το
     ru: сладость
     pos: noun
+    example: Μετά το φαγητό θέλω ένα γλυκό.
+    exampleRu: После еды я хочу чего-нибудь сладкого.
 
   - el: μαρμελάδα
     article: η
     ru: мармелад, джем
     pos: noun
+    example: Βάζω μαρμελάδα στη φρυγανιά.
+    exampleRu: Я мажу сухарик джемом.
 
   - el: κονσέρβα
     article: η
     ru: консерва
     pos: noun
+    example: Η κονσέρβα κρατάει χρόνια.
+    exampleRu: Консерва хранится годами.
 
   - el: μπίρα
     article: η
     ru: пиво
     pos: noun
+    example: Θέλω μια κρύα μπίρα.
+    exampleRu: Я хочу холодного пива.
 
   - el: ποτό
     article: το
     ru: алкогольный напиток
     pos: noun
+    example: Τι ποτό θέλεις;
+    exampleRu: Что будешь пить?
 
   - el: αναψυκτικό
     article: το
     ru: прохладительный напиток
     pos: noun
+    example: Παίρνω ένα αναψυκτικό.
+    exampleRu: Я беру прохладительный напиток.
 
   - el: πορτοκαλάδα
     article: η
     ru: апельсиновый сок
     pos: noun
+    example: Η πορτοκαλάδα είναι φυσική.
+    exampleRu: Апельсиновый сок натуральный.
 
   - el: χυμός
     article: ο
     ru: сок
     pos: noun
+    example: Πίνω χυμό το πρωί.
+    exampleRu: Утром я пью сок.
 
   - el: σόδα
     article: η
     ru: содовая
     pos: noun
+    example: Θέλω ουίσκι με σόδα.
+    exampleRu: Я хочу виски с содовой.
 
   - el: τσάι
     article: το
     ru: чай
     pos: noun
+    example: Πίνω τσάι με λεμόνι.
+    exampleRu: Я пью чай с лимоном.
 
   - el: φαγητό
     article: το
@@ -227,20 +311,28 @@ words:
     pos: noun
 
   # ─── Море и рыба ───────────────────────────────────────────
+    example: Το φαγητό είναι στο τραπέζι.
+    exampleRu: Еда на столе.
   - el: ψάρι
     article: το
     ru: рыба
     pos: noun
+    example: Το ψάρι είναι φρέσκο.
+    exampleRu: Рыба свежая.
 
   - el: γαρίδα
     article: η
     ru: креветка
     pos: noun
+    example: Οι γαρίδες είναι ακριβές.
+    exampleRu: Креветки дорогие.
 
   - el: χταπόδι
     article: το
     ru: осьминог
     pos: noun
+    example: Το χταπόδι είναι νόστιμο με ξίδι.
+    exampleRu: Осьминог вкусен с уксусом.
 
   - el: θαλασσινό
     article: το
@@ -248,47 +340,65 @@ words:
     pos: noun
 
   # ─── Хозтовары ─────────────────────────────────────────────
+    example: Στην ταβέρνα τρώμε θαλασσινά.
+    exampleRu: В таверне мы едим морепродукты.
   - el: σαπούνι
     article: το
     ru: мыло
     pos: noun
+    example: Το σαπούνι είναι στο μπάνιο.
+    exampleRu: Мыло в ванной.
 
   - el: σαμπουάν
     article: το
     ru: шампунь
     pos: noun
     irregular: true
+    example: Τελείωσε το σαμπουάν.
+    exampleRu: Шампунь закончился.
 
   - el: οδοντόβουρτσα
     article: η
     ru: зубная щётка
     pos: noun
+    example: Πήρα νέα οδοντόβουρτσα.
+    exampleRu: Я купил новую зубную щётку.
 
   - el: οδοντόκρεμα
     article: η
     ru: зубная паста
     pos: noun
+    example: Αγόρασε οδοντόκρεμα από το φαρμακείο.
+    exampleRu: Купи зубную пасту в аптеке.
 
   - el: απορρυπαντικό
     article: το
     ru: моющее средство
     pos: noun
+    example: Το απορρυπαντικό είναι κάτω από τον νεροχύτη.
+    exampleRu: Моющее средство под раковиной.
 
   - el: χαρτί υγείας
     article: το
     ru: туалетная бумага
     pos: noun
     irregular: true
+    example: Πάρε και χαρτί υγείας.
+    exampleRu: Возьми ещё туалетную бумагу.
 
   - el: χαρτομάντιλο
     article: το
     ru: салфетка
     pos: noun
+    example: Έχεις ένα χαρτομάντιλο;
+    exampleRu: У тебя есть салфетка?
 
   - el: τσιγάρο
     article: το
     ru: сигарета
     pos: noun
+    example: Δεν θέλω τσιγάρο, ευχαριστώ.
+    exampleRu: Сигарету не хочу, спасибо.
 
   - el: ασπιρίνη
     article: η
@@ -297,21 +407,29 @@ words:
     cases:
       nom: [~, οι ασπιρίνες]
       acc: [~, τις ασπιρίνες]
+    example: Πάρε μια ασπιρίνη για τον πονοκέφαλο.
+    exampleRu: Прими аспирин от головной боли.
 
   - el: δίαιτα
     article: η
     ru: диета
     pos: noun
+    example: Κάνω δίαιτα από τη Δευτέρα.
+    exampleRu: Я на диете с понедельника.
 
   - el: υγεία
     article: η
     ru: здоровье
     pos: noun
+    example: Η υγεία είναι το πιο σημαντικό.
+    exampleRu: Здоровье — самое главное.
 
   - el: βάρος
     article: το
     ru: вес, тяжесть
     pos: noun
+    example: Έχασα βάρος με τη δίαιτα.
+    exampleRu: Я похудел на диете.
 
   - el: μαγειρεύω
     ru: готовить (еду)
@@ -323,3 +441,5 @@ words:
     article: η
     ru: кулинария
     pos: noun
+    example: Μου αρέσει η ελληνική μαγειρική.
+    exampleRu: Мне нравится греческая кухня.

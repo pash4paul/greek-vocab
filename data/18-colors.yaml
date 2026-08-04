@@ -12,26 +12,38 @@ words:
     ru: белый (книжное)
     pos: adj
     note: более книжный синоним άσπρος
+    example: Φοράει ένα λευκό πουκάμισο.
+    exampleRu: Он в белой рубашке.
 
   - el: μαύρος
     ru: чёрный
     pos: adj
+    example: Ο καφές μου είναι μαύρος.
+    exampleRu: Мой кофе чёрный.
 
   - el: κόκκινος
     ru: красный
     pos: adj
+    example: Το κρασί είναι κόκκινο.
+    exampleRu: Вино красное.
 
   - el: κίτρινος
     ru: жёлтый
     pos: adj
+    example: Το λεμόνι είναι κίτρινο.
+    exampleRu: Лимон жёлтый.
 
   - el: πράσινος
     ru: зелёный
     pos: adj
+    example: Τα φύλλα είναι πράσινα.
+    exampleRu: Листья зелёные.
 
   - el: γαλάζιος
     ru: голубой
     pos: adj
+    example: Ο ουρανός είναι γαλάζιος.
+    exampleRu: Небо голубое.
 
   - el: γκρίζος
     ru: серый
@@ -40,6 +52,8 @@ words:
     note: женский род γκρίζα, а не «γκρίζη»
     forms:
       gender: [γκρίζος, γκρίζα, γκρίζο]
+    example: Φοράει ένα γκρίζο παλτό.
+    exampleRu: Он в сером пальто.
 
   - el: πορτοκαλής
     ru: оранжевый
@@ -50,50 +64,68 @@ words:
       gender: [πορτοκαλής, πορτοκαλιά, πορτοκαλί]
 
   # ─── Несклоняемые заимствования ────────────────────────────
+    example: Έχει μια πορτοκαλί τσάντα.
+    exampleRu: У неё оранжевая сумка.
   - el: καφέ
     ru: коричневый
     pos: adj
     irregular: true
     note: не склоняется, форма одна для всех родов
+    example: Τα μάτια της είναι καφέ.
+    exampleRu: У неё карие глаза.
 
   - el: μπλε
     ru: синий
     pos: adj
     irregular: true
     note: не склоняется
+    example: Η θάλασσα είναι μπλε.
+    exampleRu: Море синее.
 
   - el: μοβ
     ru: фиолетовый
     pos: adj
     irregular: true
     note: не склоняется
+    example: Το φόρεμα είναι μοβ.
+    exampleRu: Платье фиолетовое.
 
   - el: μπεζ
     ru: бежевый
     pos: adj
     irregular: true
     note: не склоняется
+    example: Οι τοίχοι είναι μπεζ.
+    exampleRu: Стены бежевые.
 
   - el: ροζ
     ru: розовый
     pos: adj
     irregular: true
     note: не склоняется
+    example: Το λουλούδι είναι ροζ.
+    exampleRu: Цветок розовый.
 
   - el: μπορντό
     ru: бордовый
     pos: adj
     irregular: true
     note: не склоняется
+    example: Το κρασί έχει μπορντό χρώμα.
+    exampleRu: У вина бордовый цвет.
 
   - el: τιρκουάζ
     ru: бирюзовый
     pos: adj
     irregular: true
     note: не склоняется
+    example: Το νερό είναι τιρκουάζ.
+    exampleRu: Вода бирюзовая.
 
   - el: φούξια
     ru: пурпурный, фуксия
     pos: adj
     irregular: true
     note: не склоняется
+    example: Της αρέσει το φούξια.
+    exampleRu: Ей нравится цвет фуксии.

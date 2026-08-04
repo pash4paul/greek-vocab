@@ -14,6 +14,8 @@ words:
       acc: [~, τα κρέατα]
     forms:
       plural: κρέατα
+    example: Το κρέας είναι στο ψυγείο.
+    exampleRu: Мясо в холодильнике.
 
   - el: κοτόπουλο
     article: το
@@ -26,54 +28,78 @@ words:
     article: η
     ru: индейка
     pos: noun
+    example: Η γαλοπούλα είναι για τα Χριστούγεννα.
+    exampleRu: Индейка — на Рождество.
 
   - el: αρνί
     article: το
     ru: баранина, ягнёнок
     pos: noun
+    example: Το αρνί ψήνεται στα κάρβουνα.
+    exampleRu: Барашка запекают на углях.
 
   - el: μοσχάρι
     article: το
     ru: говядина, телёнок
     pos: noun
+    example: Το μοσχάρι είναι πιο ακριβό από το χοιρινό.
+    exampleRu: Говядина дороже свинины.
 
   - el: χοιρινό
     article: το
     ru: свинина
     pos: noun
+    example: Το χοιρινό με πατάτες είναι νόστιμο.
+    exampleRu: Свинина с картошкой вкусная.
 
   - el: κιμάς
     article: ο
     ru: фарш
     pos: noun
+    example: Ο κιμάς είναι για τα μπιφτέκια.
+    exampleRu: Фарш — на котлеты.
 
   - el: μπριζόλα
     article: η
     ru: бризоль, стейк
     pos: noun
+    example: Θέλω μια μπριζόλα καλά ψημένη.
+    exampleRu: Я хочу хорошо прожаренный стейк.
 
   - el: μπιφτέκι
     article: το
     ru: котлета
     pos: noun
+    example: Το μπιφτέκι είναι έτοιμο.
+    exampleRu: Котлета готова.
 
   - el: φιλέτο
     article: το
     ru: филе
     pos: noun
+    example: Το φιλέτο είναι το πιο ακριβό κομμάτι.
+    exampleRu: Филе — самая дорогая часть.
 
   - el: μοσχαρίσιος
     ru: говяжий
     pos: adj
+    example: Θέλω μοσχαρίσιο κιμά.
+    exampleRu: Мне говяжий фарш.
 
   - el: χοιρινός
     ru: свиной
     pos: adj
+    example: Η χοιρινή μπριζόλα είναι φθηνή.
+    exampleRu: Свиной стейк дешёвый.
 
   - el: βραστός
     ru: варёный
     pos: adj
+    example: Θέλω βραστά λαχανικά.
+    exampleRu: Я хочу варёные овощи.
 
   - el: ψητός
     ru: жареный, запечённый
     pos: adj
+    example: Το ψητό κρέας μυρίζει ωραία.
+    exampleRu: Жареное мясо приятно пахнет.

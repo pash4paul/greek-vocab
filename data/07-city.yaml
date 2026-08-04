@@ -14,48 +14,66 @@ words:
       acc: [~, τις πόλεις]
     forms:
       plural: πόλεις
+    example: Η πόλη είναι μεγάλη και όμορφη.
+    exampleRu: Город большой и красивый.
 
   - el: χωριό
     article: το
     ru: деревня, село
     pos: noun
+    example: Οι γονείς μου μένουν σε ένα χωριό.
+    exampleRu: Мои родители живут в деревне.
 
   - el: οδός
     article: η
     ru: улица
     pos: noun
     note: женский род, хотя окончание -ος
+    example: Μένω στην οδό Ερμού.
+    exampleRu: Я живу на улице Эрму.
 
   - el: πλατεία
     article: η
     ru: площадь
     pos: noun
+    example: Η πλατεία είναι γεμάτη κόσμο.
+    exampleRu: Площадь полна людей.
 
   - el: λεωφόρος
     article: η
     ru: проспект
     pos: noun
     note: женский род, хотя окончание -ος
+    example: Περπατάμε στη λεωφόρο.
+    exampleRu: Мы идём по проспекту.
 
   - el: κέντρο
     article: το
     ru: центр
     pos: noun
+    example: Το κέντρο της πόλης είναι κοντά.
+    exampleRu: Центр города рядом.
 
   - el: προάστιο
     article: το
     ru: пригород
     pos: noun
+    example: Μένουμε σε ένα ήσυχο προάστιο.
+    exampleRu: Мы живём в тихом пригороде.
 
   - el: περιοχή
     article: η
     ru: район
     pos: noun
+    example: Η περιοχή είναι ήσυχη το βράδυ.
+    exampleRu: Район вечером тихий.
 
   - el: γειτονιά
     article: η
     ru: соседство, квартал
     pos: noun
+    example: Όλη η γειτονιά ξέρει τον κύριο Νίκο.
+    exampleRu: Весь квартал знает господина Никоса.
 
   - el: διεύθυνση
     article: η
@@ -68,21 +86,29 @@ words:
     forms:
       plural: διευθύνσεις
     irregular: true
+    example: Γράψε μου τη διεύθυνση του ξενοδοχείου.
+    exampleRu: Напиши мне адрес гостиницы.
 
   - el: αριθμός
     article: ο
     ru: число, номер
     pos: noun
+    example: Ποιος είναι ο αριθμός του σπιτιού;
+    exampleRu: Какой номер дома?
 
   - el: όροφος
     article: ο
     ru: этаж
     pos: noun
+    example: Μένω στον τρίτο όροφο.
+    exampleRu: Я живу на третьем этаже.
 
   - el: ισόγειο
     article: το
     ru: цокольный этаж
     pos: noun
+    example: Το μαγαζί είναι στο ισόγειο.
+    exampleRu: Магазин на первом этаже.
 
   - el: διαμέρισμα
     article: το
@@ -95,31 +121,43 @@ words:
     article: η
     ru: многоэтажный дом
     pos: noun
+    example: Η πολυκατοικία έχει έξι ορόφους.
+    exampleRu: В доме шесть этажей.
 
   - el: μονοκατοικία
     article: η
     ru: частный дом
     pos: noun
+    example: Θέλουμε μια μονοκατοικία με κήπο.
+    exampleRu: Мы хотим частный дом с садом.
 
   - el: ουρανοξύστης
     article: ο
     ru: небоскрёб
     pos: noun
+    example: Ο ουρανοξύστης είναι πολύ ψηλός.
+    exampleRu: Небоскрёб очень высокий.
 
   - el: κήπος
     article: ο
     ru: сад
     pos: noun
+    example: Ο κήπος έχει πολλά λουλούδια.
+    exampleRu: В саду много цветов.
 
   - el: αυλή
     article: η
     ru: двор
     pos: noun
+    example: Η αυλή του σπιτιού είναι μικρή.
+    exampleRu: Двор дома маленький.
 
   - el: πάρκο
     article: το
     ru: парк
     pos: noun
+    example: Πάμε βόλτα στο πάρκο.
+    exampleRu: Идём гулять в парк.
 
   - el: παιδική χαρά
     article: η
@@ -127,6 +165,8 @@ words:
     pos: noun
     irregular: true
     note: словосочетание, склоняются оба слова
+    example: Η παιδική χαρά είναι δίπλα στο πάρκο.
+    exampleRu: Детская площадка рядом с парком.
 
   - el: στάση
     article: η
@@ -139,21 +179,29 @@ words:
       acc: [~, τις στάσεις]
     forms:
       plural: στάσεις
+    example: Η στάση του λεωφορείου είναι εκεί.
+    exampleRu: Автобусная остановка вон там.
 
   - el: αστυνομία
     article: η
     ru: полиция
     pos: noun
+    example: Κάλεσε την αστυνομία!
+    exampleRu: Вызови полицию!
 
   - el: εκκλησία
     article: η
     ru: церковь
     pos: noun
+    example: Η εκκλησία είναι στην πλατεία.
+    exampleRu: Церковь на площади.
 
   - el: δημαρχείο
     article: το
     ru: мэрия
     pos: noun
+    example: Το δημαρχείο ανοίγει στις οκτώ.
+    exampleRu: Мэрия открывается в восемь.
 
   - el: βιβλιοθήκη
     article: η
@@ -162,82 +210,114 @@ words:
     cases:
       nom: [~, οι βιβλιοθήκες]
       acc: [~, τις βιβλιοθήκες]
+    example: Διαβάζω στη βιβλιοθήκη.
+    exampleRu: Я читаю в библиотеке.
 
   - el: μουσείο
     article: το
     ru: музей
     pos: noun
+    example: Το μουσείο είναι κλειστό τη Δευτέρα.
+    exampleRu: Музей закрыт в понедельник.
 
   - el: θέατρο
     article: το
     ru: театр
     pos: noun
+    example: Πάμε στο θέατρο το Σάββατο.
+    exampleRu: В субботу мы идём в театр.
 
   - el: νοσοκομείο
     article: το
     ru: больница
     pos: noun
+    example: Δουλεύει σε ένα μεγάλο νοσοκομείο.
+    exampleRu: Он работает в большой больнице.
 
   - el: ξενοδοχείο
     article: το
     ru: гостиница
     pos: noun
+    example: Μένουμε σε ένα ξενοδοχείο κοντά στη θάλασσα.
+    exampleRu: Мы живём в гостинице у моря.
 
   - el: ξενώνας
     article: ο
     ru: гостиница, общежитие
     pos: noun
+    example: Ο ξενώνας είναι πιο φθηνός από το ξενοδοχείο.
+    exampleRu: Хостел дешевле гостиницы.
 
   - el: λιμάνι
     article: το
     ru: порт
     pos: noun
+    example: Το πλοίο είναι στο λιμάνι.
+    exampleRu: Корабль в порту.
 
   - el: ταχυδρομείο
     article: το
     ru: почта
     pos: noun
+    example: Το ταχυδρομείο είναι δίπλα στην τράπεζα.
+    exampleRu: Почта рядом с банком.
 
   - el: γυμναστήριο
     article: το
     ru: спортивный зал
     pos: noun
+    example: Πάω στο γυμναστήριο κάθε Τρίτη.
+    exampleRu: Я хожу в спортзал каждый вторник.
 
   - el: καφετέρια
     article: η
     ru: кафе
     pos: noun
+    example: Καθόμαστε σε μια καφετέρια.
+    exampleRu: Мы сидим в кафе.
 
   - el: καφενείο
     article: το
     ru: кофейня
     pos: noun
+    example: Ο παππούς πίνει καφέ στο καφενείο.
+    exampleRu: Дед пьёт кофе в кофейне.
 
   - el: ταβέρνα
     article: η
     ru: таверна
     pos: noun
+    example: Τρώμε ψάρι σε μια ταβέρνα.
+    exampleRu: Мы едим рыбу в таверне.
 
   - el: κομμωτήριο
     article: το
     ru: парикмахерская
     pos: noun
+    example: Πάω στο κομμωτήριο το Σάββατο.
+    exampleRu: В субботу я иду в парикмахерскую.
 
   - el: εμπορικό κέντρο
     article: το
     ru: торговый центр
     pos: noun
     irregular: true
+    example: Το εμπορικό κέντρο είναι πολύ μεγάλο.
+    exampleRu: Торговый центр очень большой.
 
   - el: γήπεδο
     article: το
     ru: стадион
     pos: noun
+    example: Το γήπεδο είναι γεμάτο.
+    exampleRu: Стадион полон.
 
   - el: εργοστάσιο
     article: το
     ru: завод
     pos: noun
+    example: Δουλεύει σε ένα εργοστάσιο.
+    exampleRu: Он работает на заводе.
 
   - el: λεωφορείο
     article: το
@@ -250,28 +330,40 @@ words:
     article: το
     ru: автомобиль
     pos: noun
+    example: Το αυτοκίνητο δεν ξεκινάει.
+    exampleRu: Машина не заводится.
 
   - el: ποδήλατο
     article: το
     ru: велосипед
     pos: noun
+    example: Πάω στη δουλειά με ποδήλατο.
+    exampleRu: Я езжу на работу на велосипеде.
 
   - el: πλοίο
     article: το
     ru: корабль
     pos: noun
+    example: Το πλοίο φεύγει στις εννιά.
+    exampleRu: Корабль отходит в девять.
 
   - el: καΐκι
     article: το
     ru: лодка
     pos: noun
+    example: Το καΐκι πάει στο νησί.
+    exampleRu: Лодка идёт на остров.
 
   - el: ταξίδι
     article: το
     ru: путешествие, поездка
     pos: noun
+    example: Το ταξίδι διαρκεί δύο ώρες.
+    exampleRu: Поездка длится два часа.
 
   - el: χιλιόμετρο
     article: το
     ru: километр
     pos: noun
+    example: Το χωριό είναι δύο χιλιόμετρα από εδώ.
+    exampleRu: Деревня в двух километрах отсюда.

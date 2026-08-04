@@ -7,61 +7,85 @@ words:
     article: η
     ru: банан
     pos: noun
+    example: Τρώω μια μπανάνα κάθε μέρα.
+    exampleRu: Я ем банан каждый день.
 
   - el: φράουλα
     article: η
     ru: клубника
     pos: noun
+    example: Η φράουλα είναι γλυκιά.
+    exampleRu: Клубника сладкая.
 
   - el: αχλάδι
     article: το
     ru: груша
     pos: noun
+    example: Το αχλάδι είναι ώριμο.
+    exampleRu: Груша спелая.
 
   - el: βερίκοκο
     article: το
     ru: абрикос
     pos: noun
+    example: Τα βερίκοκα είναι φρέσκα.
+    exampleRu: Абрикосы свежие.
 
   - el: καρπούζι
     article: το
     ru: арбуз
     pos: noun
+    example: Το καρπούζι είναι βαρύ.
+    exampleRu: Арбуз тяжёлый.
 
   - el: κεράσι
     article: το
     ru: черешня
     pos: noun
+    example: Τα κεράσια είναι ακριβά τον Μάιο.
+    exampleRu: В мае черешня дорогая.
 
   - el: λεμόνι
     article: το
     ru: лимон
     pos: noun
+    example: Βάλε λεμόνι στο ψάρι.
+    exampleRu: Полей рыбу лимоном.
 
   - el: μανταρίνι
     article: το
     ru: мандарин
     pos: noun
+    example: Το μανταρίνι μυρίζει ωραία.
+    exampleRu: Мандарин приятно пахнет.
 
   - el: πεπόνι
     article: το
     ru: дыня
     pos: noun
+    example: Το πεπόνι είναι πολύ γλυκό.
+    exampleRu: Дыня очень сладкая.
 
   - el: ροδάκινο
     article: το
     ru: персик
     pos: noun
+    example: Αγόρασα δύο κιλά ροδάκινα.
+    exampleRu: Я купил два килограмма персиков.
 
   - el: σταφύλι
     article: το
     ru: виноград
     pos: noun
+    example: Το σταφύλι είναι φρούτο του φθινοπώρου.
+    exampleRu: Виноград — осенний фрукт.
 
   - el: σύκο
     article: το
     ru: инжир
     pos: noun
+    example: Τρώμε σύκα το καλοκαίρι.
+    exampleRu: Летом мы едим инжир.
 
   - el: ελιά
     article: η
@@ -69,15 +93,21 @@ words:
     pos: noun
 
   # ─── Λαχανικά ──────────────────────────────────────────────
+    example: Η ελιά ζει πολλά χρόνια.
+    exampleRu: Оливковое дерево живёт много лет.
   - el: λαχανικό
     article: το
     ru: овощ
     pos: noun
+    example: Το καρότο είναι λαχανικό.
+    exampleRu: Морковь — это овощ.
 
   - el: μελιτζάνα
     article: η
     ru: баклажан
     pos: noun
+    example: Η μελιτζάνα θέλει πολύ λάδι.
+    exampleRu: Баклажан требует много масла.
 
   - el: ντομάτα
     article: η
@@ -90,6 +120,8 @@ words:
     article: η
     ru: картофель
     pos: noun
+    example: Οι πατάτες είναι στον φούρνο.
+    exampleRu: Картошка в печи.
 
   - el: πιπεριά
     article: η
@@ -97,63 +129,89 @@ words:
     pos: noun
     cases:
       gen: [~, των πιπεριών]
+    example: Η πιπεριά είναι κόκκινη.
+    exampleRu: Перец красный.
 
   - el: αγγούρι
     article: το
     ru: огурец
     pos: noun
+    example: Η σαλάτα έχει ντομάτα και αγγούρι.
+    exampleRu: В салате помидор и огурец.
 
   - el: καρότο
     article: το
     ru: морковь
     pos: noun
+    example: Το καρότο είναι πορτοκαλί.
+    exampleRu: Морковь оранжевая.
 
   - el: κολοκυθάκι
     article: το
     ru: кабачок
     pos: noun
+    example: Τα κολοκυθάκια είναι βραστά.
+    exampleRu: Кабачки варёные.
 
   - el: κρεμμύδι
     article: το
     ru: лук
     pos: noun
+    example: Το κρεμμύδι με κάνει να κλαίω.
+    exampleRu: От лука я плачу.
 
   - el: λάχανο
     article: το
     ru: капуста
     pos: noun
+    example: Κόβω το λάχανο για σαλάτα.
+    exampleRu: Я режу капусту на салат.
 
   - el: μανιτάρι
     article: το
     ru: гриб
     pos: noun
+    example: Το μανιτάρι φυτρώνει στο δάσος.
+    exampleRu: Гриб растёт в лесу.
 
   - el: μαρούλι
     article: το
     ru: салат-латук
     pos: noun
+    example: Πλένω το μαρούλι.
+    exampleRu: Я мою салат.
 
   - el: σκόρδο
     article: το
     ru: чеснок
     pos: noun
+    example: Το σκόρδο έχει δυνατή μυρωδιά.
+    exampleRu: У чеснока сильный запах.
 
   - el: φασόλι
     article: το
     ru: фасоль
     pos: noun
+    example: Τα φασόλια θέλουν ώρα να βράσουν.
+    exampleRu: Фасоль варится долго.
 
   - el: φακή
     article: η
     ru: чечевица
     pos: noun
+    example: Η φακή είναι νόστιμη με ξύδι.
+    exampleRu: Чечевица вкусна с уксусом.
 
   - el: όσπριο
     article: το
     ru: бобовые
     pos: noun
+    example: Η φακή είναι όσπριο.
+    exampleRu: Чечевица — бобовое.
 
   - el: φυστίκι
     article: το
     ru: фисташка
     pos: noun
+    example: Το φυστίκι Αιγίνης είναι διάσημο.
+    exampleRu: Фисташки с Эгины знамениты.

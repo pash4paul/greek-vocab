@@ -6,21 +6,29 @@ words:
     article: το
     ru: школа
     pos: noun
+    example: Το σχολείο αρχίζει τον Σεπτέμβριο.
+    exampleRu: Школа начинается в сентябре.
 
   - el: γυμνάσιο
     article: το
     ru: гимназия
     pos: noun
+    example: Ο γιος μου πάει στο γυμνάσιο.
+    exampleRu: Мой сын ходит в гимназию.
 
   - el: λύκειο
     article: το
     ru: лицей
     pos: noun
+    example: Στο λύκειο μαθαίνουμε αγγλικά.
+    exampleRu: В лицее мы учим английский.
 
   - el: πανεπιστήμιο
     article: το
     ru: университет
     pos: noun
+    example: Σπουδάζω στο πανεπιστήμιο της Αθήνας.
+    exampleRu: Я учусь в университете Афин.
 
   - el: τάξη
     article: η
@@ -47,6 +55,8 @@ words:
     article: ο
     ru: ученик
     pos: noun
+    example: Ο μαθητής γράφει στον πίνακα.
+    exampleRu: Ученик пишет на доске.
 
   - el: μαθήτρια
     article: η
@@ -55,11 +65,15 @@ words:
     cases:
       nom: [~, οι μαθήτριες]
       acc: [~, τις μαθήτριες]
+    example: Η μαθήτρια διαβάζει δυνατά.
+    exampleRu: Ученица читает вслух.
 
   - el: δάσκαλος
     article: ο
     ru: учитель
     pos: noun
+    example: Ο δάσκαλος εξηγεί το μάθημα.
+    exampleRu: Учитель объясняет урок.
 
   - el: δασκάλα
     article: η
@@ -67,11 +81,15 @@ words:
     pos: noun
     cases:
       gen: [~, των δασκαλών]
+    example: Η δασκάλα μας είναι πολύ ευγενική.
+    exampleRu: Наша учительница очень добрая.
 
   - el: φοιτητής
     article: ο
     ru: студент
     pos: noun
+    example: Ο φοιτητής μένει σε ξενώνα.
+    exampleRu: Студент живёт в общежитии.
 
   - el: φοιτήτρια
     article: η
@@ -80,6 +98,8 @@ words:
     cases:
       nom: [~, οι φοιτήτριες]
       acc: [~, τις φοιτήτριες]
+    example: Η φοιτήτρια γράφει εργασία.
+    exampleRu: Студентка пишет работу.
 
   - el: βιβλίο
     article: το
@@ -92,16 +112,22 @@ words:
     article: το
     ru: тетрадь
     pos: noun
+    example: Άνοιξε το τετράδιο.
+    exampleRu: Открой тетрадь.
 
   - el: λεξικό
     article: το
     ru: словарь
     pos: noun
+    example: Το λεξικό είναι στο ράφι.
+    exampleRu: Словарь на полке.
 
   - el: μολύβι
     article: το
     ru: карандаш
     pos: noun
+    example: Γράφω με μολύβι.
+    exampleRu: Я пишу карандашом.
 
   - el: στυλό
     article: το
@@ -109,16 +135,22 @@ words:
     pos: noun
     irregular: true
     note: заимствование, не склоняется
+    example: Δάνεισέ μου ένα στυλό.
+    exampleRu: Дай мне ручку.
 
   - el: μαρκαδόρος
     article: ο
     ru: фломастер, маркер
     pos: noun
+    example: Ο μαρκαδόρος δεν γράφει.
+    exampleRu: Маркер не пишет.
 
   - el: γόμα
     article: η
     ru: ластик
     pos: noun
+    example: Πού είναι η γόμα;
+    exampleRu: Где ластик?
 
   - el: ξύστρα
     article: η
@@ -126,21 +158,29 @@ words:
     pos: noun
     cases:
       gen: [~, των ξυστρών]
+    example: Θέλω μια ξύστρα για το μολύβι.
+    exampleRu: Мне нужна точилка для карандаша.
 
   - el: χάρακας
     article: ο
     ru: линейка
     pos: noun
+    example: Μέτρα με τον χάρακα.
+    exampleRu: Измерь линейкой.
 
   - el: χαρτί
     article: το
     ru: бумага
     pos: noun
+    example: Δώσε μου ένα χαρτί.
+    exampleRu: Дай мне листок бумаги.
 
   - el: ράφι
     article: το
     ru: полка
     pos: noun
+    example: Βάλε το πιάτο στο πάνω ράφι.
+    exampleRu: Поставь тарелку на верхнюю полку.
 
   - el: λέξη
     article: η
@@ -153,6 +193,8 @@ words:
       acc: [~, τις λέξεις]
     forms:
       plural: λέξεις
+    example: Δεν καταλαβαίνω αυτή τη λέξη.
+    exampleRu: Я не понимаю это слово.
 
   - el: γλώσσα
     article: η
@@ -167,56 +209,78 @@ words:
     article: το
     ru: имя прилагательное
     pos: noun
+    example: Το επίθετο συμφωνεί με το ουσιαστικό.
+    exampleRu: Прилагательное согласуется с существительным.
 
   - el: διάβασμα
     article: το
     ru: чтение
     pos: noun
+    example: Το διάβασμα θέλει χρόνο.
+    exampleRu: Чтение требует времени.
 
   - el: ιστορία
     article: η
     ru: история
     pos: noun
+    example: Μου αρέσει η ιστορία της Ελλάδας.
+    exampleRu: Мне нравится история Греции.
 
   - el: λογοτεχνία
     article: η
     ru: литература
     pos: noun
+    example: Διαβάζω ελληνική λογοτεχνία.
+    exampleRu: Я читаю греческую литературу.
 
   - el: φιλολογία
     article: η
     ru: филология
     pos: noun
+    example: Σπουδάζει φιλολογία στο πανεπιστήμιο.
+    exampleRu: Он изучает филологию в университете.
 
   - el: ιατρική
     article: η
     ru: медицина
     pos: noun
+    example: Η ιατρική είναι δύσκολη σχολή.
+    exampleRu: Медицина — трудный факультет.
 
   - el: πληροφορική
     article: η
     ru: информатика
     pos: noun
+    example: Δουλεύω στην πληροφορική.
+    exampleRu: Я работаю в информатике.
 
   - el: αρχιτεκτονική
     article: η
     ru: архитектура
     pos: noun
+    example: Η αρχιτεκτονική της Αθήνας είναι ξεχωριστή.
+    exampleRu: Архитектура Афин особенная.
 
   - el: μυθολογία
     article: η
     ru: мифология
     pos: noun
+    example: Η ελληνική μυθολογία έχει πολλούς θεούς.
+    exampleRu: В греческой мифологии много богов.
 
   - el: οικολογία
     article: η
     ru: экология
     pos: noun
+    example: Η οικολογία μας αφορά όλους.
+    exampleRu: Экология касается всех нас.
 
   - el: ασχολία
     article: η
     ru: занятие
     pos: noun
+    example: Η αγαπημένη μου ασχολία είναι το διάβασμα.
+    exampleRu: Моё любимое занятие — чтение.
 
   - el: μαθαίνω
     ru: учить, изучать
@@ -227,8 +291,12 @@ words:
   - el: σπουδάζω
     ru: учиться
     pos: verb
+    example: Σπουδάζω ιατρική.
+    exampleRu: Я изучаю медицину.
 
   - el: γραμματεία
     article: η
     ru: приёмная, секретариат
     pos: noun
+    example: Πήγαινε στη γραμματεία για την αίτηση.
+    exampleRu: Иди в секретариат за заявлением.

@@ -13,46 +13,64 @@ words:
       acc: [~, τις φύσεις]
     forms:
       plural: φύσεις
+    example: Η φύση στην Ελλάδα είναι όμορφη.
+    exampleRu: Природа в Греции красивая.
 
   - el: δέντρο
     article: το
     ru: дерево
     pos: noun
+    example: Το δέντρο έχει πολλά φύλλα.
+    exampleRu: У дерева много листьев.
 
   - el: φυτό
     article: το
     ru: растение
     pos: noun
+    example: Το φυτό θέλει νερό.
+    exampleRu: Растению нужна вода.
 
   - el: φύλλο
     article: το
     ru: лист
     pos: noun
+    example: Το φύλλο έπεσε από το δέντρο.
+    exampleRu: Лист упал с дерева.
 
   - el: λουλούδι
     article: το
     ru: цветок
     pos: noun
+    example: Αυτό το λουλούδι είναι κόκκινο.
+    exampleRu: Этот цветок красный.
 
   - el: αγριολούλουδο
     article: το
     ru: полевой цветок
     pos: noun
+    example: Τα αγριολούλουδα ανθίζουν την άνοιξη.
+    exampleRu: Полевые цветы цветут весной.
 
   - el: τριαντάφυλλο
     article: το
     ru: роза
     pos: noun
+    example: Το τριαντάφυλλο έχει αγκάθια.
+    exampleRu: У розы есть шипы.
 
   - el: μαργαρίτα
     article: η
     ru: ромашка
     pos: noun
+    example: Η μαργαρίτα είναι λευκή.
+    exampleRu: Ромашка белая.
 
   - el: παπαρούνα
     article: η
     ru: мак
     pos: noun
+    example: Οι παπαρούνες είναι κόκκινες.
+    exampleRu: Маки красные.
 
   - el: ανεμώνη
     article: η
@@ -61,37 +79,51 @@ words:
     cases:
       nom: [~, οι ανεμώνες]
       acc: [~, τις ανεμώνες]
+    example: Η ανεμώνη ανθίζει νωρίς.
+    exampleRu: Анемона цветёт рано.
 
   - el: τουλίπα
     article: η
     ru: тюльпан
     pos: noun
+    example: Η τουλίπα είναι από την Ολλανδία.
+    exampleRu: Тюльпан из Голландии.
 
   - el: κυκλάμινο
     article: το
     ru: цикламен
     pos: noun
+    example: Το κυκλάμινο φυτρώνει στα βράχια.
+    exampleRu: Цикламен растёт на скалах.
 
   - el: πουλί
     article: το
     ru: птица
     pos: noun
+    example: Το πουλί κάθεται στο δέντρο.
+    exampleRu: Птица сидит на дереве.
 
   - el: σκύλος
     article: ο
     ru: пёс, собака
     pos: noun
+    example: Ο σκύλος τρέχει στην αυλή.
+    exampleRu: Пёс бегает по двору.
 
   - el: γάτα
     article: η
     ru: кошка
     pos: noun
+    example: Η γάτα κοιμάται στον καναπέ.
+    exampleRu: Кошка спит на диване.
 
   - el: ποτάμι
     article: το
     ru: река
     pos: noun
     note: вариант — ο ποταμός
+    example: Τα παιδιά κολυμπούν στο ποτάμι.
+    exampleRu: Дети плавают в реке.
 
   - el: δέλτα
     article: το
@@ -99,16 +131,22 @@ words:
     pos: noun
     irregular: true
     note: не склоняется
+    example: Το δέλτα του ποταμού είναι μεγάλο.
+    exampleRu: Дельта реки большая.
 
   - el: βιότοπος
     article: ο
     ru: заповедник, биотоп
     pos: noun
+    example: Ο βιότοπος έχει σπάνια πουλιά.
+    exampleRu: В заповеднике редкие птицы.
 
   - el: κλίμα
     article: το
     ru: климат
     pos: noun
+    example: Το κλίμα εδώ είναι ζεστό.
+    exampleRu: Климат здесь жаркий.
 
   - el: ζέστη
     article: η
@@ -117,54 +155,78 @@ words:
     cases:
       nom: [~, οι ζέστες]
       acc: [~, τις ζέστες]
+    example: Σήμερα κάνει πολλή ζέστη.
+    exampleRu: Сегодня очень жарко.
 
   - el: κρύο
     article: το
     ru: холод
     pos: noun
+    example: Το κρύο δεν με πειράζει.
+    exampleRu: Холод мне не мешает.
 
   - el: σιτάρι
     article: το
     ru: пшеница
     pos: noun
+    example: Το σιτάρι είναι κίτρινο το καλοκαίρι.
+    exampleRu: Летом пшеница жёлтая.
 
   - el: χρώμα
     article: το
     ru: цвет
     pos: noun
+    example: Τι χρώμα σου αρέσει;
+    exampleRu: Какой цвет тебе нравится?
 
   - el: σημαία
     article: η
     ru: знамя, флаг
     pos: noun
+    example: Η ελληνική σημαία είναι μπλε και λευκή.
+    exampleRu: Греческий флаг синий с белым.
 
   - el: βόρειος
     ru: северный
     pos: adj
+    example: Η βόρεια Ελλάδα έχει βουνά.
+    exampleRu: В северной Греции горы.
 
   - el: νότιος
     ru: южный
     pos: adj
+    example: Τα νότια νησιά είναι πιο ζεστά.
+    exampleRu: Южные острова теплее.
 
   - el: μεσογειακός
     ru: средиземноморский
     pos: adj
+    example: Η μεσογειακή διατροφή είναι υγιεινή.
+    exampleRu: Средиземноморская диета полезна.
 
   - el: γραφικός
     ru: живописный
     pos: adj
+    example: Το χωριό είναι πολύ γραφικό.
+    exampleRu: Деревня очень живописная.
 
   - el: βιολογικός
     ru: биологический, натуральный
     pos: adj
+    example: Αγοράζω βιολογικά λαχανικά.
+    exampleRu: Я покупаю натуральные овощи.
 
   - el: συνορεύω
     ru: граничить
     pos: verb
+    example: Η Ελλάδα συνορεύει με την Τουρκία.
+    exampleRu: Греция граничит с Турцией.
 
   - el: απέχω
     ru: находиться на расстоянии
     pos: verb
+    example: Το χωριό απέχει δέκα χιλιόμετρα.
+    exampleRu: Деревня в десяти километрах.
 
   - el: βρίσκομαι
     ru: находиться
@@ -173,3 +235,5 @@ words:
     note: среднепассивный залог
     forms:
       present: [βρίσκομαι, βρίσκεσαι, βρίσκεται, βρισκόμαστε, βρίσκεστε, βρίσκονται]
+    example: Βρίσκομαι στην Αθήνα αυτή την εβδομάδα.
+    exampleRu: На этой неделе я в Афинах.
