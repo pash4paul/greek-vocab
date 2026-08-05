@@ -54,6 +54,16 @@ function saveCache(c) {
   writeFileSync(CACHE, JSON.stringify(c));
 }
 
+/**
+ * Уже добытые клетки из прошлых запусков. Проверяются только слова с пустыми
+ * клетками, а заполненное Викисловарём пустым больше не выглядит — поэтому без
+ * слияния каждый запуск выбрасывал всё, что нашёл предыдущий.
+ */
+function loadPrevious() {
+  if (!existsSync(OUT)) return {};
+  try { return JSON.parse(readFileSync(OUT, 'utf8')).cells ?? {}; } catch { return {}; }
+}
+
 async function fetchPage(word, retry = 0) {
   const url = `${API}?action=parse&page=${encodeURIComponent(word)}&prop=text&format=json&formatversion=2`;
   const res = await fetch(url, { headers: { 'User-Agent': UA } });
@@ -185,11 +195,23 @@ async function main() {
   }
 
   saveCache(cache);
+
+  // Слияние с прошлыми запусками: этот запуск видел только слова с пустыми
+  // клетками, остальные надо сохранить как есть.
+  const merged = { ...loadPrevious() };
+  for (const [id, entry] of Object.entries(result)) {
+    merged[id] = { ...merged[id] };
+    for (const [c, pair] of Object.entries(entry)) {
+      const old = merged[id][c] ?? [null, null];
+      merged[id][c] = [pair[0] ?? old[0], pair[1] ?? old[1]];
+    }
+  }
+
   mkdirSync(dirname(OUT), { recursive: true });
   writeFileSync(OUT, JSON.stringify({
     source: 'el.wiktionary.org',
-    fetchedWords: Object.keys(result).length,
-    cells: result,
+    fetchedWords: Object.keys(merged).length,
+    cells: merged,
   }, null, 2) + '\n');
 
   console.log(
