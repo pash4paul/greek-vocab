@@ -1,6 +1,6 @@
 {
   "source": "el.wiktionary.org",
-  "fetchedWords": 99,
+  "fetchedWords": 106,
   "cells": {
     "fili:noun": {
       "gen": [
@@ -614,6 +614,96 @@
       "gen": [
         null,
         "των ιδεών"
+      ]
+    },
+    "theia:noun": {
+      "gen": [
+        null,
+        "των θειών"
+      ]
+    },
+    "xadelfi:noun": {
+      "nom": [
+        null,
+        "οι ξαδέλφες"
+      ],
+      "gen": [
+        null,
+        "των ξαδελφών"
+      ],
+      "acc": [
+        null,
+        "τις ξαδέλφες"
+      ],
+      "voc": [
+        null,
+        "ξαδέλφες"
+      ]
+    },
+    "dieythyntria:noun": {
+      "gen": [
+        null,
+        "των διευθυντριών"
+      ]
+    },
+    "synantisi:noun": {
+      "nom": [
+        null,
+        "οι συναντήσεις"
+      ],
+      "gen": [
+        null,
+        "των συναντήσεων"
+      ],
+      "acc": [
+        null,
+        "τις συναντήσεις"
+      ],
+      "voc": [
+        null,
+        "συναντήσεις"
+      ]
+    },
+    "niki:noun": {
+      "nom": [
+        null,
+        "οι νίκες"
+      ],
+      "gen": [
+        null,
+        "των νικών"
+      ],
+      "acc": [
+        null,
+        "τις νίκες"
+      ],
+      "voc": [
+        null,
+        "νίκες"
+      ]
+    },
+    "ekplixi:noun": {
+      "nom": [
+        null,
+        "οι εκπλήξεις"
+      ],
+      "gen": [
+        null,
+        "των εκπλήξεων"
+      ],
+      "acc": [
+        null,
+        "τις εκπλήξεις"
+      ],
+      "voc": [
+        null,
+        "εκπλήξεις"
+      ]
+    },
+    "paralia:noun": {
+      "gen": [
+        null,
+        "των παραλιών"
       ]
     }
   }
