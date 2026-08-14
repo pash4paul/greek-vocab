@@ -293,6 +293,35 @@ function containsWord(sentence, word) {
   return normalize(sentence).includes(stem);
 }
 
+/**
+ * Ищет слова, которые невозможно различить по вопросу.
+ *
+ * На карточке RU→EL и в подсказке к пропуску видно только перевод. Если весь
+ * перевод одного слова целиком входит в перевод другого — «разведённый»
+ * против «разведённый, расставшийся», — вопрос допускает два ответа,
+ * и правильный из них засчитается ошибкой.
+ *
+ * Уточнение в скобках считается частью варианта: «перец (овощ)» и «перец
+ * (специя)» уже разведены, а «магазин» и «магазин, лавка» — ещё нет.
+ */
+function ambiguousTranslations(words) {
+  const variants = (w) => new Set(
+    w.ru.split(/[,;]/).map((v) => v.trim().toLowerCase().replace(/ё/g, 'е')).filter(Boolean),
+  );
+  const sets = words.map((w) => ({ w, v: variants(w) }));
+  const pairs = [];
+  for (const a of sets) {
+    for (const b of sets) {
+      if (a.w === b.w) continue;
+      if (![...a.v].every((v) => b.v.has(v))) continue;
+      // При полном совпадении наборов пара нашлась бы дважды — оставляем одну
+      if (a.v.size === b.v.size && a.w.id > b.w.id) continue;
+      pairs.push([a.w, b.w]);
+    }
+  }
+  return pairs;
+}
+
 function main() {
   const docs = loadFiles();
   if (!docs.length) {
@@ -322,6 +351,14 @@ function main() {
       seen.set(w.id, { file, topic });
       words.push(w);
     });
+  }
+
+  for (const [a, b] of ambiguousTranslations(words)) {
+    warn(
+      seen.get(a.id).file, a.el,
+      `перевод «${a.ru}» не отличить от ${b.el} «${b.ru}» — по вопросу подойдут оба. ` +
+      'Разведи уточнением в скобках',
+    );
   }
 
   for (const w of warnings) console.warn(`  ! ${w}`);
