@@ -125,6 +125,21 @@ export function fixAccentPosition(word) {
 
 const endsWith = (w, s) => w.endsWith(s);
 
+/**
+ * Словарная статья из нескольких слов: «εμπορικό κέντρο», «παιδική χαρά».
+ *
+ * Все правила ниже читают конец строки и правят ударение в ней же, то есть
+ * считают её одним словом. На словосочетании это выходит боком дважды:
+ * определение остаётся в исходной форме («της παιδική χαράς» вместо
+ * «της παιδικής χαράς»), а правило трёх слогов отсчитывает их от конца всей
+ * строки и снимает ударение с первого слова («μουσικη τεχνολόγίες»).
+ * Согласование частей — отдельная задача, правил для неё здесь нет,
+ * поэтому словосочетания честно отдаются на ручное заполнение.
+ */
+const isPhrase = (el) => el.trim().includes(' ');
+
+const PHRASE_SKIP = 'словосочетание — части согласуются между собой, задай формы ключом cases:';
+
 // ─── Глаголы ──────────────────────────────────────────────────────────────
 
 const GROUP_A = ['ω', 'εις', 'ει', 'ουμε', 'ετε', 'ουν'];
@@ -139,6 +154,7 @@ const GROUP_B2 = ['ώ', 'είς', 'εί', 'ούμε', 'είτε', 'ούν'];
 export function conjugatePresent(el) {
   const w = el.trim();
 
+  if (isPhrase(w)) return { skip: PHRASE_SKIP };
   if (/(?:ομαι|άμαι|ούμαι|ιέμαι)$/.test(w)) {
     return { skip: 'глагол среднепассивного залога — отдельная парадигма' };
   }
@@ -166,6 +182,7 @@ export const CONJUGATION_HINT = { 'Б2': GROUP_B2 };
 export function adjectiveForms(el) {
   const w = el.trim();
 
+  if (isPhrase(w)) return { skip: PHRASE_SKIP };
   if (endsWith(w, 'ός')) {
     // Ударение на окончании остаётся на окончании: παλιός → παλιά → παλιό.
     const stem = w.slice(0, -2);
@@ -256,10 +273,13 @@ const withStressedEnding = (stem, ending) => stripAccents(stem) + ending;
 export function declineNoun(el, article) {
   const gender = GENDER[article];
   if (!gender) return { skip: 'без артикля род неизвестен' };
+  // Род возвращается и при отказе: артикли по падежам от него зависят,
+  // а они нужны и тогда, когда сами формы вписаны руками.
+  if (isPhrase(el)) return { gender, skip: PHRASE_SKIP };
 
   const w = el.trim();
   const t = buildTable(w, gender);
-  if (!t) return { skip: `нестандартное окончание для рода «${article}»` };
+  if (!t) return { gender, skip: `нестандартное окончание для рода «${article}»` };
 
   return {
     gender,
@@ -443,6 +463,7 @@ export function pluralForm(el, article) {
   const w = el.trim();
   const gender = GENDER[article];
   if (!gender) return { skip: 'без артикля род неизвестен' };
+  if (isPhrase(w)) return { skip: PHRASE_SKIP };
 
   // Окончание под ударением остаётся ударным и во множественном числе:
   // το βουνό → τα βουνά, ο γιατρός → οι γιατροί. Поэтому окситонные типы

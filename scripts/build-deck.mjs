@@ -139,7 +139,7 @@ function buildWord(file, topic, lesson, raw, index) {
   if (f.past) forms.past = String(f.past).trim();
 
   const irregular = raw.irregular === true;
-  const declension = applyMorphology(file, el, stem, pos, article, forms, irregular, raw.cases);
+  const declension = applyMorphology(file, el, stem, display, pos, article, forms, irregular, raw.cases);
 
   if (raw.example && !raw.example.includes(' ')) {
     warn(file, el, 'example выглядит как одно слово — для cloze нужно предложение');
@@ -178,7 +178,7 @@ function buildWord(file, topic, lesson, raw, index) {
  * Где форм нет вовсе, а правило применимо — форма подставляется,
  * чтобы не писать руками предсказуемое.
  */
-function applyMorphology(file, el, stem, pos, article, forms, irregular, manualCases) {
+function applyMorphology(file, el, stem, display, pos, article, forms, irregular, manualCases) {
   const check = (key, expected, actual, kind) => {
     if (!expected) return;
     if (!actual) {
@@ -216,13 +216,20 @@ function applyMorphology(file, el, stem, pos, article, forms, irregular, manualC
 
   if (pos === 'noun' && article) {
     const r = declineNoun(stem, article);
+    const wordId = `${slugify(stem)}:noun`;
     if (!r.table) {
+      // Отказ правила не отменяет того, что вписано руками и найдено
+      // в Викисловаре: порядок источников — руками, Викисловарь, правила,
+      // и первые два работают сами по себе. Раньше здесь терялось всё:
+      // у словосочетаний ключ cases: молча ни на что не влиял.
+      if (manualCases || WIKTIONARY[wordId]) {
+        return buildDeclension(file, el, display, r, article, manualCases, WIKTIONARY[wordId]);
+      }
       if (!forms.plural && !irregular) warn(file, el, `склонение не выведено: ${r.skip}`);
       return undefined;
     }
-    const wordId = `${slugify(stem)}:noun`;
     check('plural', r.table.nom[1], forms.plural, 'noun');
-    return buildDeclension(file, el, r, article, manualCases, WIKTIONARY[wordId]);
+    return buildDeclension(file, el, display, r, article, manualCases, WIKTIONARY[wordId]);
   }
   return undefined;
 }
@@ -237,8 +244,11 @@ const CASES = ['nom', 'gen', 'acc', 'voc'];
  * Клетки, которые правилами не выводятся, остаются null. Их можно заполнить
  * вручную через ключ `cases` в yaml — он же перекрывает выведенное.
  */
-function buildDeclension(file, el, r, article, manualCases, wiktionary) {
+function buildDeclension(file, el, display, r, article, manualCases, wiktionary) {
   const arts = CASE_ARTICLES[r.gender];
+  // Правило могло отказаться целиком — тогда выведенных клеток просто нет,
+  // а руками вписанные и найденные в Викисловаре остаются на своих местах.
+  const table = r.table ?? { nom: [], gen: [], acc: [], voc: [] };
   const out = {};
 
   for (const c of CASES) {
@@ -246,7 +256,7 @@ function buildDeclension(file, el, r, article, manualCases, wiktionary) {
       const manual = manualCases?.[c]?.[num];
       if (manual) return String(manual).trim();
 
-      const form = r.table[c][num];
+      const form = table[c][num];
       if (form) {
         let art = arts[c][num];
         // «την» теряет -ν перед мягкими согласными: την πόρτα, но τη μέρα.
@@ -260,6 +270,11 @@ function buildDeclension(file, el, r, article, manualCases, wiktionary) {
       return null;
     });
   }
+
+  // Именительный единственного — это сама словарная форма, гадать тут не о чем.
+  // Нужно там, где правило отказалось, а Викисловарь дал одни косвенные падежи:
+  // у «το κρέας» нашлось «του κρέατος», а сам заголовок остался пустым.
+  if (!out.nom[0]) out.nom[0] = display;
 
   // Звательный во множественном числе всегда совпадает с именительным, только
   // без артикля. Выводим его из итоговой формы, а не из правила: иначе слова
