@@ -5,6 +5,7 @@ import { emptyProgress, exportProgress, importProgress } from '../lib/storage.ts
 import {
   allVoices, getGreekVoice, getRecentEvents, greekVoices, speak, supported,
 } from '../lib/tts.ts';
+import { buildTime, checkForUpdate, type UpdateCheck } from '../lib/pwa.ts';
 
 interface Props {
   deck: Deck;
@@ -306,7 +307,50 @@ export function SettingsView({ deck, progress, tts, onChange, onReplace }: Props
           Слов в колоде: {deck.words.length} · источники: {deck.builtFrom.join(', ')}
         </p>
       </section>
+
+      <section>
+        <h3>Версия</h3>
+        <Version />
+      </section>
     </div>
+  );
+}
+
+const UPDATE_MSG: Record<UpdateCheck, string> = {
+  updating: 'нашлась новая версия — ставлю, экран перезагрузится сам',
+  current: '✓ стоит последняя версия',
+  offline: 'нет связи с сервером — проверю сама, когда появится',
+  unavailable: 'офлайн-режим не включён: так бывает при запуске с localhost '
+    + 'и в приватном окне. Обновления в этом режиме приходят сами, по перезагрузке',
+};
+
+/**
+ * Дата сборки и проверка обновления вручную.
+ *
+ * Нужны потому, что молчаливое обновление неотличимо от сломанного:
+ * если на карточке старый пример, по этой дате сразу видно, чинить словарь
+ * или доставку. Один раз уже разбирались именно с этим.
+ */
+function Version() {
+  const [msg, setMsg] = useState<string | null>(null);
+
+  const check = async () => {
+    setMsg('проверяю…');
+    setMsg(UPDATE_MSG[await checkForUpdate()]);
+  };
+
+  return (
+    <>
+      <p className="muted small">
+        Собрано {buildTime().toLocaleString('ru-RU', {
+          day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',
+        })}
+      </p>
+      <div className="btn-row">
+        <button className="btn" onClick={() => void check()}>Проверить обновление</button>
+      </div>
+      {msg && <p className="msg">{msg}</p>}
+    </>
   );
 }
 

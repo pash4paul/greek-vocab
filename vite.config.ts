@@ -8,10 +8,17 @@ const base = process.env.BASE_PATH ?? '/';
 
 export default defineConfig({
   base,
+  // Дата сборки видна в настройках. Без неё нельзя отличить «обновление
+  // не доехало» от «слово в словаре так и не исправили» — а это разные поломки.
+  define: { __BUILD_TIME__: JSON.stringify(new Date().toISOString()) },
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      // Регистрируем сами, в src/lib/pwa.ts: встроенный скрипт вешается
+      // на событие load и потому спрашивает сервер о новой версии
+      // единственный раз за всю жизнь установленного приложения.
+      injectRegister: null,
       includeAssets: ['icon.svg'],
       manifest: {
         name: 'Ελληνικά — словарь',
