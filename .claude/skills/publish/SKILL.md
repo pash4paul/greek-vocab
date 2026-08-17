@@ -31,8 +31,15 @@ git remote add origin git@github.com:<username>/<repo>.git
 git push -u origin main
 ```
 
-Затем владелец включает публикацию: **Settings → Pages → Source → GitHub Actions**.
-Это единственный шаг, который нельзя сделать из терминала — так и скажи.
+Публикацию workflow включает сам — в `configure-pages` стоит `enablement: true`.
+Если это почему-то не сработало, владелец включает её руками:
+**Settings → Pages → Source → GitHub Actions**.
+
+**Pages бесплатен только для публичных репозиториев.** У приватного выкатка
+падает на шаге `configure-pages` с «Get Pages site failed … Not Found», и это
+не лечится ничем, кроме **Settings → General → Change visibility → Public**.
+Прогресс занятий в репозитории не хранится, личного там нет — только словарь
+и код, так что публичность безопасна. Спроси владельца, прежде чем менять.
 
 Через пару минут сайт будет по адресу `https://<username>.github.io/<repo>/`.
 Workflow уже лежит в `.github/workflows/deploy.yml`, настраивать его не надо:
