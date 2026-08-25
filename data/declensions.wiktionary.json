@@ -1,6 +1,6 @@
 {
   "source": "el.wiktionary.org",
-  "fetchedWords": 106,
+  "fetchedWords": 116,
   "cells": {
     "fili:noun": {
       "gen": [
@@ -704,6 +704,78 @@
       "gen": [
         null,
         "των παραλιών"
+      ]
+    },
+    "anoixi:noun": {
+      "nom": [
+        null,
+        "οι ανοίξεις"
+      ],
+      "gen": [
+        null,
+        "των ανοίξεων"
+      ],
+      "acc": [
+        null,
+        "τις ανοίξεις"
+      ],
+      "voc": [
+        null,
+        "ανοίξεις"
+      ]
+    },
+    "triti:noun": {
+      "gen": [
+        null,
+        "των Τριτών"
+      ]
+    },
+    "tetarti:noun": {
+      "gen": [
+        null,
+        "των Τεταρτών"
+      ]
+    },
+    "pempti:noun": {
+      "gen": [
+        null,
+        "των Πεμπτών"
+      ]
+    },
+    "voitheia:noun": {
+      "gen": [
+        null,
+        "των βοηθειών"
+      ]
+    },
+    "paraggelia:noun": {
+      "gen": [
+        null,
+        "των παραγγελιών"
+      ]
+    },
+    "merida:noun": {
+      "gen": [
+        null,
+        "των μερίδων"
+      ]
+    },
+    "xifias:noun": {
+      "gen": [
+        null,
+        "των ξιφιών"
+      ]
+    },
+    "marida:noun": {
+      "gen": [
+        null,
+        "των μαρίδων"
+      ]
+    },
+    "allergia:noun": {
+      "gen": [
+        null,
+        "των αλλεργιών"
       ]
     }
   }

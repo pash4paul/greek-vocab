@@ -486,3 +486,10 @@ words:
     pos: phrase
     example: Έκανα τα ψώνια για την εβδομάδα.
     exampleRu: Я сделал покупки на неделю.
+
+  - el: τιμή
+    article: η
+    ru: цена
+    pos: noun
+    example: Η τιμή είναι πολύ ψηλή για μένα.
+    exampleRu: Цена для меня слишком высокая.
