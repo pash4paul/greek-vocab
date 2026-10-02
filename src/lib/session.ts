@@ -140,7 +140,7 @@ export interface PlanCounts {
 }
 
 function topicAllowed(word: Word, settings: Settings) {
-  return settings.enabledTopics.length === 0 || settings.enabledTopics.includes(word.topic);
+  return settings.enabledTopics.length === 0 || word.topics.some((t) => settings.enabledTopics.includes(t));
 }
 
 function shuffle<T>(arr: T[]): T[] {

@@ -9,6 +9,10 @@ export interface WordForms {
   present?: string[];
   /** 3 рода: мужской, женский, средний */
   gender?: string[];
+  /** Παρατατικός, αόριστος, εξακολουθητικός μέλλοντας — те же 6 лиц */
+  imperfect?: string[];
+  aorist?: string[];
+  future?: string[];
 }
 
 export type GrammCase = 'nom' | 'gen' | 'acc' | 'voc';
@@ -54,7 +58,10 @@ export interface Word {
   example?: string;
   exampleRu?: string;
   note?: string;
+  /** Тема файла, где слово записано */
   topic: string;
+  /** Все темы слова: тема файла плюс дополнительные (глаголы — ещё и в «Базовых глаголах») */
+  topics: string[];
   lesson?: string;
   tags: string[];
 }

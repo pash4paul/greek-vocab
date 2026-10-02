@@ -329,30 +329,47 @@ words:
   - el: παίζω
     ru: играть
     pos: verb
+    forms:
+      aorist: έπαιξα
     example: Παίζω κιθάρα κάθε μέρα.
     exampleRu: Я играю на гитаре каждый день.
 
   - el: γυρίζω
     ru: возвращаться, поворачивать
     pos: verb
+    forms:
+      aorist: γύρισα
     example: Γυρίζω σπίτι στις έξι.
     exampleRu: Я возвращаюсь домой в шесть.
 
   - el: φεύγω
     ru: уходить, уезжать
     pos: verb
+    topics: [Неправильные глаголы]
+    irregular: true
+    forms:
+      aorist: έφυγα
+    note: "Αόριστος έφυγα: ευ → υ"
     example: Φεύγω αύριο για την Ελλάδα.
     exampleRu: Завтра я уезжаю в Грецию.
 
   - el: περιμένω
     ru: ждать
     pos: verb
+    topics: [Неправильные глаголы]
+    irregular: true
+    forms:
+      aorist: περίμενα
+    note: "Αόριστος совпадает с παρατατικός — περίμενα"
     example: Περιμένω το λεωφορείο.
     exampleRu: Я жду автобус.
 
   - el: προτιμάω
     ru: предпочитать
     pos: verb
+    forms:
+      aorist: προτίμησα
+    note: "Книжная форма — προτιμώ"
     example: Προτιμάω τσάι από καφέ.
     exampleRu: Я предпочитаю чай кофе.
 

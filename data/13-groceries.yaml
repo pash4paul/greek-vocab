@@ -439,6 +439,8 @@ words:
   - el: μαγειρεύω
     ru: готовить (еду)
     pos: verb
+    forms:
+      aorist: μαγείρεψα
     example: Μαγειρεύω κάθε βράδυ.
     exampleRu: Я готовлю каждый вечер.
 

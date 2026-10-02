@@ -9,7 +9,7 @@ import { parse } from 'yaml';
 import { slugify, normalize } from '../src/lib/greek.mjs';
 import {
   ARTICLES as CASE_ARTICLES, adjectiveForms, conjugatePresent, declineNoun,
-  feminineAccusativeArticle,
+  feminineAccusativeArticle, imperfectForm, pastPersons,
 } from './morphology.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -20,6 +20,16 @@ const CHECK_ONLY = process.argv.includes('--check');
 
 const POS = ['noun', 'verb', 'adj', 'adv', 'phrase', 'prep', 'pron', 'num', 'conj', 'other'];
 const ARTICLES = ['ο', 'η', 'το', 'οι', 'τα'];
+
+/**
+ * Тема, в которую попадает каждый глагол, где бы он ни был записан.
+ * Глагол из «Ресторана» учится и там, и среди глаголов — так их можно
+ * повторить все разом, не выискивая по урокам.
+ */
+const VERB_TOPIC = 'Базовые глаголы';
+
+/** Прошедшие времена: в yaml — 1 л. ед. ч. строкой или все шесть лиц списком. */
+const PAST_TENSES = { imperfect: 'παρατατικός', aorist: 'αόριστος' };
 
 /**
  * Клетки, вытянутые из Викисловаря скриптом fetch-declensions.mjs.
@@ -43,6 +53,7 @@ const derived = { verb: 0, adj: 0, noun: 0 };
 const mismatches = [];
 const declensionGaps = new Map();
 const gapWords = [];
+const noAorist = [];
 
 function err(file, word, msg) {
   errors.push(`${file}${word ? ` [${word}]` : ''}: ${msg}`);
@@ -137,6 +148,28 @@ function buildWord(file, topic, lesson, raw, index) {
     forms.gender = f.gender.map((x) => String(x).trim());
   }
   if (f.past) forms.past = String(f.past).trim();
+  for (const key of Object.keys(PAST_TENSES)) {
+    if (f[key] == null) continue;
+    if (Array.isArray(f[key])) {
+      if (f[key].length !== 6) {
+        err(file, el, `forms.${key} — либо одна форма (1 л. ед. ч.), либо список из 6 лиц`);
+        return null;
+      }
+      forms[key] = f[key].map((x) => String(x).trim());
+    } else {
+      forms[key] = String(f[key]).trim();
+    }
+  }
+
+  if (raw.topics != null && !Array.isArray(raw.topics)) {
+    err(file, el, 'topics — список дополнительных тем: topics: [Неправильные глаголы]');
+    return null;
+  }
+  const topics = [...new Set([
+    topic,
+    ...(raw.topics ?? []).map((t) => String(t).trim()),
+    ...(pos === 'verb' ? [VERB_TOPIC] : []),
+  ])];
 
   const irregular = raw.irregular === true;
   const declension = applyMorphology(file, el, stem, display, pos, article, forms, irregular, raw.cases);
@@ -162,6 +195,7 @@ function buildWord(file, topic, lesson, raw, index) {
     exampleRu: raw.exampleRu?.trim(),
     note: raw.note?.trim(),
     topic,
+    topics,
     lesson,
     tags: Array.isArray(raw.tags) ? raw.tags.map(String) : [],
   };
@@ -201,6 +235,39 @@ function applyMorphology(file, el, stem, display, pos, article, forms, irregular
     if (r.forms) check('present', r.forms, forms.present, 'verb');
     else if (!forms.present && !irregular) {
       warn(file, el, `спряжение не выведено: ${r.skip}`);
+    }
+    if (forms.present) forms.future = forms.present.map((p) => `θα ${p}`);
+
+    // Παρατατικός сверяется с правилом по 1 л. ед. ч.; полный список из шести
+    // лиц пишется только у исключений и берётся как есть.
+    const imp = imperfectForm(el);
+    const manualImp = [forms.imperfect].flat()[0];
+    if (imp.form && !manualImp) {
+      forms.imperfect = imp.form;
+      derived.verb++;
+    } else if (imp.form && manualImp !== imp.form && !irregular) {
+      mismatches.push(
+        `${file} [${el}]: imperfect — по правилу «${imp.form}», в файле «${manualImp}». ` +
+        'Опечатка? Если слово неправильное, добавь irregular: true',
+      );
+    } else if (!imp.form && !manualImp) {
+      warn(file, el, `παρατατικός не выведен: ${imp.skip} — впиши forms.imperfect`);
+    }
+
+    // Αόριστος правилом не выводится: основа меняется по-разному
+    // (γράφω → έγραψα, παίζω → έπαιξα, αγοράζω → αγόρασα), а это и есть
+    // то, что учат. Он всегда вписывается руками.
+    if (!forms.aorist) noAorist.push(el);
+
+    for (const key of Object.keys(PAST_TENSES)) {
+      if (typeof forms[key] !== 'string') continue;
+      const p = pastPersons(forms[key], el);
+      if (p.skip) {
+        err(file, el, `forms.${key} «${forms[key]}»: ${p.skip}`);
+        delete forms[key];
+      } else {
+        forms[key] = p.forms;
+      }
     }
     return;
   }
@@ -388,7 +455,8 @@ function main() {
     process.exit(1);
   }
 
-  const topics = [...new Set(words.map((w) => w.topic))];
+  // Сначала темы файлов по порядку, затем дополнительные, вроде «Неправильных глаголов».
+  const topics = [...new Set([...words.map((w) => w.topic), ...words.flatMap((w) => w.topics)])];
   const deck = { version: 1, builtFrom: docs.map((d) => d.file), topics, words };
 
   if (!CHECK_ONLY) {
@@ -411,6 +479,13 @@ function main() {
   }
   if (mismatches.length) {
     console.log(`  расхождений с правилами: ${mismatches.length} — см. выше`);
+  }
+  const verbs = words.filter((w) => w.pos === 'verb').length;
+  if (verbs) {
+    console.log(
+      `  глаголов: ${verbs}, с аористом: ${verbs - noAorist.length}` +
+      (noAorist.length ? ` (без него: ${noAorist.join(', ')})` : ''),
+    );
   }
   const declined = words.filter((w) => w.declension).length;
   if (declined) console.log(`  склонение построено: ${declined} существительных`);

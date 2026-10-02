@@ -285,12 +285,19 @@ words:
   - el: μαθαίνω
     ru: учить, изучать
     pos: verb
+    topics: [Неправильные глаголы]
+    irregular: true
+    forms:
+      aorist: έμαθα
+    note: "Αόριστος έμαθα"
     example: Μαθαίνω ελληνικά.
     exampleRu: Я учу греческий.
 
   - el: σπουδάζω
     ru: учиться
     pos: verb
+    forms:
+      aorist: σπούδασα
     example: Σπουδάζω ιατρική.
     exampleRu: Я изучаю медицину.
 

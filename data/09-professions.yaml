@@ -281,61 +281,90 @@ words:
   - el: δουλεύω
     ru: работать
     pos: verb
+    forms:
+      aorist: δούλεψα
     example: Δουλεύω σε μια τεχνική εταιρεία.
     exampleRu: Я работаю в технической компании.
 
   - el: διδάσκω
     ru: преподавать
     pos: verb
+    forms:
+      aorist: δίδαξα
     example: Διδάσκω ελληνικά σε παιδιά.
     exampleRu: Я преподаю греческий детям.
 
   - el: ανήκω
     ru: принадлежать
     pos: verb
+    topics: [Неправильные глаголы]
+    irregular: true
+    forms:
+      imperfect: ανήκα
+    note: "Внутреннее приращение: ανήκα; αόριστος не употребляется"
     example: Αυτό το βιβλίο ανήκει στη βιβλιοθήκη.
     exampleRu: Эта книга принадлежит библиотеке.
 
   - el: υπάρχω
     ru: существовать
     pos: verb
-    note: очень часто в 3 л. — υπάρχει «имеется»
+    topics: [Неправильные глаголы]
+    irregular: true
+    forms:
+      imperfect: υπήρχα
+      aorist: υπήρξα
+    note: "очень часто в 3 л. — υπάρχει «имеется». Внутреннее приращение: υπήρχα, υπήρξα"
     example: Δεν υπάρχει κανείς εδώ.
     exampleRu: Здесь никого нет.
 
   - el: αρχίζω
     ru: начинать
     pos: verb
+    forms:
+      aorist: άρχισα
     example: Το μάθημα αρχίζει στις εννιά.
     exampleRu: Урок начинается в девять.
 
   - el: τελειώνω
     ru: заканчивать
     pos: verb
+    forms:
+      aorist: τελείωσα
     example: Η δουλειά τελειώνει στις έξι.
     exampleRu: Работа заканчивается в шесть.
 
   - el: ετοιμάζω
     ru: готовить, подготавливать
     pos: verb
+    forms:
+      aorist: ετοίμασα
     example: Ετοιμάζω το βραδινό.
     exampleRu: Я готовлю ужин.
 
   - el: ψάχνω
     ru: искать
     pos: verb
+    forms:
+      aorist: έψαξα
     example: Ψάχνω τα κλειδιά μου.
     exampleRu: Я ищу свои ключи.
 
   - el: βρίσκω
     ru: находить
     pos: verb
+    topics: [Неправильные глаголы]
+    irregular: true
+    forms:
+      aorist: βρήκα
+    note: "Αόριστος βρήκα"
     example: Δεν βρίσκω τη στάση του λεωφορείου.
     exampleRu: Я не могу найти автобусную остановку.
 
   - el: χάνω
     ru: терять
     pos: verb
+    forms:
+      aorist: έχασα
     example: Χάνω πάντα το λεωφορείο.
     exampleRu: Я всегда опаздываю на автобус.
 

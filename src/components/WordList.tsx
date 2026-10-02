@@ -29,7 +29,7 @@ export function WordList({ deck, progress }: { deck: Deck; progress: Progress })
     return deck.words
       .map((w) => ({ word: w, cards: cardsOf(w, progress) }))
       .filter(({ word, cards }) => {
-        if (topic && word.topic !== topic) return false;
+        if (topic && !word.topics.includes(topic)) return false;
         if (filter !== 'all' && status(cards) !== filter) return false;
         if (!q && !qRu) return true;
         return (

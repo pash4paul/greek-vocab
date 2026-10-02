@@ -41,6 +41,63 @@ function DeclensionTable({ word, compact }: { word: Word; compact: boolean }) {
 }
 
 const PERSONS = ['εγώ', 'εσύ', 'αυτός', 'εμείς', 'εσείς', 'αυτοί'];
+
+const TENSES = [
+  ['imperfect', 'παρατατικός'],
+  ['aorist', 'αόριστος'],
+  ['future', 'μέλλοντας'],
+] as const;
+
+/**
+ * Времена глагола. У правильного хватает 1 л. ед. ч.: остальные лица
+ * строятся по образцу, и их владелец знает сам. У неправильного в развёрнутом
+ * виде — оба прошедших по лицам: исключение часто прячется во мн. ч.
+ * (ήθελα → θέλαμε, παρήγγειλα → παραγγείλαμε).
+ */
+function Tenses({ word, expanded }: { word: Word; expanded: boolean }) {
+  const f = word.forms!;
+  const present = TENSES.filter(([k]) => f[k]?.length);
+  if (!present.length) return null;
+
+  if (!expanded) {
+    return (
+      <p className="form-line">
+        <span className="form-label">времена</span>
+        <span className="greek-sm">{present.map(([k]) => f[k]![0]).join(' · ')}</span>
+      </p>
+    );
+  }
+
+  const past = TENSES.filter(([k]) => k !== 'future' && f[k]?.length);
+  return (
+    <>
+      {present.map(([k, label]) => (
+        <p key={k} className="form-line">
+          <span className="form-label">{label}</span>
+          <span className="greek-sm">{f[k]![0]}</span>
+        </p>
+      ))}
+      {word.irregular && past.length > 0 && (
+        <table className="decl">
+          <thead>
+            <tr>
+              <th />
+              {past.map(([k, label]) => <th key={k}>{label}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {PERSONS.map((p, i) => (
+              <tr key={p}>
+                <td className="form-label">{p}</td>
+                {past.map(([k]) => <td key={k} className="greek-sm">{f[k]![i]}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </>
+  );
+}
 const GENDERS = ['м. р.', 'ж. р.', 'ср. р.'];
 
 const POS_LABEL: Record<string, string> = {
@@ -105,6 +162,8 @@ export function WordDetails({
           <span className="greek-sm">{forms.present.join(' · ')}</span>
         </p>
       ))}
+
+      {word.pos === 'verb' && forms && <Tenses word={word} expanded={expanded} />}
 
       {word.example && (
         <blockquote className="example">

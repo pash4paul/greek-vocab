@@ -430,30 +430,41 @@ words:
   - el: αγοράζω
     ru: покупать
     pos: verb
+    forms:
+      aorist: αγόρασα
     example: Αγοράζω ψωμί κάθε μέρα.
     exampleRu: Я покупаю хлеб каждый день.
 
   - el: πουλάω
     ru: продавать
     pos: verb
+    forms:
+      aorist: πούλησα
+    note: "Книжная форма — πουλώ"
     example: Πουλάω παλιά βιβλία.
     exampleRu: Я продаю старые книги.
 
   - el: διαλέγω
     ru: выбирать
     pos: verb
+    forms:
+      aorist: διάλεξα
     example: Διαλέγω πάντα φρέσκα φρούτα.
     exampleRu: Я всегда выбираю свежие фрукты.
 
   - el: ζυγίζω
     ru: взвешивать
     pos: verb
+    forms:
+      aorist: ζύγισα
     example: Ζυγίζω δύο κιλά ντομάτες.
     exampleRu: Я взвешиваю два килограмма помидоров.
 
   - el: κοστίζω
     ru: стоить
     pos: verb
+    forms:
+      aorist: κόστισα
     example: Πόσο κοστίζει αυτό;
     exampleRu: Сколько это стоит?
 

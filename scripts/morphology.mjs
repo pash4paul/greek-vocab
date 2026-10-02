@@ -176,6 +176,95 @@ export function conjugatePresent(el) {
 
 export const CONJUGATION_HINT = { 'Б2': GROUP_B2 };
 
+/** Ставит ударение на слог n от конца, сняв все прочие. */
+function accentAt(word, fromEnd) {
+  const plain = [...word].map(dropTonos).join('');
+  const n = nuclei(plain);
+  const target = n[Math.max(0, n.length - fromEnd)];
+  if (!target) return plain;
+  const chars = [...plain];
+  chars[target.end] = addTonos(chars[target.end]);
+  return chars.join('');
+}
+
+/**
+ * Παρατατικός, 1 л. ед. ч.
+ *
+ * -άω и -ώ (оба спряжения) дают -ούσα: μιλάω → μιλούσα, μπορώ → μπορούσα.
+ * Остальные на -ω: основа + -α с ударением на третьем слоге от конца,
+ * а если слогов всего два — ударное приращение έ-: γράφω → έγραφα,
+ * διαβάζω → διάβαζα.
+ *
+ * Не берётся за приставочные глаголы с внутренним приращением
+ * (υπάρχω → υπήρχα) — их по написанию не отличить от διαλέγω → διάλεγα,
+ * поэтому такие формы вписываются руками и сверка с правилом их ловит.
+ */
+export function imperfectForm(el) {
+  const w = el.trim();
+  if (isPhrase(w)) return { skip: PHRASE_SKIP };
+  if (/μαι$/.test(w)) return { skip: 'глагол среднепассивного залога — отдельная парадигма' };
+  if (endsWith(w, 'άω')) return { form: stripAccents(w.slice(0, -2)) + 'ούσα' };
+  if (endsWith(w, 'ώ')) return { form: stripAccents(w.slice(0, -1)) + 'ούσα' };
+  if (!endsWith(w, 'ω')) return { skip: 'не оканчивается на -ω' };
+
+  // ζω → ζούσα, πάω → πήγαινα: односложные спрягаются каждый по-своему.
+  if (countSyllables(w) < 2) return { skip: 'односложный глагол — форма задаётся вручную' };
+
+  const stem = w.slice(0, -1);
+  // -αύω/-εύω — не гласная основа: υ здесь читается как «в» (δουλεύω → δούλευα).
+  const vowelStem = isVowel(stem.at(-1)) && !/[αε]υ$/.test(stripAccents(stem));
+  // ακούω → άκουγα, τρώω → έτρωγα, λέω → έλεγα: после гласной встаёт -γ-,
+  // и не у всех (ιδρύω → ίδρυα). Угадывать не берёмся.
+  if (vowelStem) return { skip: 'основа на гласную — форма задаётся вручную' };
+
+  const bare = stripAccents(stem) + 'α';
+  if (countSyllables(bare) >= 3) return { form: accentAt(bare, 3) };
+  return { form: 'έ' + bare };
+}
+
+const PAST_ENDINGS = ['α', 'ες', 'ε', 'αμε', 'ατε', 'αν'];
+const MIDDLE_PAST_ENDINGS = ['μουν', 'σουν', 'ταν', 'μασταν', 'σασταν'];
+
+/**
+ * Все шесть лиц прошедшего времени по форме 1 л. ед. ч. — годится и для
+ * παρατατικός, и для αόριστος: окончания у них общие.
+ *
+ * Во 2-м и 1-м лице мн. ч. слог прибавляется, ударение уходит на третий
+ * от конца, и ударное приращение, оставшись без ударения, отпадает:
+ * έγραψα → γράψαμε, ήθελα → θέλαμε. Приращение — это έ-/ή- в начале,
+ * которого нет у настоящего времени: у ελπίζω → έλπισα «ε» своё,
+ * и ελπίσαμε его сохраняет.
+ *
+ * Внутреннее приращение (παρήγγειλα → παραγγείλαμε) отсюда не видно —
+ * у таких глаголов лица вписываются списком.
+ */
+export function pastPersons(first, present) {
+  const f = first.trim();
+
+  if (endsWith(f, 'μουν')) {
+    // Среднепассивный παρατατικός: λεγόμουν, λεγόσουν, λεγόταν… λέγονταν.
+    const base = f.slice(0, -4);
+    return {
+      forms: [
+        ...MIDDLE_PAST_ENDINGS.map((e) => base + e),
+        accentAt(stripAccents(base) + 'νταν', 3),
+      ],
+    };
+  }
+  if (!endsWith(f, 'α')) return { skip: 'форма прошедшего должна оканчиваться на -α или -μουν' };
+
+  const stem = f.slice(0, -1);
+  const augment = /^[έή]/.test(f) && stripAccents(present.trim())[0] !== stripAccents(f[0]);
+
+  return {
+    forms: PAST_ENDINGS.map((e) => {
+      if (e.length === 1 || e === 'ες' || e === 'αν') return stem + e;
+      const moved = accentAt(stem + e, 3);
+      return augment && !hasTonos(moved[0]) ? moved.slice(1) : moved;
+    }),
+  };
+}
+
 // ─── Прилагательные ───────────────────────────────────────────────────────
 
 /** Три рода: мужской, женский, средний. */
