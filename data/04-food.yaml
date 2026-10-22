@@ -164,3 +164,50 @@ words:
       aorist: πλήρωσα
     example: Πληρώνω με κάρτα.
     exampleRu: Я плачу картой.
+
+  - el: πρωινό
+    article: το
+    ru: завтрак
+    pos: noun
+    example: Τι τρως για πρωινό;
+    exampleRu: Что ты ешь на завтрак?
+
+  - el: μεσημεριανό
+    article: το
+    ru: обед
+    pos: noun
+    note: полностью — μεσημεριανό γεύμα
+
+  - el: γεύμα
+    article: το
+    ru: приём пищи, трапеза
+    pos: noun
+    note: "τα γεύματα της ημέρας — завтрак, обед и ужин"
+
+  - el: βραδινό
+    article: το
+    ru: ужин
+    pos: noun
+    note: повседневное слово; торжественнее — το δείπνο
+
+  - el: δείπνο
+    article: το
+    ru: ужин (торжественный)
+    pos: noun
+    note: книжное слово; повседневное — το βραδινό
+
+  - el: όρεξη
+    article: η
+    ru: аппетит
+    pos: noun
+    forms:
+      plural: ορέξεις
+    example: Δεν έχω όρεξη σήμερα.
+    exampleRu: У меня сегодня нет аппетита.
+
+  - el: συνταγή
+    article: η
+    ru: рецепт
+    pos: noun
+    example: Μου δίνεις τη συνταγή;
+    exampleRu: Дашь мне рецепт?

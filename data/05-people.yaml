@@ -473,3 +473,15 @@ words:
     pos: noun
     example: Η οικογένειά μου έχει πέντε μέλη.
     exampleRu: В моей семье пять человек.
+
+  - el: ψεύτης
+    article: ο
+    ru: лжец, врун
+    pos: noun
+
+  - el: μυστικό
+    article: το
+    ru: тайна, секрет
+    pos: noun
+    example: Είναι μυστικό!
+    exampleRu: Это секрет!

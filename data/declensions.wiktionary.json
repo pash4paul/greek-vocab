@@ -1,6 +1,6 @@
 {
   "source": "el.wiktionary.org",
-  "fetchedWords": 116,
+  "fetchedWords": 137,
   "cells": {
     "fili:noun": {
       "gen": [
@@ -776,6 +776,192 @@
       "gen": [
         null,
         "των αλλεργιών"
+      ]
+    },
+    "apothiki:noun": {
+      "nom": [
+        null,
+        "οι αποθήκες"
+      ],
+      "gen": [
+        null,
+        "των αποθηκών"
+      ],
+      "acc": [
+        null,
+        "τις αποθήκες"
+      ],
+      "voc": [
+        null,
+        "αποθήκες"
+      ]
+    },
+    "exoporta:noun": {
+      "gen": [
+        null,
+        "των εξωπορτών"
+      ]
+    },
+    "toyaleta:noun": {
+      "gen": [
+        null,
+        "των τουαλετών"
+      ]
+    },
+    "trapezaria:noun": {
+      "gen": [
+        null,
+        "των τραπεζαριών"
+      ]
+    },
+    "ntoylapa:noun": {
+      "gen": [
+        null,
+        "των ντουλαπών"
+      ]
+    },
+    "polythrona:noun": {
+      "gen": [
+        null,
+        "των πολυθρονών"
+      ]
+    },
+    "vrastiras:noun": {
+      "gen": [
+        null,
+        "των βραστήρων"
+      ]
+    },
+    "orexi:noun": {
+      "nom": [
+        null,
+        "οι ορέξεις"
+      ],
+      "gen": [
+        null,
+        "των ορέξεων"
+      ],
+      "acc": [
+        null,
+        "τις ορέξεις"
+      ],
+      "voc": [
+        null,
+        "ορέξεις"
+      ]
+    },
+    "imerominia:noun": {
+      "gen": [
+        null,
+        "των ημερομηνιών"
+      ]
+    },
+    "politria:noun": {
+      "gen": [
+        null,
+        "των πωλητριών"
+      ]
+    },
+    "ekptosi:noun": {
+      "nom": [
+        null,
+        "οι εκπτώσεις"
+      ],
+      "gen": [
+        null,
+        "των εκπτώσεων"
+      ],
+      "acc": [
+        null,
+        "τις εκπτώσεις"
+      ],
+      "voc": [
+        null,
+        "εκπτώσεις"
+      ]
+    },
+    "karta:noun": {
+      "gen": [
+        null,
+        "των καρτών"
+      ]
+    },
+    "pinakas:noun": {
+      "gen": [
+        null,
+        "των πινάκων"
+      ]
+    },
+    "techni:noun": {
+      "nom": [
+        null,
+        "οι τέχνες"
+      ],
+      "gen": [
+        null,
+        "των τεχνών"
+      ],
+      "acc": [
+        null,
+        "τις τέχνες"
+      ],
+      "voc": [
+        null,
+        "τέχνες"
+      ]
+    },
+    "fanela:noun": {
+      "gen": [
+        null,
+        "των φανελών"
+      ]
+    },
+    "gravata:noun": {
+      "gen": [
+        null,
+        "των γραβατών"
+      ]
+    },
+    "zoni:noun": {
+      "nom": [
+        null,
+        "οι ζώνες"
+      ],
+      "gen": [
+        null,
+        "των ζωνών"
+      ],
+      "acc": [
+        null,
+        "τις ζώνες"
+      ],
+      "voc": [
+        null,
+        "ζώνες"
+      ]
+    },
+    "tsanta:noun": {
+      "gen": [
+        null,
+        "των τσαντών"
+      ]
+    },
+    "kaltsa:noun": {
+      "gen": [
+        null,
+        "των καλτσών"
+      ]
+    },
+    "petseta:noun": {
+      "gen": [
+        null,
+        "των πετσετών"
+      ]
+    },
+    "chartopetseta:noun": {
+      "gen": [
+        null,
+        "των χαρτοπετσετών"
       ]
     }
   }

@@ -430,3 +430,29 @@ words:
     pos: noun
     example: Το δώρο ήταν μια ωραία έκπληξη.
     exampleRu: Подарок был приятным сюрпризом.
+
+  - el: πίνακας
+    article: ο
+    ru: картина, доска
+    pos: noun
+    example: Ο πίνακας είναι στον τοίχο.
+    exampleRu: Картина на стене.
+
+  - el: ζωγραφική
+    article: η
+    ru: живопись, рисование
+    pos: noun
+
+  - el: τέχνη
+    article: η
+    ru: искусство
+    pos: noun
+    forms:
+      plural: τέχνες
+
+  - el: τρέξιμο
+    article: το
+    ru: бег
+    pos: noun
+    example: Το τρέξιμο είναι καλό για την υγεία.
+    exampleRu: Бег полезен для здоровья.
