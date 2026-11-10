@@ -171,8 +171,21 @@ function buildWord(file, topic, lesson, raw, index) {
     ...(pos === 'verb' ? [VERB_TOPIC] : []),
   ])];
 
+  // Идентификатор — транслит без ударений, а в нём η, ι и υ сливаются в «i»/«y»:
+  // τάξη и ταξί оба дают taxi. Сменить транслит нельзя — обнулится прогресс
+  // у всех слов, поэтому новому слову при столкновении id задаётся руками.
+  let id = `${slugify(stem)}:${pos}`;
+  if (raw.id != null) {
+    const custom = String(raw.id).trim();
+    if (!/^[a-z0-9-]+$/.test(custom)) {
+      err(file, el, `id — латиница, цифры и дефис, без части речи: id: taksi (получено «${raw.id}»)`);
+      return null;
+    }
+    id = `${custom}:${pos}`;
+  }
+
   const irregular = raw.irregular === true;
-  const declension = applyMorphology(file, el, stem, display, pos, article, forms, irregular, raw.cases);
+  const declension = applyMorphology(file, el, stem, display, pos, article, forms, irregular, raw.cases, id);
 
   if (raw.example && !raw.example.includes(' ')) {
     warn(file, el, 'example выглядит как одно слово — для cloze нужно предложение');
@@ -182,7 +195,7 @@ function buildWord(file, topic, lesson, raw, index) {
   }
 
   return {
-    id: `${slugify(stem)}:${pos}`,
+    id,
     el: stem,
     article,
     display,
@@ -212,7 +225,7 @@ function buildWord(file, topic, lesson, raw, index) {
  * Где форм нет вовсе, а правило применимо — форма подставляется,
  * чтобы не писать руками предсказуемое.
  */
-function applyMorphology(file, el, stem, display, pos, article, forms, irregular, manualCases) {
+function applyMorphology(file, el, stem, display, pos, article, forms, irregular, manualCases, wordId) {
   const check = (key, expected, actual, kind) => {
     if (!expected) return;
     if (!actual) {
@@ -283,7 +296,6 @@ function applyMorphology(file, el, stem, display, pos, article, forms, irregular
 
   if (pos === 'noun' && article) {
     const r = declineNoun(stem, article);
-    const wordId = `${slugify(stem)}:noun`;
     if (!r.table) {
       // Отказ правила не отменяет того, что вписано руками и найдено
       // в Викисловаре: порядок источников — руками, Викисловарь, правила,
@@ -426,11 +438,21 @@ function main() {
       const w = buildWord(file, topic, lesson, raw, i);
       if (!w) return;
       const prev = seen.get(w.id);
+      if (prev && prev.display !== w.display) {
+        // Разные слова с одним id: второе молча вытеснило бы первое вместе
+        // с его прогрессом. Так ταξί однажды спрятало τάξη.
+        err(
+          file, w.el,
+          `тот же идентификатор ${w.id}, что у ${prev.display} из ${prev.file}. ` +
+          'Это разные слова — новому впиши свой id: (например, id: taksi), у старого не меняй',
+        );
+        return;
+      }
       if (prev) {
         warn(file, w.el, `дубль слова из ${prev.file} (тема «${prev.topic}») — оставляю первое`);
         return;
       }
-      seen.set(w.id, { file, topic });
+      seen.set(w.id, { file, topic, display: w.display });
       words.push(w);
     });
   }

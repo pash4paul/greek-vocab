@@ -1,6 +1,6 @@
 {
   "source": "el.wiktionary.org",
-  "fetchedWords": 137,
+  "fetchedWords": 142,
   "cells": {
     "fili:noun": {
       "gen": [
@@ -962,6 +962,48 @@
       "gen": [
         null,
         "των χαρτοπετσετών"
+      ]
+    },
+    "filenada:noun": {
+      "gen": [
+        null,
+        "των φιλενάδων"
+      ]
+    },
+    "aionas:noun": {
+      "gen": [
+        null,
+        "των αιώνων"
+      ]
+    },
+    "masticha:noun": {
+      "gen": [
+        null,
+        "των μαστιχών"
+      ]
+    },
+    "parastasi:noun": {
+      "nom": [
+        null,
+        "οι παραστάσεις"
+      ],
+      "gen": [
+        null,
+        "των παραστάσεων"
+      ],
+      "acc": [
+        null,
+        "τις παραστάσεις"
+      ],
+      "voc": [
+        null,
+        "παραστάσεις"
+      ]
+    },
+    "peripeteia:noun": {
+      "gen": [
+        null,
+        "των περιπετειών"
       ]
     }
   }
